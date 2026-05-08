@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "7.15.12",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.12-20f3f343be5f9577bcde2287b94e90937a7b004f043c91eb141757414e196aae",
-    "sha256":  "20f3f343be5f9577bcde2287b94e90937a7b004f043c91eb141757414e196aae",
+    "version":  "7.15.13",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.13-68a3b7846bfa906e855119912f7fd3538415c965fad68e6c6dace3fd7e8b46ec",
+    "sha256":  "68a3b7846bfa906e855119912f7fd3538415c965fad68e6c6dace3fd7e8b46ec",
     "size":  320000,
-    "notes":  "v7.15.12: fixes queued GUI upgrade/install clicks being dropped by cooldown across AutoMiner, JewishMiner, IndustrialMiner, Farmer, Hydroponic and MoneyTree. D4 server build 6.10 keeps full button/action logs but samples normal sync logs to reduce GUI lag.",
-    "released":  "2026-05-08T00:21:24Z"
+    "notes":  "v7.15.13: MoneyTree can collect stored dukes even when fuel is empty. Includes v7.15.12 queued GUI upgrade/install cooldown fixes across AutoMiner, JewishMiner, IndustrialMiner, Farmer, Hydroponic and MoneyTree. D4 server build 6.10 samples normal sync logs to reduce GUI lag.",
+    "released":  "2026-05-08T00:23:38Z"
 }
