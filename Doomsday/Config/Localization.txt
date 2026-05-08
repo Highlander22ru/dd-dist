@@ -779,69 +779,13 @@ skillBezumecName,,,,,[FF00FF]☠ Madman[-],[FF00FF]☠ Безумец[-]
 skillBezumecDesc,progression,skill,,,Passive branch for Madman bonuses,Пассивная ветка бонусов Безумца
 perkBezumecName,,,,,[FF00FF]☠ Madman - {cvar(bezumec:0)} lvl[-],[FF00FF]☠ Безумец - {cvar(bezumec:0)} лвл[-]
 perkBezumecDesc,,,,,[FF00FF]Passive skill[-] grows automatically with player level. [AAAAAA]Never resets.[-],[FF00FF]Пассивный навык[-] растёт автоматически с уровнем игрока. [AAAAAA]Не теряется и сброса нет.[-]
-perkBezumecLongDesc,,,,,[FF00FF]☠ Madman - passive[-]
-[AAAAAA]Auto gain: every [FFD700]1000[-] player levels -> [00FF00]+1 Madman[-]
-[AAAAAA]Max [FFD700]150[-] at player level [FFD700]150000[-]
-[AAAAAA]Never resets. No respec required.[-]
-
-[FFD700]▼ Current total bonuses ▼[-]
-[FF0000]❤ +{cvar(bezumecTotalHP:0)} HP[-]  [00BFFF]+{cvar(bezumecTotalStam:0)} Stamina[-]
-[00FF00]★ +{cvar(bezumecTotalXP:0)}% XP[-]  [FF6600]+{cvar(bezumecTotalDmg:0)}% Zombie damage[-]
-[A020F0]◆ +{cvar(bezumecTotalLoot:0)}% Loot[-]  [FFD700]+{cvar(bezumecTotalHarvest:0)}% Harvest[-]
-[FFD700]{cvar(bezumecTotalSP:0)} skill points granted[-]
-
-[AAAAAA]Vanilla skill points stop above player level 1000. Game stage and loot stage stay capped at 1000.[-],[FF00FF]☠ Безумец - пассив[-]
-[AAAAAA]Автонабор: каждые [FFD700]1000[-] уровней игрока -> [00FF00]+1 Безумец[-]
-[AAAAAA]Макс [FFD700]150[-] на уровне игрока [FFD700]150000[-]
-[AAAAAA]Не теряется. Сброс не требуется.[-]
-
-[FFD700]▼ Текущие суммарные бонусы ▼[-]
-[FF0000]❤ +{cvar(bezumecTotalHP:0)} HP[-]  [00BFFF]+{cvar(bezumecTotalStam:0)} Выносливости[-]
-[00FF00]★ +{cvar(bezumecTotalXP:0)}% Опыта[-]  [FF6600]+{cvar(bezumecTotalDmg:0)}% Урона по зомби[-]
-[A020F0]◆ +{cvar(bezumecTotalLoot:0)}% Лута[-]  [FFD700]+{cvar(bezumecTotalHarvest:0)}% Добычи[-]
-[FFD700]{cvar(bezumecTotalSP:0)} очков навыков выдано[-]
-
-[AAAAAA]Очки навыков выше уровня игрока 1000 не выдаются. Этап игры и Поиск добычи ограничены уровнем 1000.[-]
+perkBezumecLongDesc,,,,,"[FF00FF]☠ Madman - passive[-]\n[AAAAAA]Auto gain: every [FFD700]1000[-] player levels -> [00FF00]+1 Madman[-]\n[AAAAAA]Max [FFD700]150[-] at player level [FFD700]150000[-]\n[AAAAAA]Never resets. No respec required.[-]\n\n[FFD700]▼ Current total bonuses ▼[-]\n[FF0000]❤ +{cvar(bezumecTotalHP:0)} HP[-]  [00BFFF]+{cvar(bezumecTotalStam:0)} Stamina[-]\n[00FF00]★ +{cvar(bezumecTotalXP:0)}% XP[-]  [FF6600]+{cvar(bezumecTotalDmg:0)}% Zombie damage[-]\n[A020F0]◆ +{cvar(bezumecTotalLoot:0)}% Loot[-]  [FFD700]+{cvar(bezumecTotalHarvest:0)}% Harvest[-]\n[FFD700]{cvar(bezumecTotalSP:0)} skill points granted[-]\n\n[AAAAAA]Vanilla skill points stop above player level 1000. Game stage and loot stage caps by biome: forest 1000 / burnt forest 2000 / desert 3000 / snow 4000 / wasteland 5000.[-]","[FF00FF]☠ Безумец - пассив[-]\n[AAAAAA]Автонабор: каждые [FFD700]1000[-] уровней игрока -> [00FF00]+1 Безумец[-]\n[AAAAAA]Макс [FFD700]150[-] на уровне игрока [FFD700]150000[-]\n[AAAAAA]Не теряется. Сброс не требуется.[-]\n\n[FFD700]▼ Текущие суммарные бонусы ▼[-]\n[FF0000]❤ +{cvar(bezumecTotalHP:0)} HP[-]  [00BFFF]+{cvar(bezumecTotalStam:0)} Выносливости[-]\n[00FF00]★ +{cvar(bezumecTotalXP:0)}% Опыта[-]  [FF6600]+{cvar(bezumecTotalDmg:0)}% Урона по зомби[-]\n[A020F0]◆ +{cvar(bezumecTotalLoot:0)}% Лута[-]  [FFD700]+{cvar(bezumecTotalHarvest:0)}% Добычи[-]\n[FFD700]{cvar(bezumecTotalSP:0)} очков навыков выдано[-]\n\n[AAAAAA]Очки навыков выше уровня игрока 1000 не выдаются. Этап игры и Поиск добычи ограничены по биому: Лесной 1000 / Горелый 2000 / Пустынный 3000 / Зимний 4000 / Пустошь 5000.[-]"
 perkBezumecRank1Desc,,,,,[FFD700]Madman: {cvar(bezumec:0)} / 150[-] [AAAAAA]auto-passive[-],[FFD700]Безумец: {cvar(bezumec:0)} / 150[-] [AAAAAA]авто-пассив[-]
 perkBezumecRank1LongDesc,,,,,[AAAAAA]Grows automatically. Buying is not required.[-],[AAAAAA]Растёт автоматически. Покупка не требуется.[-]
 reqBezumecLevel1000,,,,,[AAAAAA]Requires player level [FFD700]1000[-][-],[AAAAAA]Требуется [FFD700]1000[-] уровень игрока[-]
 reqBezumecMaxUsage,,,,,[FF4444]⚠ Maximum usage count reached (150)[-],[FF4444]⚠ Максимальное количество использований достигнуто (150)[-]
 buffBezumecName,,,,,[FF00FF]☠ Madman (Passive)[-],[FF00FF]☠ Безумец (Пассив)[-]
-buffBezumecDesc,,,,,[FF00FF]☠ Madman (Passive)[-]
-
-[FFD700]Level:[-] [FFFFFF]{cvar(bezumec:0)}[-] [FFD700]/ 150[-]
-
-[AAAAAA]Every [FFD700]1000[-] player levels -> [00FF00]+1 Madman[-]
-[AAAAAA]Max [FFD700]150[-] at player level [FFD700]150000[-]
-[AAAAAA]Never resets.[-]
-
-[FFD700]Current total bonuses:[-]
-[FF0000]❤ Health:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]
-[00BFFF]⚡ Stamina:[-] [FFFFFF]+{cvar(bezumecTotalStam:0)}[-]
-[00FF00]★ XP:[-] [FFFFFF]+{cvar(bezumecTotalXP:0)}%[-]
-[FF6600]⚔ Zombie damage:[-] [FFFFFF]+{cvar(bezumecTotalDmg:0)}%[-]
-[A020F0]◆ Loot:[-] [FFFFFF]+{cvar(bezumecTotalLoot:0)}%[-]
-[FFD700]⛏ Harvest:[-] [FFFFFF]+{cvar(bezumecTotalHarvest:0)}%[-]
-[FFD700]Skill points granted:[-] [FFFFFF]{cvar(bezumecTotalSP:0)}[-]
-
-[AAAAAA]Vanilla skill points stop above player level 1000. Game stage and loot stage stay capped at 1000.[-],[FF00FF]☠ Безумец (Пассив)[-]
-
-[FFD700]Уровень:[-] [FFFFFF]{cvar(bezumec:0)}[-] [FFD700]/ 150[-]
-
-[AAAAAA]Каждые [FFD700]1000[-] уровней игрока -> [00FF00]+1 Безумец[-]
-[AAAAAA]Макс [FFD700]150[-] на уровне игрока [FFD700]150000[-]
-[AAAAAA]Не теряется. Сброса нет.[-]
-
-[FFD700]Текущие суммарные бонусы:[-]
-[FF0000]❤ Здоровье:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]
-[00BFFF]⚡ Выносливость:[-] [FFFFFF]+{cvar(bezumecTotalStam:0)}[-]
-[00FF00]★ Опыт:[-] [FFFFFF]+{cvar(bezumecTotalXP:0)}%[-]
-[FF6600]⚔ Урон по зомби:[-] [FFFFFF]+{cvar(bezumecTotalDmg:0)}%[-]
-[A020F0]◆ Лут:[-] [FFFFFF]+{cvar(bezumecTotalLoot:0)}%[-]
-[FFD700]⛏ Добыча:[-] [FFFFFF]+{cvar(bezumecTotalHarvest:0)}%[-]
-[FFD700]Очков навыков выдано:[-] [FFFFFF]{cvar(bezumecTotalSP:0)}[-]
-
-[AAAAAA]Очки навыков выше уровня игрока 1000 не выдаются. Этап игры и Поиск добычи ограничены уровнем 1000.[-]
+buffBezumecDesc,,,,,"[FF00FF]☠ Madman (Passive)[-]\n\n[FFD700]Level:[-] [FFFFFF]{cvar(bezumec:0)}[-] [FFD700]/ 150[-]\n\n[AAAAAA]Every [FFD700]1000[-] player levels -> [00FF00]+1 Madman[-]\n[AAAAAA]Max [FFD700]150[-] at player level [FFD700]150000[-]\n[AAAAAA]Never resets.[-]\n\n[FFD700]Current total bonuses:[-]\n[FF0000]❤ Health:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]\n[00BFFF]⚡ Stamina:[-] [FFFFFF]+{cvar(bezumecTotalStam:0)}[-]\n[00FF00]★ XP:[-] [FFFFFF]+{cvar(bezumecTotalXP:0)}%[-]\n[FF6600]⚔ Zombie damage:[-] [FFFFFF]+{cvar(bezumecTotalDmg:0)}%[-]\n[A020F0]◆ Loot:[-] [FFFFFF]+{cvar(bezumecTotalLoot:0)}%[-]\n[FFD700]⛏ Harvest:[-] [FFFFFF]+{cvar(bezumecTotalHarvest:0)}%[-]\n[FFD700]Skill points granted:[-] [FFFFFF]{cvar(bezumecTotalSP:0)}[-]\n\n[AAAAAA]Vanilla skill points stop above player level 1000. Game stage and loot stage caps by biome: forest 1000 / burnt forest 2000 / desert 3000 / snow 4000 / wasteland 5000.[-]","[FF00FF]☠ Безумец (Пассив)[-]\n\n[FFD700]Уровень:[-] [FFFFFF]{cvar(bezumec:0)}[-] [FFD700]/ 150[-]\n\n[AAAAAA]Каждые [FFD700]1000[-] уровней игрока -> [00FF00]+1 Безумец[-]\n[AAAAAA]Макс [FFD700]150[-] на уровне игрока [FFD700]150000[-]\n[AAAAAA]Не теряется. Сброса нет.[-]\n\n[FFD700]Текущие суммарные бонусы:[-]\n[FF0000]❤ Здоровье:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]\n[00BFFF]⚡ Выносливость:[-] [FFFFFF]+{cvar(bezumecTotalStam:0)}[-]\n[00FF00]★ Опыт:[-] [FFFFFF]+{cvar(bezumecTotalXP:0)}%[-]\n[FF6600]⚔ Урон по зомби:[-] [FFFFFF]+{cvar(bezumecTotalDmg:0)}%[-]\n[A020F0]◆ Лут:[-] [FFFFFF]+{cvar(bezumecTotalLoot:0)}%[-]\n[FFD700]⛏ Добыча:[-] [FFFFFF]+{cvar(bezumecTotalHarvest:0)}%[-]\n[FFD700]Очков навыков выдано:[-] [FFFFFF]{cvar(bezumecTotalSP:0)}[-]\n\n[AAAAAA]Очки навыков выше уровня игрока 1000 не выдаются. Этап игры и Поиск добычи ограничены по биому: Лесной 1000 / Горелый 2000 / Пустынный 3000 / Зимний 4000 / Пустошь 5000.[-]"
 Magazine_AddSkillPointx100,,,,,[FFD700]✦[-] Skill Magazine x100,[FFD700]✦[-] Журнал навыков x100
 Magazine_AddSkillPointx100Desc,,,,,[FFD700]✦ Rare Skill Magazine ✦[-]\n\n[AAAAAA]Reading this rare magazine grants:[-]\n[00FF00]⚡ Skill Points:[-] +100\n[FFFF00]★ Experience:[-] +150000,[FFD700]✦ Редкий Журнал Навыков ✦[-]\n\n[AAAAAA]Прочтение этого редкого журнала даёт:[-]\n[00FF00]⚡ Очки навыков:[-] +100\n[FFFF00]★ Опыт:[-] +150000
 buffRestoreMagazineSkillPointsName,,,,,[FFFF00]⏱ Skill Points Restoration[-],[FFFF00]⏱ Восстановление очков навыков[-]

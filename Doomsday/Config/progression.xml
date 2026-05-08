@@ -2248,7 +2248,7 @@
 </perk>
 </append>
 	
-		<set xpath="/progression/level/@max_level">1000</set>
+		<set xpath="/progression/level/@max_level">150000</set>
 	<set xpath="/progression/level/@exp_to_level">10000</set>
 	<set xpath="/progression/level/@experience_multiplier">1.03</set>
 	<set xpath="/progression/level/@clamp_exp_cost_at_level">210</set>
