@@ -1,0 +1,8 @@
+﻿{
+    "version":  "7.15.11",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.11-30f0fbb40d3ef38ca0065777a8890da0181420955fde3ee0af9a3654e5684b79",
+    "sha256":  "30f0fbb40d3ef38ca0065777a8890da0181420955fde3ee0af9a3654e5684b79",
+    "size":  318976,
+    "notes":  "v7.15.11: detailed GUI diagnostics; fixes 7DaysBank dedicated oldCash payout and GUI rate text; improves IndustrialForge/MultiVlastForge upgrade feedback and prevents upgrade clicks being dropped by cooldown. Requires DoomsdayServer.dll v7.15.11 / ModInfo 6.9.",
+    "released":  "2026-05-08T00:07:04Z"
+}
