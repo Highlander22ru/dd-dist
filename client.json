@@ -1,26 +1,26 @@
 {
-    "version":  "7.15.15",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.15-423e7dfd90d49742be763519493c1ae571ce27c0069403c885d6bfb90dba77ea",
-    "sha256":  "423e7dfd90d49742be763519493c1ae571ce27c0069403c885d6bfb90dba77ea",
+    "version":  "7.15.16",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.16-95bc10ee91263f3dbe76a4b36e6fc9a57e62bb51d30a2cfb6eaeeb96ecc4263f",
+    "sha256":  "95bc10ee91263f3dbe76a4b36e6fc9a57e62bb51d30a2cfb6eaeeb96ecc4263f",
     "size":  321024,
-    "notes":  "v7.15.15: synchronizes GUI/HUD and localization values with server balance for MoneyTree, Bank, Industrial/Auto/Jewish miners, Farmer, Hydroponic, Industrial Forge and Multi-Vlast Forge. Fixes stale Bank payout preview and Industrial Miner 25M storage display. D4 server build 6.11 included.",
-    "released":  "2026-05-08T00:44:25.8267748Z",
+    "notes":  "v7.15.16: deep GUI/HUD recheck. Bank timed deposits now display the exact server payout totals from bnk_*_t CVars; Money Tree GUI/HUD no longer shows old 10/min production or 500 fuel fallbacks when no modules are installed. Server DLL logic recompiled/verified unchanged from D4 6.11.",
+    "released":  "2026-05-08T01:14:25.9254082Z",
     "files":  [
                   {
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.15-423e7dfd90d49742be763519493c1ae571ce27c0069403c885d6bfb90dba77ea",
-                      "sha256":  "423e7dfd90d49742be763519493c1ae571ce27c0069403c885d6bfb90dba77ea",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.16-95bc10ee91263f3dbe76a4b36e6fc9a57e62bb51d30a2cfb6eaeeb96ecc4263f",
+                      "sha256":  "95bc10ee91263f3dbe76a4b36e6fc9a57e62bb51d30a2cfb6eaeeb96ecc4263f",
                       "size":  321024
                   },
                   {
                       "path":  "DoomsdayClient/ModInfo.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.15-33dcaa29442a545e5824a6c9dc6d3de5beb5d307125e56d564cb02c5d9708c69",
-                      "sha256":  "33dcaa29442a545e5824a6c9dc6d3de5beb5d307125e56d564cb02c5d9708c69",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.16-caff5ce6ffe587fbe1a81a78e5fb5c1fd631c4eb805e03593935b47a593b8adb",
+                      "sha256":  "caff5ce6ffe587fbe1a81a78e5fb5c1fd631c4eb805e03593935b47a593b8adb",
                       "size":  246
                   },
                   {
                       "path":  "Doomsday/Config/Localization.txt",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.15-18d4520cf23909a45fd9131b48dd643022f8fb8591e76bfe91050fc49ea91550",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.16-18d4520cf23909a45fd9131b48dd643022f8fb8591e76bfe91050fc49ea91550",
                       "sha256":  "18d4520cf23909a45fd9131b48dd643022f8fb8591e76bfe91050fc49ea91550",
                       "size":  2698832
                   }
