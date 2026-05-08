@@ -35,33 +35,6 @@
 		<passive_effect name="CraftingTier" operation="base_add" level="5,10,15,20,25,100" value="1,2,3,4,5,5" tags="gunRemoteInjectionRifle"/>
 	</append>
 	
-	<!-- Безумец - display-only пассивный навык.
-	     Вся игровая логика уровня, SP и бонусов живёт в DoomsdayServer/Client.
-	     progression.xml нужен только для корректного отображения в дереве навыков. -->
-	<append xpath="/progression/attributes">
-		<attribute name="attbezumec" name_key="attBezumecName" desc_key="attBezumecDesc" icon="ui_game_symbol_skull" min_level="0" max_level="0" base_skill_point_cost="0">
-			<effect_group>
-				<effect_description level="0" desc_key="attBezumecRank0Desc" long_desc_key="attBezumecRank0LongDesc"/>
-			</effect_group>
-		</attribute>
-	</append>
-	
-	<append xpath="/progression/skills">
-		<skill name="skillBezumec" max_level="1" parent="attbezumec" name_key="skillBezumecName" desc_key="skillBezumecDesc" icon="ui_game_symbol_skull">
-			<effect_group/>
-		</skill>
-	</append>
-	
-	<append xpath="/progression/perks">
-		<perk name="perkBezumec" max_level="1" parent="skillBezumec" base_skill_point_cost="0" name_key="perkBezumecName" desc_key="perkBezumecDesc" long_desc_key="perkBezumecLongDesc" icon="ui_game_symbol_skull">
-			<level_requirements level="1">
-				<requirement name="CVarCompare" cvar="passiveSkillsActive" operation="GTE" value="1" desc_key="reqPerkGameAuto"/>
-			</level_requirements>
-			<effect_group name="Rank Descriptions">
-				<effect_description level="1" desc_key="perkBezumecRank1Desc" long_desc_key="perkBezumecRank1LongDesc"/>
-			</effect_group>
-		</perk>
-	</append>
 	
 	
 		<set xpath="/progression/perks/book[@name='perkPistolPeteComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">ammoBundle9mmBulletBall,ammoBundle9mmBulletHP,ammoBundle9mmBulletAP,ammoDisBundle9mmBulletBall,ammoDisBundle9mmBulletHP,ammoDisBundle9mmBulletAP</set>
@@ -1751,6 +1724,7 @@
 	</append>
 	
 	<append xpath="/progression/skills">
+		<skill name="skillBezumec" max_level="1" parent="attpasssiveskills" name_key="skillBezumecName" desc_key="skillBezumecDesc" icon="ui_game_symbol_skull"><effect_group/></skill>
 		<skill name="skillAdaptation" parent="attpasssiveskills" name_key="skillAdaptationName" icon="ui_game_symbol_survival"><effect_group/></skill>
 		<skill name="skillWeaponExpert" parent="attpasssiveskills" name_key="skillWeaponExpertName" icon="ui_game_symbol_head_shot"><effect_group/></skill>
 		<skill name="skillDeadHunt" parent="attpasssiveskills" name_key="skillDeadHuntName" icon="ui_game_symbol_map_cursor"><effect_group/></skill>
@@ -1762,6 +1736,17 @@
 	<!-- РџР°СЃСЃРёРІРЅС‹Рµ РЅР°РІС‹РєРё (Codex-style: max_level=1, CVar-based bonuses) -->
 	<!-- ======================================================== -->
 	<append xpath="/progression/perks">
+
+		<!-- BEZUMEC (Passive, display-only; gameplay is handled in Doomsday DLLs) -->
+		<perk name="perkBezumec" max_level="1" parent="skillBezumec" base_skill_point_cost="0" name_key="perkBezumecName" desc_key="perkBezumecDesc" long_desc_key="perkBezumecLongDesc" icon="ui_game_symbol_skull">
+			<level_requirements level="1">
+				<requirement name="CVarCompare" cvar="passiveSkillsActive" operation="GTE" value="1" desc_key="reqPerkGameAuto"/>
+			</level_requirements>
+			<effect_group name="Rank Desc">
+				<effect_description level="1" desc_key="perkBezumecRank1Desc" long_desc_key="perkBezumecRank1LongDesc"/>
+			</effect_group>
+		</perk>
+
 
 <!-- *** xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <!-- ADAPTATION (Codex-style: max_level=1, CVar-based bonuses) -->

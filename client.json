@@ -1,34 +1,34 @@
 {
-    "version":  "7.15.21",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.21-2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
+    "version":  "7.15.22",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.22-2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
     "sha256":  "2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
     "size":  321536,
-    "notes":  "v7.15.21: restored max player level 150000 for passive Bezumec and corrected Bezumec UI text to biome caps: forest 1000, burnt 2000, desert 3000, snow 4000, wasteland 5000. Vanilla skill points still stop above level 1000.",
-    "released":  "2026-05-08T08:05:47.3784762Z",
+    "notes":  "v7.15.22: moved Bezumec into Passive Skills, restored the screenshot-style passive description, and polished the skill localization. Stage/Loot caps remain biome-based: forest 1000, burnt 2000, desert 3000, snow 4000, wasteland 5000.",
+    "released":  "2026-05-08T09:01:00.4415494Z",
     "files":  [
                   {
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.21-2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.22-2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
                       "sha256":  "2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
                       "size":  321536
                   },
                   {
                       "path":  "DoomsdayClient/ModInfo.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.21-9bfa21740966006447c8c0616d625949bee1ab764fb5d991b217e744ddb97a27",
-                      "sha256":  "9bfa21740966006447c8c0616d625949bee1ab764fb5d991b217e744ddb97a27",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.22-1d63f175576c4b12095cbbc9c342e0d6099e3823e8f5360ef25af5d95dd7e2c2",
+                      "sha256":  "1d63f175576c4b12095cbbc9c342e0d6099e3823e8f5360ef25af5d95dd7e2c2",
                       "size":  246
                   },
                   {
                       "path":  "Doomsday/Config/Localization.txt",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.21-2320f8a6e2361185f2ce9fa8fab43ac10f38da15b7c3b507f43a7bc8ee14de38",
-                      "sha256":  "2320f8a6e2361185f2ce9fa8fab43ac10f38da15b7c3b507f43a7bc8ee14de38",
-                      "size":  2730020
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.22-56bada3a1ed73737fc2efedd141d4975404713561cfc8127405a62bd8cbeed28",
+                      "sha256":  "56bada3a1ed73737fc2efedd141d4975404713561cfc8127405a62bd8cbeed28",
+                      "size":  2733835
                   },
                   {
                       "path":  "Doomsday/Config/progression.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/progression.xml?v=7.15.21-cd3eaa483536286ff753567d4bc7f441065490724e407ffaa9a5e190f045fc28",
-                      "sha256":  "cd3eaa483536286ff753567d4bc7f441065490724e407ffaa9a5e190f045fc28",
-                      "size":  643099
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/progression.xml?v=7.15.22-f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
+                      "sha256":  "f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
+                      "size":  642356
                   }
               ]
 }
