@@ -1,21 +1,21 @@
 {
-    "version":  "7.15.18",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.18-34aeb2e01dbc12d604bb88c24bee42a46378e7f5640e06920b0dd7ac8c8cac5f",
-    "sha256":  "34aeb2e01dbc12d604bb88c24bee42a46378e7f5640e06920b0dd7ac8c8cac5f",
-    "size":  320000,
-    "notes":  "v7.15.18: Bank GUI text now fits inside sections; IndustrialForge GUI diagnostics are hidden; custom GUI cursor is held stable; IndustrialForge fire/sound particle respawns if the engine drops it and is lifted to the forge mouth. D4 server 6.14 adds an IndustrialForge smelt-capacity guard.",
-    "released":  "2026-05-08T04:31:27.7059029Z",
+    "version":  "7.15.19",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.19-ccf6d148c907000a2fd7b97db95cf8e5a58de8ea4e3a33dace84968262ecf977",
+    "sha256":  "ccf6d148c907000a2fd7b97db95cf8e5a58de8ea4e3a33dace84968262ecf977",
+    "size":  321536,
+    "notes":  "v7.15.19: ItemStack network hotfix. Client now replays legacy raw 65534 stacks instead of corrupting packet parsing; server 6.15 now encodes 65534+ stacks symmetrically. Includes earlier Bank GUI, IndustrialForge GUI/cursor/fire fixes.",
+    "released":  "2026-05-08T06:30:45.3201924Z",
     "files":  [
                   {
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.18-34aeb2e01dbc12d604bb88c24bee42a46378e7f5640e06920b0dd7ac8c8cac5f",
-                      "sha256":  "34aeb2e01dbc12d604bb88c24bee42a46378e7f5640e06920b0dd7ac8c8cac5f",
-                      "size":  320000
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.19-ccf6d148c907000a2fd7b97db95cf8e5a58de8ea4e3a33dace84968262ecf977",
+                      "sha256":  "ccf6d148c907000a2fd7b97db95cf8e5a58de8ea4e3a33dace84968262ecf977",
+                      "size":  321536
                   },
                   {
                       "path":  "DoomsdayClient/ModInfo.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.18-e8d614e9bf6546c5d254aabec3ff46c620e94d124500deac71a35c2c9567cf90",
-                      "sha256":  "e8d614e9bf6546c5d254aabec3ff46c620e94d124500deac71a35c2c9567cf90",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.19-a6756d1b8205156c22ec0c7c3a72bca14d543ea5a01e22c76233494e493eb792",
+                      "sha256":  "a6756d1b8205156c22ec0c7c3a72bca14d543ea5a01e22c76233494e493eb792",
                       "size":  246
                   },
                   {
