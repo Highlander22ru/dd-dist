@@ -3,6 +3,6 @@
     "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.12-20f3f343be5f9577bcde2287b94e90937a7b004f043c91eb141757414e196aae",
     "sha256":  "20f3f343be5f9577bcde2287b94e90937a7b004f043c91eb141757414e196aae",
     "size":  320000,
-    "notes":  "v7.15.12: fixes queued GUI upgrade/install clicks being dropped by cooldown across AutoMiner, JewishMiner, IndustrialMiner, Farmer, Hydroponic and MoneyTree. Keeps detailed diagnostics. Requires DoomsdayServer.dll v7.15.11+ / ModInfo 6.9.",
-    "released":  "2026-05-08T00:15:28Z"
+    "notes":  "v7.15.12: fixes queued GUI upgrade/install clicks being dropped by cooldown across AutoMiner, JewishMiner, IndustrialMiner, Farmer, Hydroponic and MoneyTree. D4 server build 6.10 keeps full button/action logs but samples normal sync logs to reduce GUI lag.",
+    "released":  "2026-05-08T00:21:24Z"
 }
