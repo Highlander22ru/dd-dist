@@ -1,28 +1,34 @@
-{
-    "version":  "7.15.19",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.19-ccf6d148c907000a2fd7b97db95cf8e5a58de8ea4e3a33dace84968262ecf977",
-    "sha256":  "ccf6d148c907000a2fd7b97db95cf8e5a58de8ea4e3a33dace84968262ecf977",
+﻿{
+    "version":  "7.15.20",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.20-2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
+    "sha256":  "2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
     "size":  321536,
-    "notes":  "v7.15.19: ItemStack network hotfix. Client now replays legacy raw 65534 stacks instead of corrupting packet parsing; server 6.15 now encodes 65534+ stacks symmetrically. Includes earlier Bank GUI, IndustrialForge GUI/cursor/fire fixes.",
-    "released":  "2026-05-08T06:30:45.3201924Z",
+    "notes":  "v7.15.20: restored passive Bezumec progression/UI, added launcher delivery for progression.xml, and fixed raw custom skill ids in UI tooltips (for example attclasstears).",
+    "released":  "2026-05-08T07:36:34.9614026Z",
     "files":  [
                   {
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.19-ccf6d148c907000a2fd7b97db95cf8e5a58de8ea4e3a33dace84968262ecf977",
-                      "sha256":  "ccf6d148c907000a2fd7b97db95cf8e5a58de8ea4e3a33dace84968262ecf977",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.20-2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
+                      "sha256":  "2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
                       "size":  321536
                   },
                   {
                       "path":  "DoomsdayClient/ModInfo.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.19-a6756d1b8205156c22ec0c7c3a72bca14d543ea5a01e22c76233494e493eb792",
-                      "sha256":  "a6756d1b8205156c22ec0c7c3a72bca14d543ea5a01e22c76233494e493eb792",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.20-fae3d7c9e18dc7c6cb65ea28e081269a01657f2eab69f2cf6f7e0f468b65d1e3",
+                      "sha256":  "fae3d7c9e18dc7c6cb65ea28e081269a01657f2eab69f2cf6f7e0f468b65d1e3",
                       "size":  246
                   },
                   {
                       "path":  "Doomsday/Config/Localization.txt",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.18-18d4520cf23909a45fd9131b48dd643022f8fb8591e76bfe91050fc49ea91550",
-                      "sha256":  "18d4520cf23909a45fd9131b48dd643022f8fb8591e76bfe91050fc49ea91550",
-                      "size":  2698832
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.20-51baf677954944c87298f31828708d313ab04c3cc10d9eaa807913e6f62781f2",
+                      "sha256":  "51baf677954944c87298f31828708d313ab04c3cc10d9eaa807913e6f62781f2",
+                      "size":  2729606
+                  },
+                  {
+                      "path":  "Doomsday/Config/progression.xml",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/progression.xml?v=7.15.20-20e6fd10734df0b2af9ca022d45033b290b673a079f622820265bca98f5abb51",
+                      "sha256":  "20e6fd10734df0b2af9ca022d45033b290b673a079f622820265bca98f5abb51",
+                      "size":  643097
                   }
               ]
 }

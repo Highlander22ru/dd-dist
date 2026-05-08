@@ -770,21 +770,78 @@ questRewardVehicleBundleT3Desc,items,item,,,[AAAAAA]One of the minibike parts.[-
 questRewardVehicleBundleT4Desc,items,item,,,[AAAAAA]One of the motorcycle parts.[-],[AAAAAA]Одна из деталей мотоцикла.[-]
 questRewardVehicleBundleT5Desc,items,item,,,[AAAAAA]One of the 4x4 truck parts.[-],[AAAAAA]Одна из деталей грузовика 4х4.[-]
 questRewardVehicleBundleT6Desc,items,item,,,[AAAAAA]One of the gyrocopter parts.[-],[AAAAAA]Одна из деталей автожира.[-]
-attbezumec,,,,,[FF00FF]✦ Madman ✦[-],[FF00FF]✦ Безумец ✦[-]
-attBezumecName,,,,,[FF00FF]✦ Madman ✦[-],[FF00FF]✦ Безумец ✦[-]
-attBezumecDesc,,,,,[FF00FF]Path to madness and absolute power.[-]\n\n[FFD700]⚙ Max level:[-] 150\n[FF0000]❤ Per level:[-] +20 HP +20 Stamina\n[FFFF00]⚡ Per level:[-] +50% XP\n[FF6600]⚔ Per level:[-] +5% Zombie Damage\n[00FF88]⛏ Per level:[-] +5% Harvest,[FF00FF]Путь к безумию и абсолютной силе.[-]\n\n[FFD700]⚙ Макс. уровень:[-] 150\n[FF0000]❤ За уровень:[-] +20 ХП +20 Выносливости\n[FFFF00]⚡ За уровень:[-] +50% Опыта\n[FF6600]⚔ За уровень:[-] +5% Урона по зомби\n[00FF88]⛏ За уровень:[-] +5% Добычи ресурсов
-attBezumecRank0Desc,,,,,Unlocks the [FF00FF]Madman[-] perk tree,Открывает дерево перков [FF00FF]Безумца[-]
-attBezumecRank0LongDesc,,,,,[AAAAAA]A mysterious power granting incredible abilities to those who reached level [FFD700]1000[-].[-],[AAAAAA]Таинственная сила дарующая невероятные способности тем кто достиг [FFD700]1000[-] уровня.[-]
-skillBezumecName,,,,,[FF00FF]⚡ Madman's Power[-],[FF00FF]⚡ Сила Безумца[-]
-perkBezumecName,,,,,[FF00FF]✦ Madman[-],[FF00FF]✦ Безумец[-]
-perkBezumecDesc,,,,,[FF00FF]Harness the power of madness[-] [AAAAAA](requires level [FFD700]1000[-])[-],[FF00FF]Обуздай силу безумия[-] [AAAAAA](требуется [FFD700]1000[-] уровень)[-]
-perkBezumecLongDesc,,,,,[FF00FF]Upon reaching level [FFD700]1000[-] you can learn this perk.[-]\n\nEach learning permanently increases power and the perk resets allowing you to learn it again.\n\n[00FF00]⚡ Each Madman level grants an additional +75 skill points.[-]\n[FFD700]⚙ Maximum:[-] 150 times.,[FF00FF]При достижении [FFD700]1000[-] уровня можно изучить этот перк.[-]\n\nКаждое изучение увеличивает силу навсегда и перк сбрасывается позволяя изучить снова.\n\n[00FF00]⚡ За каждый уровень Безумца дополнительно даётся +75 очков навыков.[-]\n[FFD700]⚙ Максимум:[-] 150 раз.
-perkBezumecRank1Desc,,,,,[FF00FF]✦[-] +1 Madman Level (permanent) [00FF00]+75 skill points[-]. [FF4444]⚠ WARNING:[-] Player level/learned skills will be reset.,[FF00FF]✦[-] +1 Уровень Безумца (навсегда) [00FF00]+75 очков навыков[-]. [FF4444]⚠ ВНИМАНИЕ:[-] Происходит сброс уровня игрока/изученные навыки.
-perkBezumecRank1LongDesc,,,,,[FF00FF]Your madness grows stronger.[-] [00FF00]⚡ +75 skill points per Madman level.[-]\n\n[AAAAAA]Perk will reset after learning.[-],[FF00FF]Твоё безумие становится сильнее.[-] [00FF00]⚡ +75 очков навыков за уровень Безумца.[-]\n\n[AAAAAA]Перк сбросится после изучения.[-]
+attbezumec,,,,,[FF00FF]☠ Madman (Passive)[-],[FF00FF]☠ Безумец (Пассив)[-]
+attBezumecName,,,,,[FF00FF]☠ Madman (Passive)[-],[FF00FF]☠ Безумец (Пассив)[-]
+attBezumecDesc,,,,,[AAAAAA]Passive skill that grows automatically from player level.[-],[AAAAAA]Пассивный навык который растёт автоматически с уровнем игрока.[-]
+attBezumecRank0Desc,,,,,Passive skill grows automatically,Пассивный навык растёт автоматически
+attBezumecRank0LongDesc,,,,,[AAAAAA]Every [FFD700]1000[-] player levels gives [00FF00]+1 Madman[-]. Max [FFD700]150[-] at player level [FFD700]150000[-]. Never resets.[-],[AAAAAA]Каждые [FFD700]1000[-] уровней игрока дают [00FF00]+1 Безумец[-]. Макс [FFD700]150[-] на уровне игрока [FFD700]150000[-]. Не теряется и не сбрасывается.[-]
+skillBezumecName,,,,,[FF00FF]☠ Madman[-],[FF00FF]☠ Безумец[-]
+skillBezumecDesc,progression,skill,,,Passive branch for Madman bonuses,Пассивная ветка бонусов Безумца
+perkBezumecName,,,,,[FF00FF]☠ Madman - {cvar(bezumec:0)} lvl[-],[FF00FF]☠ Безумец - {cvar(bezumec:0)} лвл[-]
+perkBezumecDesc,,,,,[FF00FF]Passive skill[-] grows automatically with player level. [AAAAAA]Never resets.[-],[FF00FF]Пассивный навык[-] растёт автоматически с уровнем игрока. [AAAAAA]Не теряется и сброса нет.[-]
+perkBezumecLongDesc,,,,,[FF00FF]☠ Madman - passive[-]
+[AAAAAA]Auto gain: every [FFD700]1000[-] player levels -> [00FF00]+1 Madman[-]
+[AAAAAA]Max [FFD700]150[-] at player level [FFD700]150000[-]
+[AAAAAA]Never resets. No respec required.[-]
+
+[FFD700]▼ Current total bonuses ▼[-]
+[FF0000]❤ +{cvar(bezumecTotalHP:0)} HP[-]  [00BFFF]+{cvar(bezumecTotalStam:0)} Stamina[-]
+[00FF00]★ +{cvar(bezumecTotalXP:0)}% XP[-]  [FF6600]+{cvar(bezumecTotalDmg:0)}% Zombie damage[-]
+[A020F0]◆ +{cvar(bezumecTotalLoot:0)}% Loot[-]  [FFD700]+{cvar(bezumecTotalHarvest:0)}% Harvest[-]
+[FFD700]{cvar(bezumecTotalSP:0)} skill points granted[-]
+
+[AAAAAA]Vanilla skill points stop above player level 1000. Game stage and loot stage stay capped at 1000.[-],[FF00FF]☠ Безумец - пассив[-]
+[AAAAAA]Автонабор: каждые [FFD700]1000[-] уровней игрока -> [00FF00]+1 Безумец[-]
+[AAAAAA]Макс [FFD700]150[-] на уровне игрока [FFD700]150000[-]
+[AAAAAA]Не теряется. Сброс не требуется.[-]
+
+[FFD700]▼ Текущие суммарные бонусы ▼[-]
+[FF0000]❤ +{cvar(bezumecTotalHP:0)} HP[-]  [00BFFF]+{cvar(bezumecTotalStam:0)} Выносливости[-]
+[00FF00]★ +{cvar(bezumecTotalXP:0)}% Опыта[-]  [FF6600]+{cvar(bezumecTotalDmg:0)}% Урона по зомби[-]
+[A020F0]◆ +{cvar(bezumecTotalLoot:0)}% Лута[-]  [FFD700]+{cvar(bezumecTotalHarvest:0)}% Добычи[-]
+[FFD700]{cvar(bezumecTotalSP:0)} очков навыков выдано[-]
+
+[AAAAAA]Очки навыков выше уровня игрока 1000 не выдаются. Этап игры и Поиск добычи ограничены уровнем 1000.[-]
+perkBezumecRank1Desc,,,,,[FFD700]Madman: {cvar(bezumec:0)} / 150[-] [AAAAAA]auto-passive[-],[FFD700]Безумец: {cvar(bezumec:0)} / 150[-] [AAAAAA]авто-пассив[-]
+perkBezumecRank1LongDesc,,,,,[AAAAAA]Grows automatically. Buying is not required.[-],[AAAAAA]Растёт автоматически. Покупка не требуется.[-]
 reqBezumecLevel1000,,,,,[AAAAAA]Requires player level [FFD700]1000[-][-],[AAAAAA]Требуется [FFD700]1000[-] уровень игрока[-]
 reqBezumecMaxUsage,,,,,[FF4444]⚠ Maximum usage count reached (150)[-],[FF4444]⚠ Максимальное количество использований достигнуто (150)[-]
-buffBezumecName,,,,,[FF00FF] Madman[-],[FF00FF] Безумец[-]
-buffBezumecDesc,,,,,"[FF00FF] Madman[-]\n\n[FFD700] Level:[-] [FFFFFF]{cvar(bezumec:0)}[-] [FFD700]/ 150[-]\n\n[FFD700] Current bonuses:[-]\n[FF0000]❤ Health:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]\n[00BFFF] Stamina:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]\n[00FF00]★ XP:[-] [FFFFFF]+{cvar(bezumecTotalXP:0)}%[-]\n[FF6600] Zombie Damage:[-] [FFFFFF]+{cvar(bezumecTotalDmg:0)}%[-]\n[00FF88] Harvest:[-] [FFFFFF]+{cvar(bezumecTotalHarvest:0)}%[-]\n\n[FFD700] Skill points on reset:[-] [FFFFFF]{cvar(bezumecTotalSP:0)}[-]\n\n[AAAAAA] Formula: Lvl×20 HP/Stam, ×50% XP, ×5% Damage, ×5% Harvest[-]\n[AAAAAA] Skill points: 75 × level[-]\n\n[AAAAAA] Magazine points, mutations, classes, codexes — will be restored.[-]","[FF00FF] Безумец[-]\n\n[FFD700] Уровень:[-] [FFFFFF]{cvar(bezumec:0)}[-] [FFD700]/ 150[-]\n\n[FFD700] Текущие бонусы:[-]\n[FF0000]❤ Здоровье:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]\n[00BFFF] Выносливость:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]\n[00FF00]★ Опыт:[-] [FFFFFF]+{cvar(bezumecTotalXP:0)}%[-]\n[FF6600] Урон по зомби:[-] [FFFFFF]+{cvar(bezumecTotalDmg:0)}%[-]\n[00FF88] Добыча:[-] [FFFFFF]+{cvar(bezumecTotalHarvest:0)}%[-]\n\n[FFD700] Очки навыков при сбросе:[-] [FFFFFF]{cvar(bezumecTotalSP:0)}[-]\n\n[AAAAAA] Формула: Ур.×20 ХП/Вын, ×50% Опыта, ×5% Урона, ×5% Добычи[-]\n[AAAAAA] Очки навыков: 75 × уровень[-]\n\n[AAAAAA] Журнальные очки, мутации, классы, кодексы — восстанавливаются.[-]"
+buffBezumecName,,,,,[FF00FF]☠ Madman (Passive)[-],[FF00FF]☠ Безумец (Пассив)[-]
+buffBezumecDesc,,,,,[FF00FF]☠ Madman (Passive)[-]
+
+[FFD700]Level:[-] [FFFFFF]{cvar(bezumec:0)}[-] [FFD700]/ 150[-]
+
+[AAAAAA]Every [FFD700]1000[-] player levels -> [00FF00]+1 Madman[-]
+[AAAAAA]Max [FFD700]150[-] at player level [FFD700]150000[-]
+[AAAAAA]Never resets.[-]
+
+[FFD700]Current total bonuses:[-]
+[FF0000]❤ Health:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]
+[00BFFF]⚡ Stamina:[-] [FFFFFF]+{cvar(bezumecTotalStam:0)}[-]
+[00FF00]★ XP:[-] [FFFFFF]+{cvar(bezumecTotalXP:0)}%[-]
+[FF6600]⚔ Zombie damage:[-] [FFFFFF]+{cvar(bezumecTotalDmg:0)}%[-]
+[A020F0]◆ Loot:[-] [FFFFFF]+{cvar(bezumecTotalLoot:0)}%[-]
+[FFD700]⛏ Harvest:[-] [FFFFFF]+{cvar(bezumecTotalHarvest:0)}%[-]
+[FFD700]Skill points granted:[-] [FFFFFF]{cvar(bezumecTotalSP:0)}[-]
+
+[AAAAAA]Vanilla skill points stop above player level 1000. Game stage and loot stage stay capped at 1000.[-],[FF00FF]☠ Безумец (Пассив)[-]
+
+[FFD700]Уровень:[-] [FFFFFF]{cvar(bezumec:0)}[-] [FFD700]/ 150[-]
+
+[AAAAAA]Каждые [FFD700]1000[-] уровней игрока -> [00FF00]+1 Безумец[-]
+[AAAAAA]Макс [FFD700]150[-] на уровне игрока [FFD700]150000[-]
+[AAAAAA]Не теряется. Сброса нет.[-]
+
+[FFD700]Текущие суммарные бонусы:[-]
+[FF0000]❤ Здоровье:[-] [FFFFFF]+{cvar(bezumecTotalHP:0)}[-]
+[00BFFF]⚡ Выносливость:[-] [FFFFFF]+{cvar(bezumecTotalStam:0)}[-]
+[00FF00]★ Опыт:[-] [FFFFFF]+{cvar(bezumecTotalXP:0)}%[-]
+[FF6600]⚔ Урон по зомби:[-] [FFFFFF]+{cvar(bezumecTotalDmg:0)}%[-]
+[A020F0]◆ Лут:[-] [FFFFFF]+{cvar(bezumecTotalLoot:0)}%[-]
+[FFD700]⛏ Добыча:[-] [FFFFFF]+{cvar(bezumecTotalHarvest:0)}%[-]
+[FFD700]Очков навыков выдано:[-] [FFFFFF]{cvar(bezumecTotalSP:0)}[-]
+
+[AAAAAA]Очки навыков выше уровня игрока 1000 не выдаются. Этап игры и Поиск добычи ограничены уровнем 1000.[-]
 Magazine_AddSkillPointx100,,,,,[FFD700]✦[-] Skill Magazine x100,[FFD700]✦[-] Журнал навыков x100
 Magazine_AddSkillPointx100Desc,,,,,[FFD700]✦ Rare Skill Magazine ✦[-]\n\n[AAAAAA]Reading this rare magazine grants:[-]\n[00FF00]⚡ Skill Points:[-] +100\n[FFFF00]★ Experience:[-] +150000,[FFD700]✦ Редкий Журнал Навыков ✦[-]\n\n[AAAAAA]Прочтение этого редкого журнала даёт:[-]\n[00FF00]⚡ Очки навыков:[-] +100\n[FFFF00]★ Опыт:[-] +150000
 buffRestoreMagazineSkillPointsName,,,,,[FFFF00]⏱ Skill Points Restoration[-],[FFFF00]⏱ Восстановление очков навыков[-]
@@ -9874,3 +9931,246 @@ bpXPMaster,items,Item,,,[FF1493]Эпический Свиток XP +250 000 (Bat
 bpXPMasterDesc,items,Item,,,[FF1493]✦ Master BattlePass XP Scroll ✦[-]\nИспользуй для +250 000 XP к боевому пропуску.,[FF1493]✦ Мастер-Свиток BattlePass XP ✦[-]\nИспользуй для +250 000 XP к боевому пропуску.
 bpPremiumActivator,items,Item,,,[FFD700]✦ Активатор BattlePass Premium[-],[FFD700]✦ Активатор BattlePass Premium[-]
 bpPremiumActivatorDesc,items,Item,,,[FFD700]✦ BattlePass Premium Pass ✦[-]\nИспользуй для активации Premium-трека текущего сезона.\nКуплено на сайте doomsday7dtd.ru или получено в подарок.,[FFD700]✦ Активатор BattlePass Premium ✦[-]\nИспользуй для активации Premium-трека текущего сезона.\nКуплено на сайте doomsday7dtd.ru или получено в подарок.
+
+attclasstears,progression,attribute,,,[FFD700]Счастье - Слёзы[-],[FFD700]Счастье - Слёзы[-]
+masterarmor,progression,Attribute,,,[B87333]✦ Master Armor[-],[B87333]✦ Мастер брони[-]
+masterbuilder,progression,Attribute,,,[8B4513]✦ Master Building[-],[8B4513]✦ Мастер строительства[-]
+masterchemist,progression,Attribute,,,[CC44CC]✦ Master Chemist[-],[CC44CC]✦ Мастер химик[-]
+mastercraftingbows,progression,Attribute,,,[32CD32]✦ Master Archery[-],[32CD32]✦ Мастер стрельбы из луков[-]
+mastercraftinghandguns,progression,Attribute,,,[DAA520]✦ Master Handguns[-],[DAA520]✦ Мастер ручного оружия[-]
+mastercraftingmachineguns,progression,Attribute,,,[FF6347]✦ Master Machine Guns[-],[FF6347]✦ Мастер пулемётов[-]
+mastercraftingrifle,progression,Attribute,,,[4682B4]✦ Master Rifles[-],[4682B4]✦ Мастер винтовок[-]
+mastercraftingshotgun,progression,Attribute,,,[CD853F]✦ Master Shotguns[-],[CD853F]✦ Мастер дробовиков[-]
+masterdemolitionist,progression,Attribute,,,[FF4500]✦ Master Demolitionist[-],[FF4500]✦ Мастер подрывник[-]
+masterelectrician,progression,Attribute,,,[AADD00]✦ Master Electrician[-],[AADD00]✦ Мастер электрик[-]
+masterfarmer,progression,Attribute,,,[55AA33]✦ Master Farmer[-],[55AA33]✦ Мастер Фермер[-]
+masterheavymeleeweapon,progression,Attribute,,,[CC3333]✦ Master Heavy Melee[-],[CC3333]✦ Мастер тяж. оружия[-]
+masterkitchen,progression,Attribute,,,[FFA500]✦ Master Kitchen[-],[FFA500]✦ Мастер кухни[-]
+masterlightmeleeweapon,progression,Attribute,,,[FF7733]✦ Master Light Melee[-],[FF7733]✦ Мастер лёгк. оружия[-]
+masterrobotics,progression,Attribute,,,[00CED1]✦ Master Robotics[-],[00CED1]✦ Мастер робототехники[-]
+mastertools,progression,Attribute,,,[FF8C00]✦ Master Tools[-],[FF8C00]✦ Мастер инструментов[-]
+mastertraps,progression,Attribute,,,[00DDDD]✦ Master Traps[-],[00DDDD]✦ Мастер ловушек[-]
+mastervehicle,progression,Attribute,,,[4FA8C0]✦ Master Mechanic[-],[4FA8C0]✦ Мастер механик[-]
+masterworkstations,progression,Attribute,,,[B8860B]✦ Master Workstations[-],[B8860B]✦ Мастер рабочих станций[-]
+perkadminloveplayer,progression,perk,,,[00BFFF]Admin Loves Players[-],[00BFFF]Админ любить игроки[-]
+perkaggressor,progression,perk,,,[AAAAAA]Aggressor[-],[AAAAAA]Агрессор[-]
+perkarmorheavy,progression,perk,,,[AAAAAA]Heavy Armor[-],[AAAAAA]Тяжелая броня[-]
+perkarmorlight,progression,perk,,,Light Armor,Легкая броня
+perkarmormedium,progression,perk,,,[AAAAAA]Medium Armor[-],[AAAAAA]Средняя броня[-]
+perkautomaticweaponexpert,progression,perk,,,[FF6600]✦ Rambo -[-] {cvar(passiveLvlAutoWeaponExpert:0)} lvl,[FF6600]✦ Рэмбо[-] - {cvar(passiveLvlAutoWeaponExpert:0)} лвл
+perkbezumec,,,,,[FF00FF]☠ Madman - {cvar(bezumec:0)} lvl[-],[FF00FF]☠ Безумец - {cvar(bezumec:0)} лвл[-]
+perkbossabaddon,progression,perk,,,[FFB800]✦ Abaddon -[-] {cvar(passiveLvlBossAbaddon:0)} lvl,[FFB800]✦ Абаддон[-] - {cvar(passiveLvlBossAbaddon:0)} лвл
+perkbossabaddonharvestcount,progression,Perk,,,[DC143C]✦ Infernal Harvest ✦[-],[DC143C]✦ Инфернальная добыча ✦[-]
+perkbossabaddonheadshot,progression,Perk,,,[DC143C]✦ Infernal Aim ✦[-],[DC143C]✦ Инфернальный прицел ✦[-]
+perkbossabaddonlover,progression,Perk,,,[DC143C]✦ Abaddon's Weapon ✦[-],[DC143C]✦ Оружие Абаддона ✦[-]
+perkbossabaddonminer,progression,Perk,,,[DC143C]✦ Infernal Harvest ✦[-],[DC143C]✦ Инфернальная жатва ✦[-]
+perkbossabaddonpewpew,progression,Perk,,,[DC143C]✦ Hellish Barrage ✦[-],[DC143C]✦ Адский шквал ✦[-]
+perkbossabaddonrangeddamage,progression,Perk,,,[DC143C]✦ Infernal Ranged Damage ✦[-],[DC143C]✦ Инфернальный дальний урон ✦[-]
+perkbossbeardaddy,progression,perk,,,[FFB800]✦ Bear Daddy -[-] {cvar(passiveLvlBossBearDaddy:0)} lvl,[FFB800]✦ Папа медведь[-] - {cvar(passiveLvlBossBearDaddy:0)} лвл
+perkbossbitch,progression,perk,,,[FFB800]✦ Bitch -[-] {cvar(passiveLvlBossBitch:0)} lvl,[FFB800]✦ Стерва[-] - {cvar(passiveLvlBossBitch:0)} лвл
+perkbossbull,progression,perk,,,[FFB800]✦ Brute -[-] {cvar(passiveLvlBossBull:0)} lvl,[FFB800]✦ Бугай[-] - {cvar(passiveLvlBossBull:0)} лвл
+perkbossburningflesh,progression,perk,,,[FFB800]✦ Ember -[-] {cvar(passiveLvlBossBurningFlesh:0)} lvl,[FFB800]✦ Огонёк[-] - {cvar(passiveLvlBossBurningFlesh:0)} лвл
+perkbosscarrier,progression,perk,,,[FFB800]✦ Carrier -[-] {cvar(passiveLvlBossCarrier:0)} lvl,[FFB800]✦ Носитель[-] - {cvar(passiveLvlBossCarrier:0)} лвл
+perkbosscholera,progression,perk,,,[FFB800]✦ Cholera -[-] {cvar(passiveLvlBossCholera:0)} lvl,[FFB800]✦ Холера[-] - {cvar(passiveLvlBossCholera:0)} лвл
+perkbossdevourer,progression,perk,,,[FFB800]✦ Devourer -[-] {cvar(passiveLvlBossDevourer:0)} lvl,[FFB800]✦ Пожиратель[-] - {cvar(passiveLvlBossDevourer:0)} лвл
+perkbossdoomsday,progression,perk,,,[FFB800]✦ Doomsday -[-] {cvar(passiveLvlBossDoomsday:0)} lvl,[FFB800]✦ Думсдэй[-] - {cvar(passiveLvlBossDoomsday:0)} лвл
+perkbossdoomsdayheadshot,progression,Perk,,,[FFB800]✦ Doomsday Mark ✦[-],[FFB800]✦ Метка Судного дня ✦[-]
+perkbossdoomsdaylover,progression,Perk,,,[FFB800]✦ Doomsday Weapon ✦[-],[FFB800]✦ Оружие Судного дня ✦[-]
+perkbossdoomsdayminer,progression,Perk,,,[FFB800]✦ Doomsday Harvest ✦[-],[FFB800]✦ Добыча Судного дня ✦[-]
+perkbossdoomsdaypewpew,progression,Perk,,,[FFB800]✦ Doomsday Barrage ✦[-],[FFB800]✦ Шквал Судного дня ✦[-]
+perkbossgargul,progression,perk,,,[FFB800]✦ Gargul -[-] {cvar(passiveLvlBossGargul:0)} lvl,[FFB800]✦ Гаргул[-] - {cvar(passiveLvlBossGargul:0)} лвл
+perkbossnova,progression,perk,,,[FFB800]✦ Nova -[-] {cvar(passiveLvlBossNova:0)} lvl,[FFB800]✦ Нова[-] - {cvar(passiveLvlBossNova:0)} лвл
+perkbossnovaheadshot,progression,Perk,,,[7FFF00]✦ Divine Aim ✦[-],[7FFF00]✦ Божественный прицел ✦[-]
+perkbossnovalover,progression,Perk,,,[7FFF00]✦ Nova's Weapon ✦[-],[7FFF00]✦ Оружие Новы ✦[-]
+perkbossnovaminer,progression,Perk,,,[7FFF00]✦ Divine Harvest ✦[-],[7FFF00]✦ Божественная жатва ✦[-]
+perkbossnovapewpew,progression,Perk,,,[7FFF00]✦ Divine Barrage ✦[-],[7FFF00]✦ Божественный шквал ✦[-]
+perkbossnovarangeddamage,progression,Perk,,,[7FFF00]✦ Creator's Power ✦[-],[7FFF00]✦ Сила создателя ✦[-]
+perkbosspovelitel,progression,perk,,,[FFB800]✦ Overlord -[-] {cvar(passiveLvlBossPovelitel:0)} lvl,[FFB800]✦ Повелитель[-] - {cvar(passiveLvlBossPovelitel:0)} лвл
+perkbosspovelitelheadshot,progression,Perk,,,[00BFFF]✦ Sovereign Aim ✦[-],[00BFFF]✦ Властный прицел ✦[-]
+perkbosspovelitellover,progression,Perk,,,[00BFFF]✦ Overlord's Weapon ✦[-],[00BFFF]✦ Оружие Повелителя ✦[-]
+perkbosspovelitelminer,progression,Perk,,,[00BFFF]✦ Overlord's Tribute ✦[-],[00BFFF]✦ Дань Повелителю ✦[-]
+perkbosspovelitelpewpew,progression,Perk,,,[00BFFF]✦ Overlord's Barrage ✦[-],[00BFFF]✦ Шквал Повелителя ✦[-]
+perkbossquintessa,progression,perk,,,[FFB800]✦ Quintessa -[-] {cvar(passiveLvlBossQuintessa:0)} lvl,[FFB800]✦ Квинтесса[-] - {cvar(passiveLvlBossQuintessa:0)} лвл
+perkbossquintessaheadshot,progression,Perk,,,[00C0FF]✦ Aim Through Dimensions ✦[-],[00C0FF]✦ Прицел сквозь измерения ✦[-]
+perkbossquintessalover,progression,Perk,,,[00C0FF]✦ Quintessa's Weapon ✦[-],[00C0FF]✦ Оружие Квинтессы ✦[-]
+perkbossquintessaminer,progression,Perk,,,[00C0FF]✦ Quintessa's Bounty ✦[-],[00C0FF]✦ Щедрость Квинтессы ✦[-]
+perkbossquintessapewpew,progression,Perk,,,[00C0FF]✦ Echo of Quintessa ✦[-],[00C0FF]✦ Эхо Квинтессы ✦[-]
+perkbossshocker,progression,perk,,,[FFB800]✦ Shocker -[-] {cvar(passiveLvlBossShocker:0)} lvl,[FFB800]✦ Шокер[-] - {cvar(passiveLvlBossShocker:0)} лвл
+perkbossveteran,progression,perk,,,[FFB800]✦ Veteran -[-] {cvar(passiveLvlBossVeteran:0)} lvl,[FFB800]✦ Ветеран[-] - {cvar(passiveLvlBossVeteran:0)} лвл
+perkbossworlds,progression,perk,,,[FFB800]✦ World-Eater -[-] {cvar(passiveLvlBossWorlds:0)} lvl,[FFB800]✦ Пожиратель Миров[-] - {cvar(passiveLvlBossWorlds:0)} лвл
+perkbossworldsblock,progression,Perk,,,[FF0000]✦ World Destroyer ✦[-],[FF0000]✦ Разрушитель миров ✦[-]
+perkbossworldsheadshot,progression,Perk,,,[FF0000]✦ Devouring Aim ✦[-],[FF0000]✦ Пожирающий прицел ✦[-]
+perkbossworldslover,progression,Perk,,,[FF0000]✦ World-Eater's Weapon ✦[-],[FF0000]✦ Оружие Пожирателя ✦[-]
+perkbossworldsminer,progression,Perk,,,[FF0000]✦ World-Eater's Harvest ✦[-],[FF0000]✦ Жатва Пожирателя ✦[-]
+perkbossworldspewpew,progression,Perk,,,[FF0000]✦ World-Eater's Barrage ✦[-],[FF0000]✦ Шквал Пожирателя ✦[-]
+perkbowsexpert,progression,perk,,,[FF6600]✦ Robin Hood -[-] {cvar(passiveLvlBowsExpert:0)} lvl,[FF6600]✦ Робин Гуд[-] - {cvar(passiveLvlBowsExpert:0)} лвл
+perkbuilderconcretemaster,progression,perk,,,[FFD700]◆ Construction Magnate ◆[-],[FFD700]◆ Строительный магнат ◆[-]
+perkbuildergods,progression,perk,,,[C77DFF]Builder of Gods[-],[C77DFF]Строитель Богов[-]
+perkbuildergreatbuilder,progression,perk,,,[FFD700]Great Builder[-],[FFD700]Великий строитель[-]
+perkbuildergypsy,progression,perk,,,[FFD700]Gypsy[-],[FFD700]Цыган[-]
+perkbuilderjewish,progression,perk,,,[FF3030]Jewish Smith[-],[FF3030]Еврейский кузнец[-]
+perkbuilderminer,progression,perk,,,[FFD700]Miner[-],[FFD700]Шахтёр[-]
+perkbuilderpickaxemaster,progression,perk,,,[FFD700]Mining Mole[-],[FFD700]Шахтёрский крот[-]
+perkbuilderresting,progression,perk,,,[FFD700]Rest[-],[FFD700]Отдых[-]
+perkbuilderroadwarrior,progression,perk,,,[FFD700]Road Warrior[-],[FFD700]Дорожный воин[-]
+perkbuilderworlddomination,progression,perk,,,[FF4500]World Domination[-],[FF4500]Мировое господство[-]
+perkbullseye,progression,perk,,,[FF0000]✦ Bullseye -[-] {cvar(passiveLvlBullsEye:0)} lvl,[FF0000]✦ В яблочко[-] - {cvar(passiveLvlBullsEye:0)} лвл
+perkburnttimer,progression,perk,,,[FF6600]✦ Burnt Forest -[-] {cvar(passiveLvlBurntTimer:0)} lvl,[FF6600]✦ Горелый[-] - {cvar(passiveLvlBurntTimer:0)} лвл
+perkcamelstock,progression,perk,,,[AAAAAA]Camel Reserve[-],[AAAAAA]Верблюжий запас[-]
+perkcodexofdeath,progression,perk,,,[808080]✦ Codex of Death ✦[-] ({cvar(codexDeathLevel:0)} lvl),[808080]✦ Кодекс смерти ✦[-] ({cvar(codexDeathLevel:0)} лвл)
+perkcodexofgod,progression,perk,,,[8A2BE2]✦ Codex of God ✦[-] ({cvar(codexGodLevel:0)} lvl),[8A2BE2]✦ Кодекс божества ✦[-] ({cvar(codexGodLevel:0)} лвл)
+perkcodexofgypsy,progression,perk,,,[FFD700]✦ Codex of the Gypsy ✦[-] ({cvar(codexGypsyLevel:0)} lvl),[FFD700]✦ Кодекс цыгана ✦[-] ({cvar(codexGypsyLevel:0)} лвл)
+perkcodexoflife,progression,perk,,,[FFD700]✦ Codex of Life ✦[-] ({cvar(codexLevel:0)} lvl),[FFD700]✦ Кодекс жизни ✦[-] ({cvar(codexLevel:0)} лвл)
+perkcoldresistance,progression,perk,,,Cold Resistance,Сопротивление холоду
+perkdefenderautoattacker,progression,perk,,,[FF0000]Power Arms[-],[FF0000]Прокачкенные руки[-]
+perkdefenderclublover,progression,perk,,,[FF0000]Club Lover[-],[FF0000]Любитель дубины[-]
+perkdefendermeleedamage,progression,perk,,,[FF0000]Melee Damage[-],[FF0000]Урон в ближнем бою[-]
+perkdefenderrunandprotect,progression,perk,,,[FF0000]Run and Protect[-],[FF0000]Беги и защищай[-]
+perkdefendersledgehammerlover,progression,perk,,,[FF0000]Sledgehammer Lover[-],[FF0000]Любитель кувалды[-]
+perkdefenderspearlover,progression,perk,,,[FF0000]Spear Lover[-],[FF0000]Любитель копья[-]
+perkdefendertank,progression,perk,,,[FF0000]Tank[-],[FF0000]Танк[-]
+perkdeserttimer,progression,perk,,,[FFD700]☀ Desert -[-] {cvar(passiveLvlDesertTimer:0)} lvl,[FFD700]☀ Пустыня[-] - {cvar(passiveLvlDesertTimer:0)} лвл
+perkdobcite,progression,perk,,,[FFD700]Clay[-] - {cvar(dobLvl_Clay:0)} lvl,[FFD700]Глина[-] - {cvar(dobLvl_Clay:0)} лвл
+perkdobcoal,progression,perk,,,[FFD700]Coal[-] - {cvar(dobLvl_Coal:0)} lvl,[FFD700]Уголь[-] - {cvar(dobLvl_Coal:0)} лвл
+perkdobiron,progression,perk,,,[FFD700]Iron[-] - {cvar(dobLvl_Iron:0)} lvl,[FFD700]Железо[-] - {cvar(dobLvl_Iron:0)} лвл
+perkdoblead,progression,perk,,,[FFD700]Lead[-] - {cvar(dobLvl_Lead:0)} lvl,[FFD700]Свинец[-] - {cvar(dobLvl_Lead:0)} лвл
+perkdobsaltpeter,progression,perk,,,[FFD700]Saltpeter[-] - {cvar(dobLvl_Saltpeter:0)} lvl,[FFD700]Селитра[-] - {cvar(dobLvl_Saltpeter:0)} лвл
+perkdobshale,progression,perk,,,[FFD700]Oil Shale[-] - {cvar(dobLvl_Shale:0)} lvl,[FFD700]Сланец[-] - {cvar(dobLvl_Shale:0)} лвл
+perkdobstone,progression,perk,,,[FFD700]Stone[-] - {cvar(dobLvl_Stone:0)} lvl,[FFD700]Камень[-] - {cvar(dobLvl_Stone:0)} лвл
+perkdobwood,progression,perk,,,[FFD700]Wood[-] - {cvar(dobLvl_Wood:0)} lvl,[FFD700]Дерево[-] - {cvar(dobLvl_Wood:0)} лвл
+perkelitehunt,progression,perk,,,[FF0000]☠ Best of the Worst -[-] {cvar(passiveLvlEliteHunt:0)} lvl,[FF0000]☠ Лучшие из худших[-] - {cvar(passiveLvlEliteHunt:0)} лвл
+perkengineerammo,progression,perk,,,[800080]Ammo Expert[-],[800080]Эксперт боеприпасов[-]
+perkengineereffective,progression,perk,,,[800080]Effective Turrets[-],[800080]Эффективные турели[-]
+perkengineermyturrets,progression,perk,,,[800080]My Turrets[-],[800080]Мои турели[-]
+perkengineertrapsxp,progression,perk,,,[800080]Trap XP[-],[800080]Опыт от ловушек[-]
+perkengineerturretlover,progression,perk,,,[800080]Turret Lover[-],[800080]Любитель турелей[-]
+perkfarmerboar,progression,perk,,,[228B22]Boar Keeper[-],[228B22]Хранитель кабанов[-]
+perkfarmerbrawler,progression,perk,,,[228B22]Brawler[-],[228B22]Боксёр[-]
+perkfarmerchicken,progression,perk,,,[228B22]Chicken Keeper[-],[228B22]Хранитель кур[-]
+perkfarmerdismember,progression,perk,,,[228B22]Dismember[-],[228B22]Расчленение[-]
+perkfarmermasterfarm,progression,perk,,,[228B22]Master Farmer[-],[228B22]Мастер фермер[-]
+perkfarmermetabolism,progression,perk,,,[228B22]Metabolism[-],[228B22]Метаболизм[-]
+perkfarmershotgunmaster,progression,perk,,,[228B22]Shotgun Master[-],[228B22]Мастер дробовика[-]
+perkfastfeet,progression,perk,,,[AAAAAA]Fast Feet[-],[AAAAAA]Скороход[-]
+perkforesttimer,progression,perk,,,[4CAF50]✦ Forest -[-] {cvar(passiveLvlForestTimer:0)} lvl,[4CAF50]✦ Лес[-] - {cvar(passiveLvlForestTimer:0)} лвл
+perkgametimer,progression,perk,,,[DECEA3]✦ Total Time -[-] {cvar(passiveLvlGameTimer:0)} lvl,[DECEA3]✦ Общее время[-] - {cvar(passiveLvlGameTimer:0)} лвл
+perkglutton,progression,perk,,,Glutton,Обжора
+perkgoodsowing,progression,perk,,,Good Sowing,Хорошая посевная
+perkhealthybody,progression,perk,,,[AAAAAA]Healthy Body[-],[AAAAAA]Здоровое тело[-]
+perkheatresistance,progression,perk,,,Heat Resistance,Сопротивление жаре
+perkheavyburden,progression,perk,,,Heavy Burden,Тяжёлая ноша
+perkhuntergundamage,progression,perk,,,[00C0FF]Gun Damage[-],[00C0FF]Урон оружия[-]
+perkhuntermagsize,progression,perk,,,[00C0FF]Magazine Size[-],[00C0FF]Размер магазина[-]
+perkhuntermasterauto,progression,perk,,,[00C0FF]Auto-Fire Master[-],[00C0FF]Мастер автоматики[-]
+perkhuntermasterhunt,progression,perk,,,[00C0FF]Master Hunter[-],[00C0FF]Мастер охоты[-]
+perkhunterninja,progression,perk,,,[00C0FF]Ninja[-],[00C0FF]Ниндзя[-]
+perkhunterreloadspeed,progression,perk,,,[00C0FF]Reload Speed[-],[00C0FF]Скорость перезарядки[-]
+perkhunterweaponlight,progression,perk,,,[00C0FF]Light Weapons[-],[00C0FF]Лёгкое оружие[-]
+perkidealmetabolism,progression,perk,,,Ideal Metabolism,Идеальный метаболизм
+perkitemsbossabaddon,progression,Perk,,,[FFFFFF]☠ [DC143C]Abaddon Items [FFFFFF]☠[-],[FFFFFF]☠ [DC143C]Предметы Абаддона [FFFFFF]☠[-]
+perkitemsbossdoomsday,progression,Perk,,,[FFFFFF]☠ [FFB800]Doomsday Items [FFFFFF]☠[-],[FFFFFF]☠ [FFB800]Предметы Думсдэя [FFFFFF]☠[-]
+perkitemsbossnova,progression,Perk,,,[FFFFFF]☠ [7FFF00]Nova Items [FFFFFF]☠[-],[FFFFFF]☠ [7FFF00]Предметы Новы [FFFFFF]☠[-]
+perkitemsbosspovelitel,progression,Perk,,,[FFFFFF]☠ [00BFFF]Overlord Items [FFFFFF]☠[-],[FFFFFF]☠ [00BFFF]Предметы Повелителя [FFFFFF]☠[-]
+perkitemsbossquintessa,progression,Perk,,,[FFFFFF]☠ [00C0FF]Quintessa Items [FFFFFF]☠[-],[FFFFFF]☠ [00C0FF]Предметы Квинтессы [FFFFFF]☠[-]
+perkitemsbossworlds,progression,Perk,,,[FFFFFF]☠ [FF0000]World-Eater Items [FFFFFF]☠[-],[FFFFFF]☠ [FF0000]Предметы Пожирателя Миров [FFFFFF]☠[-]
+perklearningability,progression,perk,,,Learning Ability,Обучаемость
+perklootering,progression,perk,,,Looting,Мародерство
+perkmeatfeast,progression,perk,,,Meat Feast,Мясной пир
+perkmechanicbeloved,progression,perk,,,[FF9900]Trader's Favorite[-],[FF9900]Любимец торговцев[-]
+perkmechaniccarsalvage,progression,perk,,,[FF9900]Salvage Yield[-],[FF9900]Добыча при разборе[-]
+perkmechanicmaxstamina,progression,perk,,,[FF9900]Maximum Stamina[-],[FF9900]Максимальная выносливость[-]
+perkmechanicmobility,progression,perk,,,[FF9900]Flash[-],[FF9900]Флеш[-]
+perkmechanicpistolwarrior,progression,perk,,,[FF9900]Pistol Warrior[-],[FF9900]Воин пистолета[-]
+perkmechanicratchetlord,progression,perk,,,[FF9900]Ratchet Lord[-],[FF9900]Лорд трещотки[-]
+perkmechanicsalvagespeed,progression,perk,,,[FF9900]Salvage Speed[-],[FF9900]Скорость разбора[-]
+perkmechanictechispower,progression,perk,,,[FF9900]Tech Is Power[-],[FF9900]Техника — сила[-]
+perkmeleecombatperf,progression,perk,,,[AAAAAA]Melee Combat[-],[AAAAAA]Ближний бой[-]
+perkmeleeheavyexpert,progression,perk,,,[FF6600]✦ Berserker -[-] {cvar(passiveLvlMeleeHeavyExpert:0)} lvl,[FF6600]✦ Берсерк[-] - {cvar(passiveLvlMeleeHeavyExpert:0)} лвл
+perkmeleehunt,progression,perk,,,[FF0000]✦ Butcher -[-] {cvar(passiveLvlMeleeHunt:0)} lvl,[FF0000]✦ Мясник[-] - {cvar(passiveLvlMeleeHunt:0)} лвл
+perkmeleelightexpert,progression,perk,,,[FF6600]✦ Slasher -[-] {cvar(passiveLvlMeleeLightExpert:0)} lvl,[FF6600]✦ Чикатило[-] - {cvar(passiveLvlMeleeLightExpert:0)} лвл
+perkmutationcrusher,progression,perk,,,[ff0000]Crusher[-],[ff0000]Дробитель[-]
+perkmutationember,progression,perk,,,[ff8800]Ember[-],[ff8800]Огонёк[-]
+perkmutationendurance,progression,perk,,,[55ff55]Adrenaline Reserve[-],[55ff55]Адреналиновый резерв[-]
+perkmutationexterminator,progression,perk,,,[cc00ff]Exterminator[-],[cc00ff]Истребитель[-]
+perkmutationforester,progression,perk,,,[00ff00]Forester[-],[00ff00]Лесник[-]
+perkmutationsandy,progression,perk,,,[ffcc00]Sandy[-],[ffcc00]Песчаный[-]
+perkmutationsnowflake,progression,perk,,,[88ccff]Snowflake[-],[88ccff]Снежинка[-]
+perkmutationsturdy,progression,perk,,,[ff5555]Hemostasis Core[-],[ff5555]Ядро гемостаза[-]
+perknighthunt,progression,perk,,,[FF0000]☠ Night Killer -[-] {cvar(passiveLvlNightHunt:0)} lvl,[FF0000]☠ Ночной убийца[-] - {cvar(passiveLvlNightHunt:0)} лвл
+perkorganizer,progression,perk,,,[AAAAAA]Organizer[-],[AAAAAA]Организатор[-]
+perkperfectcardio,progression,perk,,,[AAAAAA]Perfect Cardio[-],[AAAAAA]Идеальное дыхание[-]
+perkpistolexpert,progression,perk,,,[FF6600]✦ Western Gunslinger -[-] {cvar(passiveLvlPistolExpert:0)} lvl,[FF6600]✦ Стрелок с запада[-] - {cvar(passiveLvlPistolExpert:0)} лвл
+perkplayerloveadmin,progression,perk,,,[FF4500]Players Love Admin[-],[FF4500]Игроки любить админа[-]
+perkrangecombatperf,progression,perk,,,[AAAAAA]Ranged Combat[-],[AAAAAA]Дальний бой[-]
+perkrangehunt,progression,perk,,,[FF0000]✦ Death's Reach -[-] {cvar(passiveLvlRangeHunt:0)} lvl,[FF0000]✦ На расстоянии смерти[-] - {cvar(passiveLvlRangeHunt:0)} лвл
+perkrecycling,progression,perk,,,Recycling,Переработка
+perkroboticsexpert,progression,perk,,,[FF6600]✦ Technophile -[-] {cvar(passiveLvlRoboticsExpert:0)} lvl,[FF6600]✦ Технофанат[-] - {cvar(passiveLvlRoboticsExpert:0)} лвл
+perkscientistcandidate,progression,perk,,,[00FF00]Happy Cockroach[-],[00FF00]Я весёлый таракан[-]
+perkscientistcheerfulspirit,progression,perk,,,[00FF00]Cheerful Spirit[-],[00FF00]Весёлый дух[-]
+perkscientistdoctorofscience,progression,perk,,,[00FF00]Doctor of Science[-],[00FF00]Доктор наук[-]
+perkscientistlightapprentice,progression,perk,,,[00FF00]Light Apprentice[-],[00FF00]Ученик света[-]
+perkscientistscienceenthusiast,progression,perk,,,[00FF00]Science Enthusiast[-],[00FF00]Энтузиаст науки[-]
+perkscientiststunbaton,progression,perk,,,[00FF00]Stun Baton[-],[00FF00]Оглушающая дубинка[-]
+perkscientistweaponspecialist,progression,perk,,,[00FF00]Weapon Specialist[-],[00FF00]Оружейный специалист[-]
+perkselfmedication,progression,perk,,,Self-Medication,Самолечение
+perkshotgunexpert,progression,perk,,,[FF6600]✦ Shotgun Expert -[-] {cvar(passiveLvlShotgunExpert:0)} lvl,[FF6600]✦ Эксперт дробовиков[-] - {cvar(passiveLvlShotgunExpert:0)} лвл
+perksniperexpert,progression,perk,,,[FF6600]✦ Godlike Sniper -[-] {cvar(passiveLvlSniperExpert:0)} lvl,[FF6600]✦ Снайпер от бога[-] - {cvar(passiveLvlSniperExpert:0)} лвл
+perkstoneupstone,progression,perk,,,Stone on Stone,Камень на камне
+perksurvivorfoodlover,progression,perk,,,[8B4513]Food Lover[-],[8B4513]Любитель еды[-]
+perksurvivorhazelnut,progression,perk,,,[8B4513]Nutcracker[-],[8B4513]Орех[-]
+perksurvivorlungs,progression,perk,,,[8B4513]Iron Lungs[-],[8B4513]Железные лёгкие[-]
+perksurvivormastersurvival,progression,perk,,,[8B4513]Survival Master[-],[8B4513]Мастер выживания[-]
+perksurvivormercilesssniper,progression,perk,,,[8B4513]Merciless Sniper[-],[8B4513]Беспощадный снайпер[-]
+perksurvivornightstalker,progression,perk,,,[8B4513]Night Stalker[-],[8B4513]Ночной охотник[-]
+perksurvivorpackcarrier,progression,perk,,,[8B4513]Pack Carrier[-],[8B4513]Носильщик[-]
+perksurvivorquiet,progression,perk,,,[8B4513]Quiet One[-],[8B4513]Тихоня[-]
+perksurvivorrobinhood,progression,perk,,,[8B4513]Robin Hood[-],[8B4513]Робин Гуд[-]
+perksurvivorsniper,progression,perk,,,[8B4513]Sniper[-],[8B4513]Снайпер[-]
+perksurvivortoiletwarrior,progression,perk,,,[8B4513]Toilet Warrior[-],[8B4513]Воин туалета[-]
+perksurvivortriumphant,progression,perk,,,[8B4513]Triumphant[-],[8B4513]Триумфатор[-]
+perktirelessness,progression,perk,,,Tirelessness,Неутомимость
+perktotalhunt,progression,perk,,,[FF0000]☠ Head Hunter -[-] {cvar(passiveLvlTotalHunt:0)} lvl,[FF0000]☠ Охота за головами[-] - {cvar(passiveLvlTotalHunt:0)} лвл
+perkwastelandtimer,progression,perk,,,[FF6633]☣ Wasteland -[-] {cvar(passiveLvlWastelandTimer:0)} lvl,[FF6633]☣ Пустошь[-] - {cvar(passiveLvlWastelandTimer:0)} лвл
+perkwintertimer,progression,perk,,,[AADDFF]❆ Winter -[-] {cvar(passiveLvlWinterTimer:0)} lvl,[AADDFF]❆ Зима[-] - {cvar(passiveLvlWinterTimer:0)} лвл
+perkzombieexpert,progression,perk,,,Zombie Expert,Эксперт по зомби
+skilladaptation,progression,Skills,,,[DECEA3]⏱ Adaptation[-],[DECEA3]⏱ Адаптация[-]
+skillarmor,progression,Skills,,,[00BFFF]⚙ Armor Proficiency Skills[-],[00BFFF]⚙ Навыки владения бронёй[-]
+skillbezumec,,,,,[FF00FF]☠ Madman[-],[FF00FF]☠ Безумец[-]
+skillbossabaddonbeginner,progression,Skill,,,[DC143C]✦ Beginner Abaddon ✦[-],[DC143C]✦ Начинающий Абаддон ✦[-]
+skillbossabaddonmaster,progression,Skill,,,[DC143C]✦ Master Abaddon ✦[-],[DC143C]✦ Мастер Абаддон ✦[-]
+skillbossdoomsdaybeginner,progression,Skill,,,[FFB800]✦ Doomsday Beginner ✦[-],[FFB800]✦ Начинающий Думсдэй ✦[-]
+skillbossdoomsdaymaster,progression,Skill,,,[FFB800]✦ Doomsday Master ✦[-],[FFB800]✦ Мастер Думсдэй ✦[-]
+skillbossexpert,progression,Skills,,,[FFB800]✦ Boss Expert[-],[FFB800]✦ Эксперт по боссам[-]
+skillbossnovabeginner,progression,Skill,,,[7FFF00]✦ Nova Beginner ✦[-],[7FFF00]✦ Начинающий Нова ✦[-]
+skillbossnovamaster,progression,Skill,,,[7FFF00]✦ Nova Master ✦[-],[7FFF00]✦ Мастер Нова ✦[-]
+skillbosspovelitelbeginner,progression,Skill,,,[00BFFF]✦ Overlord Beginner ✦[-],[00BFFF]✦ Начинающий Повелитель ✦[-]
+skillbosspovelitelmaster,progression,Skill,,,[00BFFF]✦ Overlord Master ✦[-],[00BFFF]✦ Мастер Повелитель ✦[-]
+skillbossquintessabeginner,progression,Skill,,,[00C0FF]✦ Quintessa Beginner ✦[-],[00C0FF]✦ Начинающий Квинтесса ✦[-]
+skillbossquintessamaster,progression,Skill,,,[00C0FF]✦ Quintessa Master ✦[-],[00C0FF]✦ Мастер Квинтесса ✦[-]
+skillbossworldsbeginner,progression,Skill,,,[FF0000]✦ World-Eater Beginner ✦[-],[FF0000]✦ Начинающий Пожиратель ✦[-]
+skillbossworldsmaster,progression,Skill,,,[FF0000]✦ World-Eater Master ✦[-],[FF0000]✦ Мастер Пожиратель ✦[-]
+skillbuildermastery,progression,skill,,,[FFD700]✦ Builder Mastery[-],[FFD700]✦ Мастерство Строителя[-]
+skillbuildermining,progression,skill,,,[FFD700]✦ Mining Skills[-],[FFD700]✦ Навыки добычи[-]
+skilldeadhunt,progression,Skills,,,[FF0000]☠ Undead Hunt[-],[FF0000]☠ Охота на нежить[-]
+skilldefendercombat,progression,skill,,,[FF0000]✦ Defender Combat[-],[FF0000]✦ Бой Защитника[-]
+skilldefendermaster,progression,skill,,,[FF0000]✦ Defender Mastery[-],[FF0000]✦ Мастерство Защитника[-]
+skillengineermaster,progression,skill,,,[800080]✦ Engineer Mastery[-],[800080]✦ Мастерство Инженера[-]
+skillengineerturrets,progression,skill,,,[800080]✦ Turret Skills[-],[800080]✦ Навыки турелей[-]
+skillfarmerbeginner,progression,skill,,,[228B22]✦ Basic Farming[-],[228B22]✦ Базовое фермерство[-]
+skillfarmermaster,progression,skill,,,[228B22]✦ Farmer Mastery[-],[228B22]✦ Мастерство Фермера[-]
+skillglobal,progression,Skills,,,[C77DFF]✦ Global Skills[-],[C77DFF]✦ Глобальные навыки[-]
+skillhuntercombat,progression,skill,,,[00C0FF]✦ Combat Skills[-],[00C0FF]✦ Боевые навыки[-]
+skillhuntermaster,progression,skill,,,[00C0FF]✦ Hunter Mastery[-],[00C0FF]✦ Мастерство Охотника[-]
+skillmechanicbeginner,progression,skill,,,[FF9900]✦ Basic Mechanic[-],[FF9900]✦ Базовый Механик[-]
+skillmechanicmaster,progression,skill,,,[FF9900]✦ Mechanic Mastery[-],[FF9900]✦ Мастерство Механика[-]
+skillpassivemining,progression,skill,,,[FFA500]Mining[-],[FFA500]Добыча[-]
+skillresourcegathering,progression,Skills,,,[FFD700]⛏ Resource Gathering Skills[-],[FFD700]⛏ Навыки сбора ресурсов[-]
+skillscientistbeginner,progression,skill,,,[00FF00]✦ Basic Science[-],[00FF00]✦ Базовая наука[-]
+skillscientistmaster,progression,skill,,,[00FF00]✦ Science Mastery[-],[00FF00]✦ Мастерство Науки[-]
+skillselfdevelop,progression,Skills,,,[00FF00]⚡ Self-Development[-],[00FF00]⚡ Навыки саморазвития[-]
+skillstablemutations,progression,skill,,,[00FFFF]Mutation Catalog[-],[00FFFF]Каталог мутаций[-]
+skillsuperiority,progression,Skills,,,[FF4444]⚔ Superiority Skills[-],[FF4444]⚔ Навыки превосходства[-]
+skillsurvivorbeginner,progression,skill,,,[8B4513]✦ Basic Survival[-],[8B4513]✦ Базовое выживание[-]
+skillsurvivormaster,progression,skill,,,[8B4513]✦ Survivor Mastery[-],[8B4513]✦ Мастерство Выжившего[-]
+skilltears,progression,skill,,,[FFD700]Tear Collection,[FFD700]Коллекция Слёз
+skillweaponexpert,progression,Skills,,,[FF6600]⚔ Weapon Expert[-],[FF6600]⚔ Эксперт по оружию[-]
