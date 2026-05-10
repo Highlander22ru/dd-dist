@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="MenuMusicReplacer"/>
+	<DisplayName value="Menu Music Replacer"/>
+	<Description value="Client-side: replaces main menu music with custom OGG track."/>
+	<Author value="Doomsday Team"/>
+	<Version value="1.2"/>
+	<Website value=""/>
+</xml>

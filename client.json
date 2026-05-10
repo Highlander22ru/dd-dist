@@ -1,32 +1,32 @@
-{
-    "version":  "7.15.33",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.33-0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
+﻿{
+    "version":  "7.15.34",
+    "url":  "https://raw.githubusercontent.com/Highlander22ru/dd-dist/raw-v5.7/DoomsdayClient.dll?v=7.15.34-0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
     "sha256":  "0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
     "size":  322560,
-    "notes":  "v7.15.33: обновлена локализация улучшений всех Doomsday-блоков; описания модулей теперь показывают реальные значения, лимиты и корректные формулировки.",
-    "released":  "2026-05-10T14:50:23.4133659Z",
+    "notes":  "v7.15.34: исправлена раскладка файлов в launcher client manifest; DoomsdayClient.dll и ModInfo.xml снова устанавливаются в Mods/DoomsdayClient, чтобы игра загружала мод.",
+    "released":  "2026-05-10T15:14:04.652923Z",
     "files":  [
                   {
-                      "path":  "DoomsdayClient.dll",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.33-0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
+                      "path":  "DoomsdayClient/DoomsdayClient.dll",
+                      "url":  "https://raw.githubusercontent.com/Highlander22ru/dd-dist/raw-v5.7/DoomsdayClient.dll?v=7.15.34-0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
                       "sha256":  "0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
                       "size":  322560
                   },
                   {
-                      "path":  "ModInfo.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.33-5bcb81b0b3b2523a19aca750b12b06327cc9d1c603dd23b087545bdb149d72c7",
+                      "path":  "DoomsdayClient/ModInfo.xml",
+                      "url":  "https://raw.githubusercontent.com/Highlander22ru/dd-dist/raw-v5.7/ModInfo.xml?v=7.15.34-5bcb81b0b3b2523a19aca750b12b06327cc9d1c603dd23b087545bdb149d72c7",
                       "sha256":  "5bcb81b0b3b2523a19aca750b12b06327cc9d1c603dd23b087545bdb149d72c7",
                       "size":  246
                   },
                   {
                       "path":  "Doomsday/Config/Localization.txt",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.33-d74c765222a11179952d40ee09286c610de8671e590483538f91b52aeb89ca7d",
+                      "url":  "https://raw.githubusercontent.com/Highlander22ru/dd-dist/raw-v5.7/Localization.txt?v=7.15.34-d74c765222a11179952d40ee09286c610de8671e590483538f91b52aeb89ca7d",
                       "sha256":  "d74c765222a11179952d40ee09286c610de8671e590483538f91b52aeb89ca7d",
                       "size":  2751365
                   },
                   {
                       "path":  "Doomsday/Config/progression.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/progression.xml?v=7.15.33-f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
+                      "url":  "https://raw.githubusercontent.com/Highlander22ru/dd-dist/raw-v5.7/progression.xml?v=7.15.34-f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
                       "sha256":  "f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
                       "size":  642356
                   }

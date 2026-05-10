@@ -1,0 +1,8 @@
+﻿{
+    "version":  "5.7.20",
+    "url":  "https://raw.githubusercontent.com/Highlander22ru/dd-dist/raw-v5.7/DoomsdayLauncher-v5.7.20.exe?v=5.7.20-2e9725cc306f45f17f20b3e84bbd3844ab89e39a66b09d9bf82261fba70c0b26",
+    "sha256":  "2e9725cc306f45f17f20b3e84bbd3844ab89e39a66b09d9bf82261fba70c0b26",
+    "size":  74349421,
+    "changelog":  "v5.7.20 raw.githubusercontent.com-first rescue build for local zapret filters that break doomsday7dtd.online and GitHub release asset redirects; includes detailed failed file diagnostics.",
+    "released":  "2026-05-10T16:09:28.479Z"
+}

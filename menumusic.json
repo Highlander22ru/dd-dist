@@ -1,0 +1,8 @@
+{
+  "version": "1.2",
+  "dll_sha256": "f6cf8f95b57f3d0de3dd99800c2f784a1f6e09b497ab0a7c84f83bd622c92524",
+  "dll_size": 11776,
+  "ogg_sha256": "6f42adaabefa11dde96dcc0050c653363e6229629696b7ff3b0c07776623fcc4",
+  "ogg_size": 1179503,
+  "notes": "v1.2: keeps custom menu music playing during server loading; stops only after the local player has spawned in world."
+}
