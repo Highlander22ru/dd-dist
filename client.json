@@ -1,32 +1,32 @@
 {
-    "version":  "7.15.32",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.32-74cb98085353f37bffc0e55c5c6e8b5acd02500ccf2672b31e05f8e644316efa",
-    "sha256":  "74cb98085353f37bffc0e55c5c6e8b5acd02500ccf2672b31e05f8e644316efa",
+    "version":  "7.15.33",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.33-0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
+    "sha256":  "0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
     "size":  322560,
-    "notes":  "v7.15.32: дополнительная GUI-перепроверка: CaseGUI больше не выставляет код MoneyTree в dd_gui, 7DaysBank обрабатывает закрытие до фонового sync, уточнён fallback-sync комментарий и карта dd_gui для MVF.",
-    "released":  "2026-05-10T14:29:38.4950974Z",
+    "notes":  "v7.15.33: обновлена локализация улучшений всех Doomsday-блоков; описания модулей теперь показывают реальные значения, лимиты и корректные формулировки.",
+    "released":  "2026-05-10T14:50:23.4133659Z",
     "files":  [
                   {
                       "path":  "DoomsdayClient.dll",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.32-74cb98085353f37bffc0e55c5c6e8b5acd02500ccf2672b31e05f8e644316efa",
-                      "sha256":  "74cb98085353f37bffc0e55c5c6e8b5acd02500ccf2672b31e05f8e644316efa",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.33-0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
+                      "sha256":  "0735d26f5971e81d8b3d2c3f141f959dcf00406d9e6a529300509745c2a08ff9",
                       "size":  322560
                   },
                   {
                       "path":  "ModInfo.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.32-e75c9a9dbd77274999614df2f9425c548d6b8181c13a497d41cf915eb9ecee26",
-                      "sha256":  "e75c9a9dbd77274999614df2f9425c548d6b8181c13a497d41cf915eb9ecee26",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.33-5bcb81b0b3b2523a19aca750b12b06327cc9d1c603dd23b087545bdb149d72c7",
+                      "sha256":  "5bcb81b0b3b2523a19aca750b12b06327cc9d1c603dd23b087545bdb149d72c7",
                       "size":  246
                   },
                   {
                       "path":  "Doomsday/Config/Localization.txt",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.32-4ac91ae609b2562d22da1a040e0c54b33cbc27ba91c1869eeccee836d484f4cb",
-                      "sha256":  "4ac91ae609b2562d22da1a040e0c54b33cbc27ba91c1869eeccee836d484f4cb",
-                      "size":  2737738
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.33-d74c765222a11179952d40ee09286c610de8671e590483538f91b52aeb89ca7d",
+                      "sha256":  "d74c765222a11179952d40ee09286c610de8671e590483538f91b52aeb89ca7d",
+                      "size":  2751365
                   },
                   {
                       "path":  "Doomsday/Config/progression.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/progression.xml?v=7.15.32-f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/progression.xml?v=7.15.33-f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
                       "sha256":  "f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
                       "size":  642356
                   }

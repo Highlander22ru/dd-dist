@@ -2711,56 +2711,56 @@ farmerStation,blocks,Workstation,,,[00FF88]⚙[-] Farmer Station,[00FF88]⚙[-] 
 farmerStationDesc,blocks,Workstation,,,[AAAAAA]This station allows you to grow seedlings of any plants.[-]\n\n[00FF88]⚙[-] Seedlings mature significantly faster\n[FFD700]⚡[-] Save your resources\n[DECEA3]★[-] Perform plant selective breeding for superior varieties,[AAAAAA]Эта станция позволяет выращивать рассаду любых растений.[-]\n\n[00FF88]⚙[-] Рассада созревает значительно быстрее\n[FFD700]⚡[-] Экономьте свои ресурсы\n[DECEA3]★[-] Проводите селекцию для получения улучшенных сортов
 zzHydroponicStation,blocks,Workstation,,,[00FFAA]🌱[-] Hydroponic Station,[00FFAA]🌱[-] Гидропонная станция
 zzHydroponicStationDesc,blocks,Workstation,,,[AAAAAA]Hydroponic station. Base harvest 2 per plant. Growth upgrades reduce 120 min to 20 min. Production T1-T5 adds +1/+2/+3/+4/+5 harvest. Fertilizer and water storage gain +100K per level up to 500K.[-],[AAAAAA]Гидропонная станция. Базовый урожай 2 с растения. Улучшения роста сокращают 120 мин до 20 мин. Производство T1-T5 даёт +1/+2/+3/+4/+5 к урожаю. Склады удобрений и воды получают +100K за уровень до 500K.[-]
-zzHydro_Cells,items,Tools/Traps,,,[00FF88]Hydroponic Station: Cells[-],[00FF88]Гидропонная станция: Ячейки[-]
-zzHydro_CellsDesc,items,Tools/Traps,,,[AAAAAA]Expands the field by +1 (NxN grid). Install into the station to unlock more planting slots.[-],[AAAAAA]Расширяет поле на +1 (сетка NxN). Установите в станцию для открытия дополнительных ячеек.[-]
-zzHydro_Growth,items,Tools/Traps,,,[88FF00]Hydroponic Station: Growth[-],[88FF00]Гидропонная станция: Рост[-]
-zzHydro_GrowthDesc,items,Tools/Traps,,,[AAAAAA]Accelerates growth of all seeds by 10 minutes. Max 10 levels (120 min → 20 min).[-],[AAAAAA]Ускоряет рост всех семян на 10 минут. Максимум 10 уровней (120 мин → 20 мин).[-]
-zzHydro_Prod_T1,items,Tools/Traps,,,[FFD700]Hydroponic Station: Production T1[-],[FFD700]Гидропонная станция: Производство T1[-]
-zzHydro_Prod_T1Desc,items,Tools/Traps,,,[AAAAAA]Increases harvest yield by +1. Tier 1 of 5.[-],[AAAAAA]Увеличивает урожай на +1. Уровень 1 из 5.[-]
-zzHydro_Prod_T2,items,Tools/Traps,,,[FFD700]Hydroponic Station: Production T2[-],[FFD700]Гидропонная станция: Производство T2[-]
-zzHydro_Prod_T2Desc,items,Tools/Traps,,,[AAAAAA]Increases harvest yield by +2. Tier 2 of 5.[-],[AAAAAA]Увеличивает урожай на +2. Уровень 2 из 5.[-]
-zzHydro_Prod_T3,items,Tools/Traps,,,[FFD700]Hydroponic Station: Production T3[-],[FFD700]Гидропонная станция: Производство T3[-]
-zzHydro_Prod_T3Desc,items,Tools/Traps,,,[AAAAAA]Increases harvest yield by +3. Tier 3 of 5.[-],[AAAAAA]Увеличивает урожай на +3. Уровень 3 из 5.[-]
-zzHydro_Prod_T4,items,Tools/Traps,,,[FFD700]Hydroponic Station: Production T4[-],[FFD700]Гидропонная станция: Производство T4[-]
-zzHydro_Prod_T4Desc,items,Tools/Traps,,,[AAAAAA]Increases harvest yield by +4. Tier 4 of 5.[-],[AAAAAA]Увеличивает урожай на +4. Уровень 4 из 5.[-]
-zzHydro_Prod_T5,items,Tools/Traps,,,[FFD700]Hydroponic Station: Production T5[-],[FFD700]Гидропонная станция: Производство T5[-]
-zzHydro_Prod_T5Desc,items,Tools/Traps,,,[AAAAAA]Increases harvest yield by +5. Tier 5 of 5.[-],[AAAAAA]Увеличивает урожай на +5. Уровень 5 из 5.[-]
-zzHydro_FertStor,items,Tools/Traps,,,[8B4513]Hydroponic Station: Fertilizer Storage[-],[8B4513]Гидропонная станция: Склад удобрений[-]
-zzHydro_FertStorDesc,items,Tools/Traps,,,[AAAAAA]Increases fertilizer storage capacity by +100K. Max 5 levels: 0 to 500K.[-],[AAAAAA]Увеличивает вместимость склада удобрений на +100K. Максимум 5 уровней: от 0 до 500K.[-]
-zzHydro_WaterStor,items,Tools/Traps,,,[00BFFF]Hydroponic Station: Water Storage[-],[00BFFF]Гидропонная станция: Склад воды[-]
-zzHydro_WaterStorDesc,items,Tools/Traps,,,[AAAAAA]Increases water storage capacity by +100K. Max 5 levels: 0 to 500K.[-],[AAAAAA]Увеличивает вместимость склада воды на +100K. Максимум 5 уровней: от 0 до 500K.[-]
+zzHydro_Cells,items,Tools/Traps,,,Hydroponics: Plant Cells,Гидропоника: Ячейки
+zzHydro_CellsDesc,items,Tools/Traps,,,[00FF88]Hydroponics: Plant Cells[-]\nUnlocks +1 planting cell. Limit: 1000 cells across 10 pages.,[00FF88]Гидропоника: Ячейки[-]\nОткрывает +1 ячейку посадки. Лимит: 1000 ячеек на 10 страницах.
+zzHydro_Growth,items,Tools/Traps,,,Hydroponics: Growth Speed,Гидропоника: Скорость роста
+zzHydro_GrowthDesc,items,Tools/Traps,,,[88FF00]Hydroponics: Growth Speed[-]\nEach module reduces growth time by 10 min. Limit: 10 modules. Range: 120 -> 20 min.,[88FF00]Гидропоника: Скорость роста[-]\nКаждый модуль сокращает рост на 10 мин. Лимит: 10 модулей. Диапазон: 120 -> 20 мин.
+zzHydro_Prod_T1,items,Tools/Traps,,,Hydroponics: Harvest Lv. 1,Гидропоника: Урожай ур. 1
+zzHydro_Prod_T1Desc,items,Tools/Traps,,,[FFD700]Hydroponics: Harvest Lv. 1[-]\nAdds +1 crop yield. Install levels in order from 1 to 5.,[FFD700]Гидропоника: Урожай ур. 1[-]\nДобавляет +1 к урожаю. Уровни ставятся по порядку с 1 по 5.
+zzHydro_Prod_T2,items,Tools/Traps,,,Hydroponics: Harvest Lv. 2,Гидропоника: Урожай ур. 2
+zzHydro_Prod_T2Desc,items,Tools/Traps,,,[FFD700]Hydroponics: Harvest Lv. 2[-]\nAdds +2 crop yield. Install levels in order from 1 to 5.,[FFD700]Гидропоника: Урожай ур. 2[-]\nДобавляет +2 к урожаю. Уровни ставятся по порядку с 1 по 5.
+zzHydro_Prod_T3,items,Tools/Traps,,,Hydroponics: Harvest Lv. 3,Гидропоника: Урожай ур. 3
+zzHydro_Prod_T3Desc,items,Tools/Traps,,,[FFD700]Hydroponics: Harvest Lv. 3[-]\nAdds +3 crop yield. Install levels in order from 1 to 5.,[FFD700]Гидропоника: Урожай ур. 3[-]\nДобавляет +3 к урожаю. Уровни ставятся по порядку с 1 по 5.
+zzHydro_Prod_T4,items,Tools/Traps,,,Hydroponics: Harvest Lv. 4,Гидропоника: Урожай ур. 4
+zzHydro_Prod_T4Desc,items,Tools/Traps,,,[FFD700]Hydroponics: Harvest Lv. 4[-]\nAdds +4 crop yield. Install levels in order from 1 to 5.,[FFD700]Гидропоника: Урожай ур. 4[-]\nДобавляет +4 к урожаю. Уровни ставятся по порядку с 1 по 5.
+zzHydro_Prod_T5,items,Tools/Traps,,,Hydroponics: Harvest Lv. 5,Гидропоника: Урожай ур. 5
+zzHydro_Prod_T5Desc,items,Tools/Traps,,,[FFD700]Hydroponics: Harvest Lv. 5[-]\nAdds +5 crop yield. Install levels in order from 1 to 5.,[FFD700]Гидропоника: Урожай ур. 5[-]\nДобавляет +5 к урожаю. Уровни ставятся по порядку с 1 по 5.
+zzHydro_FertStor,items,Tools/Traps,,,Hydroponics: Fertilizer Tank,Гидропоника: Бак удобрений
+zzHydro_FertStorDesc,items,Tools/Traps,,,[8B4513]Hydroponics: Fertilizer Tank[-]\nAdds +100K fertilizer capacity per level. Limit: 5 levels. Max: 500K.,[8B4513]Гидропоника: Бак удобрений[-]\nДобавляет +100K вместимости удобрений за уровень. Лимит: 5 уровней. Максимум: 500K.
+zzHydro_WaterStor,items,Tools/Traps,,,Hydroponics: Water Tank,Гидропоника: Бак воды
+zzHydro_WaterStorDesc,items,Tools/Traps,,,[00BFFF]Hydroponics: Water Tank[-]\nAdds +100K water capacity per level. Limit: 5 levels. Max: 500K.,[00BFFF]Гидропоника: Бак воды[-]\nДобавляет +100K вместимости воды за уровень. Лимит: 5 уровней. Максимум: 500K.
 zzHydro_Fertilizer,items,Resources,,,[8B6914]Fertilizer[-],[8B6914]Удобрение[-]
 zzHydro_FertilizerDesc,items,Resources,,,[AAAAAA]Nutrient mix for hydroponic growing. Each seed consumes 5 units every 4 hours.[-],[AAAAAA]Питательная смесь для гидропонного выращивания. Каждое семя потребляет 5 единиц каждые 4 часа.[-]
 zzHydro_Water,items,Resources,,,[4488FF]Water[-],[4488FF]Вода[-]
 zzHydro_WaterDesc,items,Resources,,,[AAAAAA]Purified water for hydroponic growing. Each seed consumes 5 units every 4 hours.[-],[AAAAAA]Очищенная вода для гидропонного выращивания. Каждое семя потребляет 5 единиц каждые 4 часа.[-]
 zzIndustrialMiner,blocks,,,,Industrial Resource Miner,Промышленный АвтоМайнер
 zzIndustrialMinerDesc,blocks,,,,[44AAFF]Industrial Resource Miner[-]\n[AAAAAA]Mines 7 resources: Stone Iron Lead Coal Nitrate Oil Shale Clay[-]\n[AAAAAA]Base: 10/min per active resource. Production modules: +600/+960/+1440/+2160/+3120 per min. Shared storage up to 25M.[-]\n[FF8800]Fuel: Gas Can. Fuel tank modules up to 2M. Fuel efficiency modules give -1/-2/-3/-4/-5% per module; effective reduction is capped at -99%.[-]\n[FFFFFF]Press [E] to manage[-],[44AAFF]Промышленный АвтоМайнер[-]\n[AAAAAA]Добывает 7 ресурсов: камень железо свинец уголь селитра сланец глина[-]\n[AAAAAA]База: 10/мин на каждый активный ресурс. Модули добычи: +600/+960/+1440/+2160/+3120 в мин. Общий склад до 25M.[-]\n[FF8800]Топливо: бензин. Бак до 2M. Модули экономии дают -1/-2/-3/-4/-5% за штуку; фактический лимит экономии -99%.[-]\n[FFFFFF]Нажмите [E] для управления[-]
-zzIM_Prod_T1,items,,,,Mining Speed Lvl 1,Добыча ур. 1
-zzIM_Prod_T2,items,,,,Mining Speed Lvl 2,Добыча ур. 2
-zzIM_Prod_T3,items,,,,Mining Speed Lvl 3,Добыча ур. 3
-zzIM_Prod_T4,items,,,,Mining Speed Lvl 4,Добыча ур. 4
-zzIM_Prod_T5,items,,,,Mining Speed Lvl 5,Добыча ур. 5
-zzIM_Prod_Desc,items,,,,[44AAFF]Increases mining speed by +600/+960/+1440/+2160/+3120 per minute for T1-T5. Install in Industrial Miner.[-],[44AAFF]Увеличивает скорость добычи на +600/+960/+1440/+2160/+3120 в минуту для T1-T5. Установите в Промышленный АвтоМайнер.[-]
-zzIM_Stor_T1,items,,,,Storage Lvl 1,Склад ур. 1
-zzIM_Stor_T2,items,,,,Storage Lvl 2,Склад ур. 2
-zzIM_Stor_T3,items,,,,Storage Lvl 3,Склад ур. 3
-zzIM_Stor_T4,items,,,,Storage Lvl 4,Склад ур. 4
-zzIM_Stor_T5,items,,,,Storage Lvl 5,Склад ур. 5
-zzIM_Stor_Desc,items,,,,[44AAFF]Increases shared resource storage by +12.5K/+25K/+50K/+100K/+175K for T1-T5. Full modules give 25M shared storage.[-],[44AAFF]Увеличивает общий склад ресурсов на +12.5K/+25K/+50K/+100K/+175K для T1-T5. Полная установка даёт 25M общего склада.[-]
-zzIM_FuelStor_T1,items,,,,Fuel Tank Lvl 1,Бак Топлива ур. 1
-zzIM_FuelStor_T2,items,,,,Fuel Tank Lvl 2,Бак Топлива ур. 2
-zzIM_FuelStor_T3,items,,,,Fuel Tank Lvl 3,Бак Топлива ур. 3
-zzIM_FuelStor_T4,items,,,,Fuel Tank Lvl 4,Бак Топлива ур. 4
-zzIM_FuelStor_T5,items,,,,Fuel Tank Lvl 5,Бак Топлива ур. 5
-zzIM_FuelStor_Desc,items,,,,[FF8800]Increases fuel tank by +1K/+2K/+4K/+8K/+14K for T1-T5. Full modules give 2M fuel capacity.[-],[FF8800]Увеличивает бак топлива на +1K/+2K/+4K/+8K/+14K для T1-T5. Полная установка даёт 2M вместимости топлива.[-]
-zzIM_FuelEff_T1,items,,,,Fuel Efficiency Lvl 1,Экономия Топлива ур. 1
-zzIM_FuelEff_T2,items,,,,Fuel Efficiency Lvl 2,Экономия Топлива ур. 2
-zzIM_FuelEff_T3,items,,,,Fuel Efficiency Lvl 3,Экономия Топлива ур. 3
-zzIM_FuelEff_T4,items,,,,Fuel Efficiency Lvl 4,Экономия Топлива ур. 4
-zzIM_FuelEff_T5,items,,,,Fuel Efficiency Lvl 5,Экономия Топлива ур. 5
-zzIM_FuelEff_Desc,items,,,,[44FF88]Reduces fuel consumption by -1/-2/-3/-4/-5% per module for T1-T5. Bonuses stack additively; effective reduction is capped at -99%, not -90%.[-],[44FF88]Снижает расход топлива на -1/-2/-3/-4/-5% за модуль T1-T5. Бонусы складываются; фактическая экономия ограничена -99%, а не -90%.[-]
-zzIM_Expand,items,,,,Resource Expansion,Расширение Добычи
-zzIM_Expand_Desc,items,,,,[44AAFF]Unlocks +1 resource type for mining. Install in Industrial Miner.[-],[44AAFF]Открывает +1 вид ресурса для добычи. Установите в Промышленный АвтоМайнер.[-]
+zzIM_Prod_T1,items,,,,Industrial Miner: Mining Lv. 1,Автомайнер: Добыча ур. 1
+zzIM_Prod_T2,items,,,,Industrial Miner: Mining Lv. 2,Автомайнер: Добыча ур. 2
+zzIM_Prod_T3,items,,,,Industrial Miner: Mining Lv. 3,Автомайнер: Добыча ур. 3
+zzIM_Prod_T4,items,,,,Industrial Miner: Mining Lv. 4,Автомайнер: Добыча ур. 4
+zzIM_Prod_T5,items,,,,Industrial Miner: Mining Lv. 5,Автомайнер: Добыча ур. 5
+zzIM_Prod_Desc,items,,,,[44AAFF]Industrial Miner: Mining[-]\nAdds +600/+960/+1440/+2160/+3120 resources per minute for T1-T5. Limits: 100/90/80/70/60 modules.,[44AAFF]Автомайнер: Добыча[-]\nДобавляет +600/+960/+1440/+2160/+3120 ресурсов в минуту для T1-T5. Лимиты: 100/90/80/70/60 модулей.
+zzIM_Stor_T1,items,,,,Industrial Miner: Storage Lv. 1,Автомайнер: Склад ур. 1
+zzIM_Stor_T2,items,,,,Industrial Miner: Storage Lv. 2,Автомайнер: Склад ур. 2
+zzIM_Stor_T3,items,,,,Industrial Miner: Storage Lv. 3,Автомайнер: Склад ур. 3
+zzIM_Stor_T4,items,,,,Industrial Miner: Storage Lv. 4,Автомайнер: Склад ур. 4
+zzIM_Stor_T5,items,,,,Industrial Miner: Storage Lv. 5,Автомайнер: Склад ур. 5
+zzIM_Stor_Desc,items,,,,[44AAFF]Industrial Miner: Storage[-]\nAdds +12.5K/+25K/+50K/+100K/+175K shared storage for T1-T5. Full set: 25M shared storage.,[44AAFF]Автомайнер: Склад[-]\nДобавляет +12.5K/+25K/+50K/+100K/+175K общего склада для T1-T5. Полный набор: 25M общего склада.
+zzIM_FuelStor_T1,items,,,,Industrial Miner: Fuel Tank Lv. 1,Автомайнер: Бак топлива ур. 1
+zzIM_FuelStor_T2,items,,,,Industrial Miner: Fuel Tank Lv. 2,Автомайнер: Бак топлива ур. 2
+zzIM_FuelStor_T3,items,,,,Industrial Miner: Fuel Tank Lv. 3,Автомайнер: Бак топлива ур. 3
+zzIM_FuelStor_T4,items,,,,Industrial Miner: Fuel Tank Lv. 4,Автомайнер: Бак топлива ур. 4
+zzIM_FuelStor_T5,items,,,,Industrial Miner: Fuel Tank Lv. 5,Автомайнер: Бак топлива ур. 5
+zzIM_FuelStor_Desc,items,,,,[FF8800]Industrial Miner: Fuel Tank[-]\nAdds +1K/+2K/+4K/+8K/+14K fuel capacity for T1-T5. Full set: 2M fuel capacity.,[FF8800]Автомайнер: Бак топлива[-]\nДобавляет +1K/+2K/+4K/+8K/+14K вместимости топлива для T1-T5. Полный набор: 2M топлива.
+zzIM_FuelEff_T1,items,,,,Industrial Miner: Fuel Economy Lv. 1,Автомайнер: Экономия топлива ур. 1
+zzIM_FuelEff_T2,items,,,,Industrial Miner: Fuel Economy Lv. 2,Автомайнер: Экономия топлива ур. 2
+zzIM_FuelEff_T3,items,,,,Industrial Miner: Fuel Economy Lv. 3,Автомайнер: Экономия топлива ур. 3
+zzIM_FuelEff_T4,items,,,,Industrial Miner: Fuel Economy Lv. 4,Автомайнер: Экономия топлива ур. 4
+zzIM_FuelEff_T5,items,,,,Industrial Miner: Fuel Economy Lv. 5,Автомайнер: Экономия топлива ур. 5
+zzIM_FuelEff_Desc,items,,,,[44FF88]Industrial Miner: Fuel Economy[-]\nReduces fuel use by 1/2/3/4/5% per module for T1-T5. Bonuses stack. Effective cap: 99%.,[44FF88]Автомайнер: Экономия топлива[-]\nСнижает расход топлива на 1/2/3/4/5% за модуль T1-T5. Бонусы складываются. Рабочий лимит: 99%.
+zzIM_Expand,items,,,,Industrial Miner: Resource Expansion,Автомайнер: Расширение добычи
+zzIM_Expand_Desc,items,,,,[44AAFF]Industrial Miner: Resource Expansion[-]\nUnlocks +1 resource type for mining. Limit: 7 active resource types.,[44AAFF]Автомайнер: Расширение добычи[-]\nОткрывает +1 вид ресурса для добычи. Лимит: 7 активных видов ресурсов.
 zzFarmerStation,blocks,,,,Farmer Station,Фермерская станция
 zzFarmerStationDesc,blocks,,,,[8B6914]Farmer Station[-]\n[AAAAAA]Raises chickens and boars. Base harvest 2 per animal. Growth is 120 to 20 min. Production T1-T5 adds +1/+2/+3/+4/+5. Feed water and product storage gain +100K per level.[-]\n[8B6914]Feed + Water required every 4 hours[-]\n[FFFFFF]Press [E] to open[-],"[8B6914]Фермерская станция[-]\n[AAAAAA]Выращивает кур и кабанов. Базовый сбор 2 с животного. Рост 120 до 20 мин. Производство T1-T5 даёт +1/+2/+3/+4/+5. Склады корма воды и продукции получают +100K за уровень.[-]\n[8B6914]Корм + вода требуются каждые 4 часа[-]\n[FFFFFF]Нажмите [E], чтобы открыть[-]"
 zzFarm_Chicken,items,,,,Chicken,Курица
@@ -2769,24 +2769,24 @@ zzFarm_Boar,items,,,,Boar,Кабан
 zzFarm_BoarDesc,items,,,,"[8B6914]Boar for the Farmer Station. Produces meat, fat, bones, leather.[-]","[8B6914]Кабан для фермерской станции. Производит мясо, жир, кости, кожу.[-]"
 zzFarm_Feed,items,,,,Animal Feed,Корм для животных
 zzFarm_FeedDesc,items,,,,[8B6914]Universal feed for the Farmer Station animals.[-],[8B6914]Универсальный корм для животных фермерской станции.[-]
-zzFarm_Cells,items,,,,Animal Cell,Ячейка для животного
-zzFarm_CellsDesc,items,,,,[8B6914]Unlocks +1 slot in the Farmer Station.[-],[8B6914]Открывает +1 ячейку в фермерской станции.[-]
-zzFarm_Speed,items,,,,Growth Speed,Скорость роста
-zzFarm_SpeedDesc,items,,,,[8B6914]Reduces growth time by 10 min. Install in Farmer Station.[-],[8B6914]Сокращает время роста на 10 мин. Установите в фермерскую станцию.[-]
-zzFarm_Prod_T1,items,,,,Production Lvl 1,Продукция ур. 1
-zzFarm_Prod_T2,items,,,,Production Lvl 2,Продукция ур. 2
-zzFarm_Prod_T3,items,,,,Production Lvl 3,Продукция ур. 3
-zzFarm_Prod_T4,items,,,,Production Lvl 4,Продукция ур. 4
-zzFarm_Prod_T5,items,,,,Production Lvl 5,Продукция ур. 5
-zzFarm_ProdDesc,items,,,,[8B6914]Increases animal harvest yield by +1/+2/+3/+4/+5 for T1-T5. Install in Farmer Station.[-],[8B6914]Увеличивает сбор с животных на +1/+2/+3/+4/+5 для T1-T5. Установите в Фермерскую станцию.[-]
-zzFarm_FeedStor,items,,,,Feed Storage,Склад корма
-zzFarm_FeedStorDesc,items,,,,[8B6914]Increases feed storage by +100K. Max 5 levels: 0 to 500K. Install in Farmer Station.[-],[8B6914]Увеличивает склад корма на +100K. Максимум 5 уровней: от 0 до 500K. Установите в Фермерскую станцию.[-]
-zzFarm_WaterStor,items,,,,Water Storage,Склад воды
-zzFarm_WaterStorDesc,items,,,,[8B6914]Increases water storage by +100K. Max 5 levels: 0 to 500K. Install in Farmer Station.[-],[8B6914]Увеличивает склад воды на +100K. Максимум 5 уровней: от 0 до 500K. Установите в Фермерскую станцию.[-]
-zzFarm_ResStor,items,,,,Resource Storage,Склад продукции
-zzFarm_ResStorDesc,items,,,,[8B6914]Increases product storage by +100K. Max 5 levels: 0 to 500K. Install in Farmer Station.[-],[8B6914]Увеличивает склад продукции на +100K. Максимум 5 уровней: от 0 до 500K. Установите в Фермерскую станцию.[-]
-zzBank_SavModule,items,,,,Savings Module,Модуль накопительного вклада
-zzBank_SavModuleDesc,items,,,,[FFD700]Unlocks the savings account in 7Days Bank. Savings interest is 0.07% per real minute.[-],[FFD700]Открывает накопительный вклад в 7Days Банке. Процент накопительного вклада: 0.07% за реальную минуту.[-]
+zzFarm_Cells,items,,,,Farmer Station: Animal Cell,Ферма: Ячейка животного
+zzFarm_CellsDesc,items,,,,[8B6914]Farmer Station: Animal Cell[-]\nUnlocks +1 animal slot. Limit: 200 slots.,[8B6914]Ферма: Ячейка животного[-]\nОткрывает +1 слот для животного. Лимит: 200 слотов.
+zzFarm_Speed,items,,,,Farmer Station: Growth Speed,Ферма: Скорость роста
+zzFarm_SpeedDesc,items,,,,[8B6914]Farmer Station: Growth Speed[-]\nEach module reduces growth time by 10 min. Limit: 10 modules. Range: 120 -> 20 min.,[8B6914]Ферма: Скорость роста[-]\nКаждый модуль сокращает рост на 10 мин. Лимит: 10 модулей. Диапазон: 120 -> 20 мин.
+zzFarm_Prod_T1,items,,,,Farmer Station: Production Lv. 1,Ферма: Продукция ур. 1
+zzFarm_Prod_T2,items,,,,Farmer Station: Production Lv. 2,Ферма: Продукция ур. 2
+zzFarm_Prod_T3,items,,,,Farmer Station: Production Lv. 3,Ферма: Продукция ур. 3
+zzFarm_Prod_T4,items,,,,Farmer Station: Production Lv. 4,Ферма: Продукция ур. 4
+zzFarm_Prod_T5,items,,,,Farmer Station: Production Lv. 5,Ферма: Продукция ур. 5
+zzFarm_ProdDesc,items,,,,[8B6914]Farmer Station: Production[-]\nAdds +1/+2/+3/+4/+5 harvest yield for T1-T5. Install levels in order from 1 to 5.,[8B6914]Ферма: Продукция[-]\nДобавляет +1/+2/+3/+4/+5 к сбору для T1-T5. Уровни ставятся по порядку с 1 по 5.
+zzFarm_FeedStor,items,,,,Farmer Station: Feed Storage,Ферма: Склад корма
+zzFarm_FeedStorDesc,items,,,,[8B6914]Farmer Station: Feed Storage[-]\nAdds +100K feed capacity per level. Limit: 5 levels. Max: 500K.,[8B6914]Ферма: Склад корма[-]\nДобавляет +100K вместимости корма за уровень. Лимит: 5 уровней. Максимум: 500K.
+zzFarm_WaterStor,items,,,,Farmer Station: Water Storage,Ферма: Склад воды
+zzFarm_WaterStorDesc,items,,,,[8B6914]Farmer Station: Water Storage[-]\nAdds +100K water capacity per level. Limit: 5 levels. Max: 500K.,[8B6914]Ферма: Склад воды[-]\nДобавляет +100K вместимости воды за уровень. Лимит: 5 уровней. Максимум: 500K.
+zzFarm_ResStor,items,,,,Farmer Station: Product Storage,Ферма: Склад продукции
+zzFarm_ResStorDesc,items,,,,[8B6914]Farmer Station: Product Storage[-]\nAdds +100K product capacity per level. Limit: 5 levels. Max: 500K per product.,[8B6914]Ферма: Склад продукции[-]\nДобавляет +100K вместимости продукции за уровень. Лимит: 5 уровней. Максимум: 500K на продукт.
+zzBank_SavModule,items,,,,7Days Bank: Savings Module,7Days Банк: Накопительный модуль
+zzBank_SavModuleDesc,items,,,,[FFD700]7Days Bank: Savings Module[-]\nUnlocks the savings account. Interest: 0.07% per real minute.,[FFD700]7Days Банк: Накопительный модуль[-]\nОткрывает накопительный вклад. Процент: 0.07% за реальную минуту.
 zz7DaysBank,blocks,,,,7Days Bank,7Days Банк
 zz7DaysBankDesc,blocks,,,,[FFD700]7Days Bank[-]\n[AAAAAA]Deposit oldCash and earn interest.[-]\n[FFD700]Minute: 0.01% | Hour: 1% | Day: 50%[-]\n[FFD700]Savings: 0.07% per minute[-]\n[FFFFFF]Press [E] to open[-],"[FFD700]7Days Банк[-]\n[AAAAAA]Вкладывайте старые купоны и получайте проценты.[-]\n[FFD700]Минутный: 0.01% | Часовой: 1% | Дневной: 50%[-]\n[FFD700]Накопительный: 0.07% в минуту[-]\n[FFFFFF]Нажмите [E], чтобы открыть[-]"
 seedsT3-1,progression,Attribute,,,Level 3: Fertilizer,Уровень 3: Удобрение
@@ -9238,244 +9238,244 @@ zzMoneyTree_L01_Grown,blocks,,,,Money Tree,Денежное Дерево
 zzMoneyTree_L01_GrownDesc,blocks,,,,[FFD700]Money Tree[-]\n\n[00FF88]Production and storage come from modules.[-]\n[00FF88]Production T1-T5: +5/+8/+12/+18/+26 Dukes per min.[-]\n[00AAFF]Storage T1-T5: +2.5K/+5K/+10K/+20K/+35K.[-]\n[FF8800]Fuel: Dollar Bills. 1 bill produces 10 Dukes before efficiency.[-]\n\n[FFFF00]Press [E] to open[-],"[FFD700]Денежное Дерево[-]\n\n[00FF88]Производство и склад работают от модулей.[-]\n[00FF88]Производство T1-T5: +5/+8/+12/+18/+26 дюков в мин.[-]\n[00AAFF]Склад T1-T5: +2.5K/+5K/+10K/+20K/+35K.[-]\n[FF8800]Топливо: долларовые купюры. 1 купюра даёт 10 дюков до экономии.[-]\n\n[FFFF00]Нажмите [E], чтобы открыть[-]"
 zzGypsyAutoMiner,blocks,,,,Gypsy AutoMiner,Цыганский АвтоМайнер
 zzGypsyAutoMinerDesc,blocks,,,,[CC77FF]Gypsy AutoMiner[-]\n[88CCFF]Gypsy Diamonds[-] [FFD700]Gypsy Gold[-] [C0C0C8]Gypsy Silver[-]\n[AAAAAA]Base: 5/min per resource. Production T1-T5: +0.6/+1.2/+1.8/+2.4/+3.0 per min. Storage up to 500K per resource.[-]\n[FF8800]Fuel: Gas Can. Fuel tank up to 5M.[-]\n[FFFFFF]Press [E] to manage[-],[CC77FF]Цыганский АвтоМайнер[-]\n[88CCFF]Цыганские алмазы[-] [FFD700]Цыганское золото[-] [C0C0C8]Цыганское серебро[-]\n[AAAAAA]База: 5/мин на ресурс. Производство T1-T5: +0.6/+1.2/+1.8/+2.4/+3.0 в мин. Склад до 500K на ресурс.[-]\n[FF8800]Топливо: бензин. Бак до 5M.[-]\n[FFFFFF]Нажмите [E] для управления[-]
-zzAM_Prod_Diamond_T1,items,,,,Diamond Mining Lvl 1,Добыча Алмазов ур. 1
-zzAM_Prod_Diamond_T2,items,,,,Diamond Mining Lvl 2,Добыча Алмазов ур. 2
-zzAM_Prod_Diamond_T3,items,,,,Diamond Mining Lvl 3,Добыча Алмазов ур. 3
-zzAM_Prod_Diamond_T4,items,,,,Diamond Mining Lvl 4,Добыча Алмазов ур. 4
-zzAM_Prod_Diamond_T5,items,,,,Diamond Mining Lvl 5,Добыча Алмазов ур. 5
-zzAM_Stor_Diamond_T1,items,,,,Diamond Storage Lvl 1,Склад Алмазов ур. 1
-zzAM_Stor_Diamond_T2,items,,,,Diamond Storage Lvl 2,Склад Алмазов ур. 2
-zzAM_Stor_Diamond_T3,items,,,,Diamond Storage Lvl 3,Склад Алмазов ур. 3
-zzAM_Stor_Diamond_T4,items,,,,Diamond Storage Lvl 4,Склад Алмазов ур. 4
-zzAM_Stor_Diamond_T5,items,,,,Diamond Storage Lvl 5,Склад Алмазов ур. 5
-zzAM_Mult_Diamond_T1,items,,,,Diamond Multiplier x2,Множитель Алмазов x2
-zzAM_Mult_Diamond_T2,items,,,,Diamond Multiplier x3,Множитель Алмазов x3
-zzAM_Mult_Diamond_T3,items,,,,Diamond Multiplier x4,Множитель Алмазов x4
-zzAM_Mult_Diamond_T4,items,,,,Diamond Multiplier x5,Множитель Алмазов x5
-zzAM_Mult_Diamond_T5,items,,,,Diamond Multiplier x6,Множитель Алмазов x6
-zzAM_Prod_Gold_T1,items,,,,Gold Mining Lvl 1,Добыча Золота ур. 1
-zzAM_Prod_Gold_T2,items,,,,Gold Mining Lvl 2,Добыча Золота ур. 2
-zzAM_Prod_Gold_T3,items,,,,Gold Mining Lvl 3,Добыча Золота ур. 3
-zzAM_Prod_Gold_T4,items,,,,Gold Mining Lvl 4,Добыча Золота ур. 4
-zzAM_Prod_Gold_T5,items,,,,Gold Mining Lvl 5,Добыча Золота ур. 5
-zzAM_Stor_Gold_T1,items,,,,Gold Storage Lvl 1,Склад Золота ур. 1
-zzAM_Stor_Gold_T2,items,,,,Gold Storage Lvl 2,Склад Золота ур. 2
-zzAM_Stor_Gold_T3,items,,,,Gold Storage Lvl 3,Склад Золота ур. 3
-zzAM_Stor_Gold_T4,items,,,,Gold Storage Lvl 4,Склад Золота ур. 4
-zzAM_Stor_Gold_T5,items,,,,Gold Storage Lvl 5,Склад Золота ур. 5
-zzAM_Mult_Gold_T1,items,,,,Gold Multiplier x2,Множитель Золота x2
-zzAM_Mult_Gold_T2,items,,,,Gold Multiplier x3,Множитель Золота x3
-zzAM_Mult_Gold_T3,items,,,,Gold Multiplier x4,Множитель Золота x4
-zzAM_Mult_Gold_T4,items,,,,Gold Multiplier x5,Множитель Золота x5
-zzAM_Mult_Gold_T5,items,,,,Gold Multiplier x6,Множитель Золота x6
-zzAM_Prod_Silver_T1,items,,,,Silver Mining Lvl 1,Добыча Серебра ур. 1
-zzAM_Prod_Silver_T2,items,,,,Silver Mining Lvl 2,Добыча Серебра ур. 2
-zzAM_Prod_Silver_T3,items,,,,Silver Mining Lvl 3,Добыча Серебра ур. 3
-zzAM_Prod_Silver_T4,items,,,,Silver Mining Lvl 4,Добыча Серебра ур. 4
-zzAM_Prod_Silver_T5,items,,,,Silver Mining Lvl 5,Добыча Серебра ур. 5
-zzAM_Stor_Silver_T1,items,,,,Silver Storage Lvl 1,Склад Серебра ур. 1
-zzAM_Stor_Silver_T2,items,,,,Silver Storage Lvl 2,Склад Серебра ур. 2
-zzAM_Stor_Silver_T3,items,,,,Silver Storage Lvl 3,Склад Серебра ур. 3
-zzAM_Stor_Silver_T4,items,,,,Silver Storage Lvl 4,Склад Серебра ур. 4
-zzAM_Stor_Silver_T5,items,,,,Silver Storage Lvl 5,Склад Серебра ур. 5
-zzAM_Mult_Silver_T1,items,,,,Silver Multiplier x2,Множитель Серебра x2
-zzAM_Mult_Silver_T2,items,,,,Silver Multiplier x3,Множитель Серебра x3
-zzAM_Mult_Silver_T3,items,,,,Silver Multiplier x4,Множитель Серебра x4
-zzAM_Mult_Silver_T4,items,,,,Silver Multiplier x5,Множитель Серебра x5
-zzAM_Mult_Silver_T5,items,,,,Silver Multiplier x6,Множитель Серебра x6
-zzAM_FuelStor_T1,items,,,,Fuel Tank Lvl 1,Бак Топлива ур. 1
-zzAM_FuelStor_T2,items,,,,Fuel Tank Lvl 2,Бак Топлива ур. 2
-zzAM_FuelStor_T3,items,,,,Fuel Tank Lvl 3,Бак Топлива ур. 3
-zzAM_FuelStor_T4,items,,,,Fuel Tank Lvl 4,Бак Топлива ур. 4
-zzAM_FuelStor_T5,items,,,,Fuel Tank Lvl 5,Бак Топлива ур. 5
-zzAM_FuelEff_T1,items,,,,Fuel Efficiency Lvl 1,Экономия Топлива ур. 1
-zzAM_FuelEff_T2,items,,,,Fuel Efficiency Lvl 2,Экономия Топлива ур. 2
-zzAM_FuelEff_T3,items,,,,Fuel Efficiency Lvl 3,Экономия Топлива ур. 3
-zzAM_FuelEff_T4,items,,,,Fuel Efficiency Lvl 4,Экономия Топлива ур. 4
-zzAM_FuelEff_T5,items,,,,Fuel Efficiency Lvl 5,Экономия Топлива ур. 5
-zzAM_Prod_Diamond_Desc,items,,,,[88CCFF]Increases Gypsy Diamond mining by +0.6/+1.2/+1.8/+2.4/+3.0 per minute for T1-T5. Install in Gypsy AutoMiner.[-],[88CCFF]Увеличивает добычу цыганских алмазов на +0.6/+1.2/+1.8/+2.4/+3.0 в минуту для T1-T5. Установите в Цыганский АвтоМайнер.[-]
-zzAM_Stor_Diamond_Desc,items,,,,[88CCFF]Increases Gypsy Diamond storage by +250/+500/+1K/+2K/+3.5K for T1-T5. Full modules give 500K storage per resource.[-],[88CCFF]Увеличивает склад цыганских алмазов на +250/+500/+1K/+2K/+3.5K для T1-T5. Полная установка даёт 500K склада на ресурс.[-]
-zzAM_Mult_Diamond_Desc,items,,,,[88CCFF]Multiplies Gypsy Diamond production: T1 x2 through T5 x6. Install in Gypsy AutoMiner.[-],[88CCFF]Умножает добычу цыганских алмазов: T1 x2 до T5 x6. Установите в Цыганский АвтоМайнер.[-]
-zzAM_Prod_Gold_Desc,items,,,,[88CCFF]Increases Gypsy Gold mining by +0.6/+1.2/+1.8/+2.4/+3.0 per minute for T1-T5. Install in Gypsy AutoMiner.[-],[88CCFF]Увеличивает добычу цыганских золота на +0.6/+1.2/+1.8/+2.4/+3.0 в минуту для T1-T5. Установите в Цыганский АвтоМайнер.[-]
-zzAM_Stor_Gold_Desc,items,,,,[88CCFF]Increases Gypsy Gold storage by +250/+500/+1K/+2K/+3.5K for T1-T5. Full modules give 500K storage per resource.[-],[88CCFF]Увеличивает склад цыганских золота на +250/+500/+1K/+2K/+3.5K для T1-T5. Полная установка даёт 500K склада на ресурс.[-]
-zzAM_Mult_Gold_Desc,items,,,,[88CCFF]Multiplies Gypsy Gold production: T1 x2 through T5 x6. Install in Gypsy AutoMiner.[-],[88CCFF]Умножает добычу цыганских золота: T1 x2 до T5 x6. Установите в Цыганский АвтоМайнер.[-]
-zzAM_Prod_Silver_Desc,items,,,,[88CCFF]Increases Gypsy Silver mining by +0.6/+1.2/+1.8/+2.4/+3.0 per minute for T1-T5. Install in Gypsy AutoMiner.[-],[88CCFF]Увеличивает добычу цыганских серебра на +0.6/+1.2/+1.8/+2.4/+3.0 в минуту для T1-T5. Установите в Цыганский АвтоМайнер.[-]
-zzAM_Stor_Silver_Desc,items,,,,[88CCFF]Increases Gypsy Silver storage by +250/+500/+1K/+2K/+3.5K for T1-T5. Full modules give 500K storage per resource.[-],[88CCFF]Увеличивает склад цыганских серебра на +250/+500/+1K/+2K/+3.5K для T1-T5. Полная установка даёт 500K склада на ресурс.[-]
-zzAM_Mult_Silver_Desc,items,,,,[88CCFF]Multiplies Gypsy Silver production: T1 x2 through T5 x6. Install in Gypsy AutoMiner.[-],[88CCFF]Умножает добычу цыганских серебра: T1 x2 до T5 x6. Установите в Цыганский АвтоМайнер.[-]
-zzAM_FuelStor_Desc,items,,,,[FF8800]Increases fuel tank by +2.5K/+5K/+10K/+20K/+35K for T1-T5. Full modules give 5M capacity.[-],[FF8800]Увеличивает бак топлива на +2.5K/+5K/+10K/+20K/+35K для T1-T5. Полная установка даёт 5M вместимости.[-]
-zzAM_FuelEff_Desc,items,,,,[44FF44]Reduces fuel consumption by +1/+2/+3/+4/+5 percent per module for T1-T5. Total reduction is capped at 90%.[-],[44FF44]Снижает расход топлива на +1/+2/+3/+4/+5 процента за модуль T1-T5. Общее снижение ограничено 90%.[-]
+zzAM_Prod_Diamond_T1,items,,,,Gypsy AutoMiner: Diamond Mining Lv. 1,Цыганский: добыча алмазов ур. 1
+zzAM_Prod_Diamond_T2,items,,,,Gypsy AutoMiner: Diamond Mining Lv. 2,Цыганский: добыча алмазов ур. 2
+zzAM_Prod_Diamond_T3,items,,,,Gypsy AutoMiner: Diamond Mining Lv. 3,Цыганский: добыча алмазов ур. 3
+zzAM_Prod_Diamond_T4,items,,,,Gypsy AutoMiner: Diamond Mining Lv. 4,Цыганский: добыча алмазов ур. 4
+zzAM_Prod_Diamond_T5,items,,,,Gypsy AutoMiner: Diamond Mining Lv. 5,Цыганский: добыча алмазов ур. 5
+zzAM_Stor_Diamond_T1,items,,,,Gypsy AutoMiner: Diamond Storage Lv. 1,Цыганский: склад алмазов ур. 1
+zzAM_Stor_Diamond_T2,items,,,,Gypsy AutoMiner: Diamond Storage Lv. 2,Цыганский: склад алмазов ур. 2
+zzAM_Stor_Diamond_T3,items,,,,Gypsy AutoMiner: Diamond Storage Lv. 3,Цыганский: склад алмазов ур. 3
+zzAM_Stor_Diamond_T4,items,,,,Gypsy AutoMiner: Diamond Storage Lv. 4,Цыганский: склад алмазов ур. 4
+zzAM_Stor_Diamond_T5,items,,,,Gypsy AutoMiner: Diamond Storage Lv. 5,Цыганский: склад алмазов ур. 5
+zzAM_Mult_Diamond_T1,items,,,,Gypsy AutoMiner: Diamond Multiplier x2,Цыганский: множитель алмазов x2
+zzAM_Mult_Diamond_T2,items,,,,Gypsy AutoMiner: Diamond Multiplier x3,Цыганский: множитель алмазов x3
+zzAM_Mult_Diamond_T3,items,,,,Gypsy AutoMiner: Diamond Multiplier x4,Цыганский: множитель алмазов x4
+zzAM_Mult_Diamond_T4,items,,,,Gypsy AutoMiner: Diamond Multiplier x5,Цыганский: множитель алмазов x5
+zzAM_Mult_Diamond_T5,items,,,,Gypsy AutoMiner: Diamond Multiplier x6,Цыганский: множитель алмазов x6
+zzAM_Prod_Gold_T1,items,,,,Gypsy AutoMiner: Gold Mining Lv. 1,Цыганский: добыча золота ур. 1
+zzAM_Prod_Gold_T2,items,,,,Gypsy AutoMiner: Gold Mining Lv. 2,Цыганский: добыча золота ур. 2
+zzAM_Prod_Gold_T3,items,,,,Gypsy AutoMiner: Gold Mining Lv. 3,Цыганский: добыча золота ур. 3
+zzAM_Prod_Gold_T4,items,,,,Gypsy AutoMiner: Gold Mining Lv. 4,Цыганский: добыча золота ур. 4
+zzAM_Prod_Gold_T5,items,,,,Gypsy AutoMiner: Gold Mining Lv. 5,Цыганский: добыча золота ур. 5
+zzAM_Stor_Gold_T1,items,,,,Gypsy AutoMiner: Gold Storage Lv. 1,Цыганский: склад золота ур. 1
+zzAM_Stor_Gold_T2,items,,,,Gypsy AutoMiner: Gold Storage Lv. 2,Цыганский: склад золота ур. 2
+zzAM_Stor_Gold_T3,items,,,,Gypsy AutoMiner: Gold Storage Lv. 3,Цыганский: склад золота ур. 3
+zzAM_Stor_Gold_T4,items,,,,Gypsy AutoMiner: Gold Storage Lv. 4,Цыганский: склад золота ур. 4
+zzAM_Stor_Gold_T5,items,,,,Gypsy AutoMiner: Gold Storage Lv. 5,Цыганский: склад золота ур. 5
+zzAM_Mult_Gold_T1,items,,,,Gypsy AutoMiner: Gold Multiplier x2,Цыганский: множитель золота x2
+zzAM_Mult_Gold_T2,items,,,,Gypsy AutoMiner: Gold Multiplier x3,Цыганский: множитель золота x3
+zzAM_Mult_Gold_T3,items,,,,Gypsy AutoMiner: Gold Multiplier x4,Цыганский: множитель золота x4
+zzAM_Mult_Gold_T4,items,,,,Gypsy AutoMiner: Gold Multiplier x5,Цыганский: множитель золота x5
+zzAM_Mult_Gold_T5,items,,,,Gypsy AutoMiner: Gold Multiplier x6,Цыганский: множитель золота x6
+zzAM_Prod_Silver_T1,items,,,,Gypsy AutoMiner: Silver Mining Lv. 1,Цыганский: добыча серебра ур. 1
+zzAM_Prod_Silver_T2,items,,,,Gypsy AutoMiner: Silver Mining Lv. 2,Цыганский: добыча серебра ур. 2
+zzAM_Prod_Silver_T3,items,,,,Gypsy AutoMiner: Silver Mining Lv. 3,Цыганский: добыча серебра ур. 3
+zzAM_Prod_Silver_T4,items,,,,Gypsy AutoMiner: Silver Mining Lv. 4,Цыганский: добыча серебра ур. 4
+zzAM_Prod_Silver_T5,items,,,,Gypsy AutoMiner: Silver Mining Lv. 5,Цыганский: добыча серебра ур. 5
+zzAM_Stor_Silver_T1,items,,,,Gypsy AutoMiner: Silver Storage Lv. 1,Цыганский: склад серебра ур. 1
+zzAM_Stor_Silver_T2,items,,,,Gypsy AutoMiner: Silver Storage Lv. 2,Цыганский: склад серебра ур. 2
+zzAM_Stor_Silver_T3,items,,,,Gypsy AutoMiner: Silver Storage Lv. 3,Цыганский: склад серебра ур. 3
+zzAM_Stor_Silver_T4,items,,,,Gypsy AutoMiner: Silver Storage Lv. 4,Цыганский: склад серебра ур. 4
+zzAM_Stor_Silver_T5,items,,,,Gypsy AutoMiner: Silver Storage Lv. 5,Цыганский: склад серебра ур. 5
+zzAM_Mult_Silver_T1,items,,,,Gypsy AutoMiner: Silver Multiplier x2,Цыганский: множитель серебра x2
+zzAM_Mult_Silver_T2,items,,,,Gypsy AutoMiner: Silver Multiplier x3,Цыганский: множитель серебра x3
+zzAM_Mult_Silver_T3,items,,,,Gypsy AutoMiner: Silver Multiplier x4,Цыганский: множитель серебра x4
+zzAM_Mult_Silver_T4,items,,,,Gypsy AutoMiner: Silver Multiplier x5,Цыганский: множитель серебра x5
+zzAM_Mult_Silver_T5,items,,,,Gypsy AutoMiner: Silver Multiplier x6,Цыганский: множитель серебра x6
+zzAM_FuelStor_T1,items,,,,Gypsy AutoMiner: Fuel Tank Lv. 1,Цыганский автомайнер: бак топлива ур. 1
+zzAM_FuelStor_T2,items,,,,Gypsy AutoMiner: Fuel Tank Lv. 2,Цыганский автомайнер: бак топлива ур. 2
+zzAM_FuelStor_T3,items,,,,Gypsy AutoMiner: Fuel Tank Lv. 3,Цыганский автомайнер: бак топлива ур. 3
+zzAM_FuelStor_T4,items,,,,Gypsy AutoMiner: Fuel Tank Lv. 4,Цыганский автомайнер: бак топлива ур. 4
+zzAM_FuelStor_T5,items,,,,Gypsy AutoMiner: Fuel Tank Lv. 5,Цыганский автомайнер: бак топлива ур. 5
+zzAM_FuelEff_T1,items,,,,Gypsy AutoMiner: Fuel Economy Lv. 1,Цыганский автомайнер: экономия топлива ур. 1
+zzAM_FuelEff_T2,items,,,,Gypsy AutoMiner: Fuel Economy Lv. 2,Цыганский автомайнер: экономия топлива ур. 2
+zzAM_FuelEff_T3,items,,,,Gypsy AutoMiner: Fuel Economy Lv. 3,Цыганский автомайнер: экономия топлива ур. 3
+zzAM_FuelEff_T4,items,,,,Gypsy AutoMiner: Fuel Economy Lv. 4,Цыганский автомайнер: экономия топлива ур. 4
+zzAM_FuelEff_T5,items,,,,Gypsy AutoMiner: Fuel Economy Lv. 5,Цыганский автомайнер: экономия топлива ур. 5
+zzAM_Prod_Diamond_Desc,items,,,,[88CCFF]Gypsy AutoMiner: Diamond Mining[-]\nAdds +0.6/+1.2/+1.8/+2.4/+3.0 Diamond per minute for T1-T5. Limits: 100/90/80/70/60 modules.,[88CCFF]Цыганский автомайнер: добыча алмазов[-]\nДобавляет +0.6/+1.2/+1.8/+2.4/+3.0 алмазов в минуту для T1-T5. Лимиты: 100/90/80/70/60 модулей.
+zzAM_Stor_Diamond_Desc,items,,,,[88CCFF]Gypsy AutoMiner: Diamond Storage[-]\nAdds +250/+500/+1K/+2K/+3.5K storage for T1-T5. Full set: 500K storage per resource.,[88CCFF]Цыганский автомайнер: склад алмазов[-]\nДобавляет +250/+500/+1K/+2K/+3.5K склада для T1-T5. Полный набор: 500K склада на ресурс.
+zzAM_Mult_Diamond_Desc,items,,,,[88CCFF]Gypsy AutoMiner: Diamond Multiplier[-]\nSets production multiplier from x2 to x6. Stronger multiplier replaces weaker one.,[88CCFF]Цыганский автомайнер: множитель алмазов[-]\nУстанавливает множитель добычи от x2 до x6. Более сильный множитель заменяет слабый.
+zzAM_Prod_Gold_Desc,items,,,,[88CCFF]Gypsy AutoMiner: Gold Mining[-]\nAdds +0.6/+1.2/+1.8/+2.4/+3.0 Gold per minute for T1-T5. Limits: 100/90/80/70/60 modules.,[88CCFF]Цыганский автомайнер: добыча золота[-]\nДобавляет +0.6/+1.2/+1.8/+2.4/+3.0 золота в минуту для T1-T5. Лимиты: 100/90/80/70/60 модулей.
+zzAM_Stor_Gold_Desc,items,,,,[88CCFF]Gypsy AutoMiner: Gold Storage[-]\nAdds +250/+500/+1K/+2K/+3.5K storage for T1-T5. Full set: 500K storage per resource.,[88CCFF]Цыганский автомайнер: склад золота[-]\nДобавляет +250/+500/+1K/+2K/+3.5K склада для T1-T5. Полный набор: 500K склада на ресурс.
+zzAM_Mult_Gold_Desc,items,,,,[88CCFF]Gypsy AutoMiner: Gold Multiplier[-]\nSets production multiplier from x2 to x6. Stronger multiplier replaces weaker one.,[88CCFF]Цыганский автомайнер: множитель золота[-]\nУстанавливает множитель добычи от x2 до x6. Более сильный множитель заменяет слабый.
+zzAM_Prod_Silver_Desc,items,,,,[88CCFF]Gypsy AutoMiner: Silver Mining[-]\nAdds +0.6/+1.2/+1.8/+2.4/+3.0 Silver per minute for T1-T5. Limits: 100/90/80/70/60 modules.,[88CCFF]Цыганский автомайнер: добыча серебра[-]\nДобавляет +0.6/+1.2/+1.8/+2.4/+3.0 серебра в минуту для T1-T5. Лимиты: 100/90/80/70/60 модулей.
+zzAM_Stor_Silver_Desc,items,,,,[88CCFF]Gypsy AutoMiner: Silver Storage[-]\nAdds +250/+500/+1K/+2K/+3.5K storage for T1-T5. Full set: 500K storage per resource.,[88CCFF]Цыганский автомайнер: склад серебра[-]\nДобавляет +250/+500/+1K/+2K/+3.5K склада для T1-T5. Полный набор: 500K склада на ресурс.
+zzAM_Mult_Silver_Desc,items,,,,[88CCFF]Gypsy AutoMiner: Silver Multiplier[-]\nSets production multiplier from x2 to x6. Stronger multiplier replaces weaker one.,[88CCFF]Цыганский автомайнер: множитель серебра[-]\nУстанавливает множитель добычи от x2 до x6. Более сильный множитель заменяет слабый.
+zzAM_FuelStor_Desc,items,,,,[FF8800]Gypsy AutoMiner: Fuel Tank[-]\nAdds +2.5K/+5K/+10K/+20K/+35K fuel capacity for T1-T5. Full set: 5M fuel capacity.,[FF8800]Цыганский автомайнер: бак топлива[-]\nДобавляет +2.5K/+5K/+10K/+20K/+35K вместимости топлива для T1-T5. Полный набор: 5M топлива.
+zzAM_FuelEff_Desc,items,,,,[44FF44]Gypsy AutoMiner: Fuel Economy[-]\nReduces fuel use by 1/2/3/4/5% per module for T1-T5. Bonuses stack. Effective cap: 90%.,[44FF44]Цыганский автомайнер: экономия топлива[-]\nСнижает расход топлива на 1/2/3/4/5% за модуль T1-T5. Бонусы складываются. Рабочий лимит: 90%.
 zzJewishAutoMiner,blocks,,,,Jewish AutoMiner,Еврейский АвтоМайнер
 zzJewishAutoMinerDesc,blocks,,,,[FF4444]Jewish AutoMiner[-]\n[FF3030]Jewish Diamonds[-] [FFD700]Jewish Gold[-] [FF6666]Jewish Silver[-]\n[AAAAAA]Base: 5/min per resource. Production T1-T5: +0.6/+1.2/+1.8/+2.4/+3.0 per min. Storage up to 500K per resource.[-]\n[FF8800]Fuel: Precious Metals. Fuel tank up to 5M.[-]\n[FFFFFF]Press [E] to manage[-],[FF4444]Еврейский АвтоМайнер[-]\n[FF3030]Еврейские алмазы[-] [FFD700]Еврейское золото[-] [FF6666]Еврейское серебро[-]\n[AAAAAA]База: 5/мин на ресурс. Производство T1-T5: +0.6/+1.2/+1.8/+2.4/+3.0 в мин. Склад до 500K на ресурс.[-]\n[FF8800]Топливо: драгоценные металлы. Бак до 5M.[-]\n[FFFFFF]Нажмите [E] для управления[-]
 zzIndustrialForge,blocks,,,,Industrial Forge,Промышленная Кузница
-zzIF_Speed_T1,items,,,,Forge Speed Lv.1,Скорость Кузницы ур.1
-zzIF_Speed_T1Desc,items,,,,[FF8800]Forge Speed Lv.1[-]\n+0.5 units/sec smelting,[FF8800]Скорость Кузницы ур.1[-]\n+0.5 ед/сек плавки
-zzIF_Speed_T2,items,,,,Forge Speed Lv.2,Скорость Кузницы ур.2
-zzIF_Speed_T2Desc,items,,,,[FF8800]Forge Speed Lv.2[-]\n+0.8 units/sec smelting,[FF8800]Скорость Кузницы ур.2[-]\n+0.8 ед/сек плавки
-zzIF_Speed_T3,items,,,,Forge Speed Lv.3,Скорость Кузницы ур.3
-zzIF_Speed_T3Desc,items,,,,[FF8800]Forge Speed Lv.3[-]\n+1.2 units/sec smelting,[FF8800]Скорость Кузницы ур.3[-]\n+1.2 ед/сек плавки
-zzIF_Speed_T4,items,,,,Forge Speed Lv.4,Скорость Кузницы ур.4
-zzIF_Speed_T4Desc,items,,,,[FF8800]Forge Speed Lv.4[-]\n+1.8 units/sec smelting,[FF8800]Скорость Кузницы ур.4[-]\n+1.8 ед/сек плавки
-zzIF_Speed_T5,items,,,,Forge Speed Lv.5,Скорость Кузницы ур.5
-zzIF_Speed_T5Desc,items,,,,[FF8800]Forge Speed Lv.5[-]\n+2.6 units/sec smelting,[FF8800]Скорость Кузницы ур.5[-]\n+2.6 ед/сек плавки
-zzIF_Stor_T1,items,,,,Forge Storage Lv.1,Ёмкость Кузницы ур.1
-zzIF_Stor_T1Desc,items,,,,[6688FF]Forge Storage Lv.1[-]\n+5000 smelted storage,[6688FF]Ёмкость Кузницы ур.1[-]\n+5000 к хранилищу переплавки
-zzIF_Stor_T2,items,,,,Forge Storage Lv.2,Ёмкость Кузницы ур.2
-zzIF_Stor_T2Desc,items,,,,[6688FF]Forge Storage Lv.2[-]\n+10000 smelted storage,[6688FF]Ёмкость Кузницы ур.2[-]\n+10000 к хранилищу переплавки
-zzIF_Stor_T3,items,,,,Forge Storage Lv.3,Ёмкость Кузницы ур.3
-zzIF_Stor_T3Desc,items,,,,[6688FF]Forge Storage Lv.3[-]\n+20000 smelted storage,[6688FF]Ёмкость Кузницы ур.3[-]\n+20000 к хранилищу переплавки
-zzIF_Stor_T4,items,,,,Forge Storage Lv.4,Ёмкость Кузницы ур.4
-zzIF_Stor_T4Desc,items,,,,[6688FF]Forge Storage Lv.4[-]\n+40000 smelted storage,[6688FF]Ёмкость Кузницы ур.4[-]\n+40000 к хранилищу переплавки
-zzIF_Stor_T5,items,,,,Forge Storage Lv.5,Ёмкость Кузницы ур.5
-zzIF_Stor_T5Desc,items,,,,[6688FF]Forge Storage Lv.5[-]\n+70000 smelted storage,[6688FF]Ёмкость Кузницы ур.5[-]\n+70000 к хранилищу переплавки
-zzIF_CraftSpeed,items,,,,Forge Craft Accelerator,Ускоритель Крафта Кузницы
-zzIF_CraftSpeedDesc,items,,,,[FF4400]Craft Accelerator[-]\n-1% craft time (max 90),[FF4400]Ускоритель Крафта[-]\n-1% время крафта (макс 90 шт)
+zzIF_Speed_T1,items,,,,Industrial Forge: Smelting Lv. 1,Пром. кузница: Плавка ур. 1
+zzIF_Speed_T1Desc,items,,,,[FF8800]Industrial Forge: Smelting Lv. 1[-]\nAdds +0.5 units/sec smelting per module. Limit: 100 modules.,[FF8800]Пром. кузница: Плавка ур. 1[-]\nДобавляет +0.5 ед/сек плавки за модуль. Лимит: 100 модулей.
+zzIF_Speed_T2,items,,,,Industrial Forge: Smelting Lv. 2,Пром. кузница: Плавка ур. 2
+zzIF_Speed_T2Desc,items,,,,[FF8800]Industrial Forge: Smelting Lv. 2[-]\nAdds +0.8 units/sec smelting per module. Limit: 90 modules.,[FF8800]Пром. кузница: Плавка ур. 2[-]\nДобавляет +0.8 ед/сек плавки за модуль. Лимит: 90 модулей.
+zzIF_Speed_T3,items,,,,Industrial Forge: Smelting Lv. 3,Пром. кузница: Плавка ур. 3
+zzIF_Speed_T3Desc,items,,,,[FF8800]Industrial Forge: Smelting Lv. 3[-]\nAdds +1.2 units/sec smelting per module. Limit: 80 modules.,[FF8800]Пром. кузница: Плавка ур. 3[-]\nДобавляет +1.2 ед/сек плавки за модуль. Лимит: 80 модулей.
+zzIF_Speed_T4,items,,,,Industrial Forge: Smelting Lv. 4,Пром. кузница: Плавка ур. 4
+zzIF_Speed_T4Desc,items,,,,[FF8800]Industrial Forge: Smelting Lv. 4[-]\nAdds +1.8 units/sec smelting per module. Limit: 70 modules.,[FF8800]Пром. кузница: Плавка ур. 4[-]\nДобавляет +1.8 ед/сек плавки за модуль. Лимит: 70 модулей.
+zzIF_Speed_T5,items,,,,Industrial Forge: Smelting Lv. 5,Пром. кузница: Плавка ур. 5
+zzIF_Speed_T5Desc,items,,,,[FF8800]Industrial Forge: Smelting Lv. 5[-]\nAdds +2.6 units/sec smelting per module. Limit: 60 modules.,[FF8800]Пром. кузница: Плавка ур. 5[-]\nДобавляет +2.6 ед/сек плавки за модуль. Лимит: 60 модулей.
+zzIF_Stor_T1,items,,,,Industrial Forge: Smelted Storage Lv. 1,Пром. кузница: Ёмкость ур. 1
+zzIF_Stor_T1Desc,items,,,,[6688FF]Industrial Forge: Smelted Storage Lv. 1[-]\nAdds +5K shared smelted storage per module. Limit: 100 modules.,[6688FF]Пром. кузница: Ёмкость ур. 1[-]\nДобавляет +5K общего склада переплавки за модуль. Лимит: 100 модулей.
+zzIF_Stor_T2,items,,,,Industrial Forge: Smelted Storage Lv. 2,Пром. кузница: Ёмкость ур. 2
+zzIF_Stor_T2Desc,items,,,,[6688FF]Industrial Forge: Smelted Storage Lv. 2[-]\nAdds +10K shared smelted storage per module. Limit: 90 modules.,[6688FF]Пром. кузница: Ёмкость ур. 2[-]\nДобавляет +10K общего склада переплавки за модуль. Лимит: 90 модулей.
+zzIF_Stor_T3,items,,,,Industrial Forge: Smelted Storage Lv. 3,Пром. кузница: Ёмкость ур. 3
+zzIF_Stor_T3Desc,items,,,,[6688FF]Industrial Forge: Smelted Storage Lv. 3[-]\nAdds +20K shared smelted storage per module. Limit: 80 modules.,[6688FF]Пром. кузница: Ёмкость ур. 3[-]\nДобавляет +20K общего склада переплавки за модуль. Лимит: 80 модулей.
+zzIF_Stor_T4,items,,,,Industrial Forge: Smelted Storage Lv. 4,Пром. кузница: Ёмкость ур. 4
+zzIF_Stor_T4Desc,items,,,,[6688FF]Industrial Forge: Smelted Storage Lv. 4[-]\nAdds +40K shared smelted storage per module. Limit: 70 modules.,[6688FF]Пром. кузница: Ёмкость ур. 4[-]\nДобавляет +40K общего склада переплавки за модуль. Лимит: 70 модулей.
+zzIF_Stor_T5,items,,,,Industrial Forge: Smelted Storage Lv. 5,Пром. кузница: Ёмкость ур. 5
+zzIF_Stor_T5Desc,items,,,,[6688FF]Industrial Forge: Smelted Storage Lv. 5[-]\nAdds +70K shared smelted storage per module. Limit: 60 modules.,[6688FF]Пром. кузница: Ёмкость ур. 5[-]\nДобавляет +70K общего склада переплавки за модуль. Лимит: 60 модулей.
+zzIF_CraftSpeed,items,,,,Industrial Forge: Craft Accelerator,Пром. кузница: Ускоритель крафта
+zzIF_CraftSpeedDesc,items,,,,[FF4400]Industrial Forge: Craft Accelerator[-]\nEach module reduces craft time by 1%. Limit: 90 modules.,[FF4400]Пром. кузница: Ускоритель крафта[-]\nКаждый модуль снижает время крафта на 1%. Лимит: 90 модулей.
 zzIndustrialForgeDesc,blocks,,,,[FF8800]Industrial Forge[-]\n[AAAAAA]Raw storage: 10M per material. Smelted storage: 10K base shared cap plus modules up to 10M. Base smelting: 5 units/sec. Fuel: Coal.[-]\n[FFFFFF]Press [E] to manage[-],[FF8800]Промышленная Кузница[-]\n[AAAAAA]Склад сырья: 10M на материал. Переплавленный склад: 10K базовый общий лимит плюс модули до 10M. Базовая плавка: 5 ед/сек. Топливо: уголь.[-]\n[FFFFFF]Нажмите [E] для управления[-]
 zzMultiVlastForge,blocks,,,,Multi-Vlast Forge,Мультивластная Кузница
 zzMultiVlastForgeDesc,blocks,,,,[9C27B0]Multi-Vlast Forge[-]\n[AAAAAA]Combines Gypsy and Jewish metals in one block. Raw storage: 10M per material. Smelted storage: 10K base plus modules. Output storage: 10M. Base smelting: 5 units/sec. Fuel: Coal.[-]\n[FFFFFF]Press [E] to manage[-],[9C27B0]Мультивластная Кузница[-]\n[AAAAAA]Объединяет цыганские и еврейские металлы в одном блоке. Склад сырья: 10M на материал. Переплавленный склад: 10K база плюс модули. Склад выхода: 10M. Базовая плавка: 5 ед/сек. Топливо: уголь.[-]\n[FFFFFF]Нажмите [E] для управления[-]
-zzMVF_Speed_T1,items,,,,MVF Speed Lv.1,Скорость МультиКузн. ур.1
-zzMVF_Speed_T1Desc,items,,,,[C77BD9]MVF Speed Lv.1[-]\n+5 units/sec smelting,[C77BD9]Скорость МультиКузн. ур.1[-]\n+5 ед/сек плавки
-zzMVF_Speed_T2,items,,,,MVF Speed Lv.2,Скорость МультиКузн. ур.2
-zzMVF_Speed_T2Desc,items,,,,[B665C8]MVF Speed Lv.2[-]\n+10 units/sec smelting,[B665C8]Скорость МультиКузн. ур.2[-]\n+10 ед/сек плавки
-zzMVF_Speed_T3,items,,,,MVF Speed Lv.3,Скорость МультиКузн. ур.3
-zzMVF_Speed_T3Desc,items,,,,[A150B7]MVF Speed Lv.3[-]\n+15 units/sec smelting,[A150B7]Скорость МультиКузн. ур.3[-]\n+15 ед/сек плавки
-zzMVF_Speed_T4,items,,,,MVF Speed Lv.4,Скорость МультиКузн. ур.4
-zzMVF_Speed_T4Desc,items,,,,[8C3CA5]MVF Speed Lv.4[-]\n+20 units/sec smelting,[8C3CA5]Скорость МультиКузн. ур.4[-]\n+20 ед/сек плавки
-zzMVF_Speed_T5,items,,,,MVF Speed Lv.5,Скорость МультиКузн. ур.5
-zzMVF_Speed_T5Desc,items,,,,[6F2487]MVF Speed Lv.5[-]\n+25 units/sec smelting,[6F2487]Скорость МультиКузн. ур.5[-]\n+25 ед/сек плавки
-zzMVF_Stor_T1,items,,,,MVF Storage Lv.1,Ёмкость МультиКузн. ур.1
-zzMVF_Stor_T1Desc,items,,,,[FFE066]MVF Storage Lv.1[-]\n+500 smelted storage,[FFE066]Ёмкость МультиКузн. ур.1[-]\n+500 к хранилищу переплавки
-zzMVF_Stor_T2,items,,,,MVF Storage Lv.2,Ёмкость МультиКузн. ур.2
-zzMVF_Stor_T2Desc,items,,,,[FFD24D]MVF Storage Lv.2[-]\n+1000 smelted storage,[FFD24D]Ёмкость МультиКузн. ур.2[-]\n+1000 к хранилищу переплавки
-zzMVF_Stor_T3,items,,,,MVF Storage Lv.3,Ёмкость МультиКузн. ур.3
-zzMVF_Stor_T3Desc,items,,,,[FFC233]MVF Storage Lv.3[-]\n+1500 smelted storage,[FFC233]Ёмкость МультиКузн. ур.3[-]\n+1500 к хранилищу переплавки
-zzMVF_Stor_T4,items,,,,MVF Storage Lv.4,Ёмкость МультиКузн. ур.4
-zzMVF_Stor_T4Desc,items,,,,[FFB31A]MVF Storage Lv.4[-]\n+2000 smelted storage,[FFB31A]Ёмкость МультиКузн. ур.4[-]\n+2000 к хранилищу переплавки
-zzMVF_Stor_T5,items,,,,MVF Storage Lv.5,Ёмкость МультиКузн. ур.5
-zzMVF_Stor_T5Desc,items,,,,[FFA500]MVF Storage Lv.5[-]\n+2500 smelted storage,[FFA500]Ёмкость МультиКузн. ур.5[-]\n+2500 к хранилищу переплавки
-zzMVF_CraftSpeed,items,,,,MVF Craft Accelerator,Ускоритель Крафта МультиКузн.
-zzMVF_CraftSpeedDesc,items,,,,[E91E63]MVF Craft Accelerator[-]\n-1% craft time per module (max 90),[E91E63]Ускоритель Крафта МультиКузн.[-]\n-1% времени крафта за модуль (макс 90 шт)
-zzJM_Prod_Diamond_T1,items,,,,Jewish Diamond Mining Lvl 1,Добыча Евр. Алмазов ур. 1
-zzJM_Prod_Diamond_T2,items,,,,Jewish Diamond Mining Lvl 2,Добыча Евр. Алмазов ур. 2
-zzJM_Prod_Diamond_T3,items,,,,Jewish Diamond Mining Lvl 3,Добыча Евр. Алмазов ур. 3
-zzJM_Prod_Diamond_T4,items,,,,Jewish Diamond Mining Lvl 4,Добыча Евр. Алмазов ур. 4
-zzJM_Prod_Diamond_T5,items,,,,Jewish Diamond Mining Lvl 5,Добыча Евр. Алмазов ур. 5
-zzJM_Stor_Diamond_T1,items,,,,Jewish Diamond Storage Lvl 1,Склад Евр. Алмазов ур. 1
-zzJM_Stor_Diamond_T2,items,,,,Jewish Diamond Storage Lvl 2,Склад Евр. Алмазов ур. 2
-zzJM_Stor_Diamond_T3,items,,,,Jewish Diamond Storage Lvl 3,Склад Евр. Алмазов ур. 3
-zzJM_Stor_Diamond_T4,items,,,,Jewish Diamond Storage Lvl 4,Склад Евр. Алмазов ур. 4
-zzJM_Stor_Diamond_T5,items,,,,Jewish Diamond Storage Lvl 5,Склад Евр. Алмазов ур. 5
-zzJM_Mult_Diamond_T1,items,,,,Jewish Diamond Multiplier x2,Множитель Евр. Алмазов x2
-zzJM_Mult_Diamond_T2,items,,,,Jewish Diamond Multiplier x3,Множитель Евр. Алмазов x3
-zzJM_Mult_Diamond_T3,items,,,,Jewish Diamond Multiplier x4,Множитель Евр. Алмазов x4
-zzJM_Mult_Diamond_T4,items,,,,Jewish Diamond Multiplier x5,Множитель Евр. Алмазов x5
-zzJM_Mult_Diamond_T5,items,,,,Jewish Diamond Multiplier x6,Множитель Евр. Алмазов x6
-zzJM_Prod_Gold_T1,items,,,,Jewish Gold Mining Lvl 1,Добыча Евр. Золота ур. 1
-zzJM_Prod_Gold_T2,items,,,,Jewish Gold Mining Lvl 2,Добыча Евр. Золота ур. 2
-zzJM_Prod_Gold_T3,items,,,,Jewish Gold Mining Lvl 3,Добыча Евр. Золота ур. 3
-zzJM_Prod_Gold_T4,items,,,,Jewish Gold Mining Lvl 4,Добыча Евр. Золота ур. 4
-zzJM_Prod_Gold_T5,items,,,,Jewish Gold Mining Lvl 5,Добыча Евр. Золота ур. 5
-zzJM_Stor_Gold_T1,items,,,,Jewish Gold Storage Lvl 1,Склад Евр. Золота ур. 1
-zzJM_Stor_Gold_T2,items,,,,Jewish Gold Storage Lvl 2,Склад Евр. Золота ур. 2
-zzJM_Stor_Gold_T3,items,,,,Jewish Gold Storage Lvl 3,Склад Евр. Золота ур. 3
-zzJM_Stor_Gold_T4,items,,,,Jewish Gold Storage Lvl 4,Склад Евр. Золота ур. 4
-zzJM_Stor_Gold_T5,items,,,,Jewish Gold Storage Lvl 5,Склад Евр. Золота ур. 5
-zzJM_Mult_Gold_T1,items,,,,Jewish Gold Multiplier x2,Множитель Евр. Золота x2
-zzJM_Mult_Gold_T2,items,,,,Jewish Gold Multiplier x3,Множитель Евр. Золота x3
-zzJM_Mult_Gold_T3,items,,,,Jewish Gold Multiplier x4,Множитель Евр. Золота x4
-zzJM_Mult_Gold_T4,items,,,,Jewish Gold Multiplier x5,Множитель Евр. Золота x5
-zzJM_Mult_Gold_T5,items,,,,Jewish Gold Multiplier x6,Множитель Евр. Золота x6
-zzJM_Prod_Silver_T1,items,,,,Jewish Silver Mining Lvl 1,Добыча Евр. Серебра ур. 1
-zzJM_Prod_Silver_T2,items,,,,Jewish Silver Mining Lvl 2,Добыча Евр. Серебра ур. 2
-zzJM_Prod_Silver_T3,items,,,,Jewish Silver Mining Lvl 3,Добыча Евр. Серебра ур. 3
-zzJM_Prod_Silver_T4,items,,,,Jewish Silver Mining Lvl 4,Добыча Евр. Серебра ур. 4
-zzJM_Prod_Silver_T5,items,,,,Jewish Silver Mining Lvl 5,Добыча Евр. Серебра ур. 5
-zzJM_Stor_Silver_T1,items,,,,Jewish Silver Storage Lvl 1,Склад Евр. Серебра ур. 1
-zzJM_Stor_Silver_T2,items,,,,Jewish Silver Storage Lvl 2,Склад Евр. Серебра ур. 2
-zzJM_Stor_Silver_T3,items,,,,Jewish Silver Storage Lvl 3,Склад Евр. Серебра ур. 3
-zzJM_Stor_Silver_T4,items,,,,Jewish Silver Storage Lvl 4,Склад Евр. Серебра ур. 4
-zzJM_Stor_Silver_T5,items,,,,Jewish Silver Storage Lvl 5,Склад Евр. Серебра ур. 5
-zzJM_Mult_Silver_T1,items,,,,Jewish Silver Multiplier x2,Множитель Евр. Серебра x2
-zzJM_Mult_Silver_T2,items,,,,Jewish Silver Multiplier x3,Множитель Евр. Серебра x3
-zzJM_Mult_Silver_T3,items,,,,Jewish Silver Multiplier x4,Множитель Евр. Серебра x4
-zzJM_Mult_Silver_T4,items,,,,Jewish Silver Multiplier x5,Множитель Евр. Серебра x5
-zzJM_Mult_Silver_T5,items,,,,Jewish Silver Multiplier x6,Множитель Евр. Серебра x6
-zzJM_FuelStor_T1,items,,,,Jewish Fuel Tank Lvl 1,Бак Топлива Евр. ур. 1
-zzJM_FuelStor_T2,items,,,,Jewish Fuel Tank Lvl 2,Бак Топлива Евр. ур. 2
-zzJM_FuelStor_T3,items,,,,Jewish Fuel Tank Lvl 3,Бак Топлива Евр. ур. 3
-zzJM_FuelStor_T4,items,,,,Jewish Fuel Tank Lvl 4,Бак Топлива Евр. ур. 4
-zzJM_FuelStor_T5,items,,,,Jewish Fuel Tank Lvl 5,Бак Топлива Евр. ур. 5
-zzJM_FuelEff_T1,items,,,,Jewish Fuel Efficiency Lvl 1,Экономия Топлива Евр. ур. 1
-zzJM_FuelEff_T2,items,,,,Jewish Fuel Efficiency Lvl 2,Экономия Топлива Евр. ур. 2
-zzJM_FuelEff_T3,items,,,,Jewish Fuel Efficiency Lvl 3,Экономия Топлива Евр. ур. 3
-zzJM_FuelEff_T4,items,,,,Jewish Fuel Efficiency Lvl 4,Экономия Топлива Евр. ур. 4
-zzJM_FuelEff_T5,items,,,,Jewish Fuel Efficiency Lvl 5,Экономия Топлива Евр. ур. 5
-zzJM_Prod_Diamond_Desc,items,,,,[FF3030]Increases Jewish Diamond mining by +0.6/+1.2/+1.8/+2.4/+3.0 per minute for T1-T5. Install in Jewish AutoMiner.[-],[FF3030]Увеличивает добычу еврейских алмазов на +0.6/+1.2/+1.8/+2.4/+3.0 в минуту для T1-T5. Установите в Еврейский АвтоМайнер.[-]
-zzJM_Stor_Diamond_Desc,items,,,,[FF3030]Increases Jewish Diamond storage by +250/+500/+1K/+2K/+3.5K for T1-T5. Full modules give 500K storage per resource.[-],[FF3030]Увеличивает склад еврейских алмазов на +250/+500/+1K/+2K/+3.5K для T1-T5. Полная установка даёт 500K склада на ресурс.[-]
-zzJM_Mult_Diamond_Desc,items,,,,[FF3030]Multiplies Jewish Diamond production: T1 x2 through T5 x6. Install in Jewish AutoMiner.[-],[FF3030]Умножает добычу еврейских алмазов: T1 x2 до T5 x6. Установите в Еврейский АвтоМайнер.[-]
-zzJM_Prod_Gold_Desc,items,,,,[FF3030]Increases Jewish Gold mining by +0.6/+1.2/+1.8/+2.4/+3.0 per minute for T1-T5. Install in Jewish AutoMiner.[-],[FF3030]Увеличивает добычу еврейских золота на +0.6/+1.2/+1.8/+2.4/+3.0 в минуту для T1-T5. Установите в Еврейский АвтоМайнер.[-]
-zzJM_Stor_Gold_Desc,items,,,,[FF3030]Increases Jewish Gold storage by +250/+500/+1K/+2K/+3.5K for T1-T5. Full modules give 500K storage per resource.[-],[FF3030]Увеличивает склад еврейских золота на +250/+500/+1K/+2K/+3.5K для T1-T5. Полная установка даёт 500K склада на ресурс.[-]
-zzJM_Mult_Gold_Desc,items,,,,[FF3030]Multiplies Jewish Gold production: T1 x2 through T5 x6. Install in Jewish AutoMiner.[-],[FF3030]Умножает добычу еврейских золота: T1 x2 до T5 x6. Установите в Еврейский АвтоМайнер.[-]
-zzJM_Prod_Silver_Desc,items,,,,[FF3030]Increases Jewish Silver mining by +0.6/+1.2/+1.8/+2.4/+3.0 per minute for T1-T5. Install in Jewish AutoMiner.[-],[FF3030]Увеличивает добычу еврейских серебра на +0.6/+1.2/+1.8/+2.4/+3.0 в минуту для T1-T5. Установите в Еврейский АвтоМайнер.[-]
-zzJM_Stor_Silver_Desc,items,,,,[FF3030]Increases Jewish Silver storage by +250/+500/+1K/+2K/+3.5K for T1-T5. Full modules give 500K storage per resource.[-],[FF3030]Увеличивает склад еврейских серебра на +250/+500/+1K/+2K/+3.5K для T1-T5. Полная установка даёт 500K склада на ресурс.[-]
-zzJM_Mult_Silver_Desc,items,,,,[FF3030]Multiplies Jewish Silver production: T1 x2 through T5 x6. Install in Jewish AutoMiner.[-],[FF3030]Умножает добычу еврейских серебра: T1 x2 до T5 x6. Установите в Еврейский АвтоМайнер.[-]
-zzJM_FuelStor_Desc,items,,,,[FF4400]Increases fuel tank by +2.5K/+5K/+10K/+20K/+35K for T1-T5. Full modules give 5M capacity.[-],[FF4400]Увеличивает бак топлива на +2.5K/+5K/+10K/+20K/+35K для T1-T5. Полная установка даёт 5M вместимости.[-]
-zzJM_FuelEff_Desc,items,,,,[44CC44]Reduces fuel consumption by +1/+2/+3/+4/+5 percent per module for T1-T5. Total reduction is capped at 90%.[-],[44CC44]Снижает расход топлива на +1/+2/+3/+4/+5 процента за модуль T1-T5. Общее снижение ограничено 90%.[-]
+zzMVF_Speed_T1,items,,,,Multi-Vlast Forge: Smelting Lv. 1,Мультивласт: Плавка ур. 1
+zzMVF_Speed_T1Desc,items,,,,[C77BD9]Multi-Vlast Forge: Smelting Lv. 1[-]\nAdds +5 units/sec smelting per module. Limit: 50 modules.,[C77BD9]Мультивласт: Плавка ур. 1[-]\nДобавляет +5 ед/сек плавки за модуль. Лимит: 50 модулей.
+zzMVF_Speed_T2,items,,,,Multi-Vlast Forge: Smelting Lv. 2,Мультивласт: Плавка ур. 2
+zzMVF_Speed_T2Desc,items,,,,[C77BD9]Multi-Vlast Forge: Smelting Lv. 2[-]\nAdds +10 units/sec smelting per module. Limit: 45 modules.,[C77BD9]Мультивласт: Плавка ур. 2[-]\nДобавляет +10 ед/сек плавки за модуль. Лимит: 45 модулей.
+zzMVF_Speed_T3,items,,,,Multi-Vlast Forge: Smelting Lv. 3,Мультивласт: Плавка ур. 3
+zzMVF_Speed_T3Desc,items,,,,[C77BD9]Multi-Vlast Forge: Smelting Lv. 3[-]\nAdds +15 units/sec smelting per module. Limit: 40 modules.,[C77BD9]Мультивласт: Плавка ур. 3[-]\nДобавляет +15 ед/сек плавки за модуль. Лимит: 40 модулей.
+zzMVF_Speed_T4,items,,,,Multi-Vlast Forge: Smelting Lv. 4,Мультивласт: Плавка ур. 4
+zzMVF_Speed_T4Desc,items,,,,[C77BD9]Multi-Vlast Forge: Smelting Lv. 4[-]\nAdds +20 units/sec smelting per module. Limit: 35 modules.,[C77BD9]Мультивласт: Плавка ур. 4[-]\nДобавляет +20 ед/сек плавки за модуль. Лимит: 35 модулей.
+zzMVF_Speed_T5,items,,,,Multi-Vlast Forge: Smelting Lv. 5,Мультивласт: Плавка ур. 5
+zzMVF_Speed_T5Desc,items,,,,[C77BD9]Multi-Vlast Forge: Smelting Lv. 5[-]\nAdds +25 units/sec smelting per module. Limit: 30 modules.,[C77BD9]Мультивласт: Плавка ур. 5[-]\nДобавляет +25 ед/сек плавки за модуль. Лимит: 30 модулей.
+zzMVF_Stor_T1,items,,,,Multi-Vlast Forge: Smelted Storage Lv. 1,Мультивласт: Ёмкость ур. 1
+zzMVF_Stor_T1Desc,items,,,,[FFE066]Multi-Vlast Forge: Smelted Storage Lv. 1[-]\nAdds +500 shared smelted storage per module. Limit: 50 modules.,[FFE066]Мультивласт: Ёмкость ур. 1[-]\nДобавляет +500 общего склада переплавки за модуль. Лимит: 50 модулей.
+zzMVF_Stor_T2,items,,,,Multi-Vlast Forge: Smelted Storage Lv. 2,Мультивласт: Ёмкость ур. 2
+zzMVF_Stor_T2Desc,items,,,,[FFE066]Multi-Vlast Forge: Smelted Storage Lv. 2[-]\nAdds +1K shared smelted storage per module. Limit: 45 modules.,[FFE066]Мультивласт: Ёмкость ур. 2[-]\nДобавляет +1K общего склада переплавки за модуль. Лимит: 45 модулей.
+zzMVF_Stor_T3,items,,,,Multi-Vlast Forge: Smelted Storage Lv. 3,Мультивласт: Ёмкость ур. 3
+zzMVF_Stor_T3Desc,items,,,,[FFE066]Multi-Vlast Forge: Smelted Storage Lv. 3[-]\nAdds +1.5K shared smelted storage per module. Limit: 40 modules.,[FFE066]Мультивласт: Ёмкость ур. 3[-]\nДобавляет +1.5K общего склада переплавки за модуль. Лимит: 40 модулей.
+zzMVF_Stor_T4,items,,,,Multi-Vlast Forge: Smelted Storage Lv. 4,Мультивласт: Ёмкость ур. 4
+zzMVF_Stor_T4Desc,items,,,,[FFE066]Multi-Vlast Forge: Smelted Storage Lv. 4[-]\nAdds +2K shared smelted storage per module. Limit: 35 modules.,[FFE066]Мультивласт: Ёмкость ур. 4[-]\nДобавляет +2K общего склада переплавки за модуль. Лимит: 35 модулей.
+zzMVF_Stor_T5,items,,,,Multi-Vlast Forge: Smelted Storage Lv. 5,Мультивласт: Ёмкость ур. 5
+zzMVF_Stor_T5Desc,items,,,,[FFE066]Multi-Vlast Forge: Smelted Storage Lv. 5[-]\nAdds +2.5K shared smelted storage per module. Limit: 30 modules.,[FFE066]Мультивласт: Ёмкость ур. 5[-]\nДобавляет +2.5K общего склада переплавки за модуль. Лимит: 30 модулей.
+zzMVF_CraftSpeed,items,,,,Multi-Vlast Forge: Craft Accelerator,Мультивласт: Ускоритель крафта
+zzMVF_CraftSpeedDesc,items,,,,[E91E63]Multi-Vlast Forge: Craft Accelerator[-]\nEach module reduces craft time by 1%. Limit: 50 modules.,[E91E63]Мультивласт: Ускоритель крафта[-]\nКаждый модуль снижает время крафта на 1%. Лимит: 50 модулей.
+zzJM_Prod_Diamond_T1,items,,,,Jewish AutoMiner: Diamond Mining Lv. 1,Еврейский: добыча алмазов ур. 1
+zzJM_Prod_Diamond_T2,items,,,,Jewish AutoMiner: Diamond Mining Lv. 2,Еврейский: добыча алмазов ур. 2
+zzJM_Prod_Diamond_T3,items,,,,Jewish AutoMiner: Diamond Mining Lv. 3,Еврейский: добыча алмазов ур. 3
+zzJM_Prod_Diamond_T4,items,,,,Jewish AutoMiner: Diamond Mining Lv. 4,Еврейский: добыча алмазов ур. 4
+zzJM_Prod_Diamond_T5,items,,,,Jewish AutoMiner: Diamond Mining Lv. 5,Еврейский: добыча алмазов ур. 5
+zzJM_Stor_Diamond_T1,items,,,,Jewish AutoMiner: Diamond Storage Lv. 1,Еврейский: склад алмазов ур. 1
+zzJM_Stor_Diamond_T2,items,,,,Jewish AutoMiner: Diamond Storage Lv. 2,Еврейский: склад алмазов ур. 2
+zzJM_Stor_Diamond_T3,items,,,,Jewish AutoMiner: Diamond Storage Lv. 3,Еврейский: склад алмазов ур. 3
+zzJM_Stor_Diamond_T4,items,,,,Jewish AutoMiner: Diamond Storage Lv. 4,Еврейский: склад алмазов ур. 4
+zzJM_Stor_Diamond_T5,items,,,,Jewish AutoMiner: Diamond Storage Lv. 5,Еврейский: склад алмазов ур. 5
+zzJM_Mult_Diamond_T1,items,,,,Jewish AutoMiner: Diamond Multiplier x2,Еврейский: множитель алмазов x2
+zzJM_Mult_Diamond_T2,items,,,,Jewish AutoMiner: Diamond Multiplier x3,Еврейский: множитель алмазов x3
+zzJM_Mult_Diamond_T3,items,,,,Jewish AutoMiner: Diamond Multiplier x4,Еврейский: множитель алмазов x4
+zzJM_Mult_Diamond_T4,items,,,,Jewish AutoMiner: Diamond Multiplier x5,Еврейский: множитель алмазов x5
+zzJM_Mult_Diamond_T5,items,,,,Jewish AutoMiner: Diamond Multiplier x6,Еврейский: множитель алмазов x6
+zzJM_Prod_Gold_T1,items,,,,Jewish AutoMiner: Gold Mining Lv. 1,Еврейский: добыча золота ур. 1
+zzJM_Prod_Gold_T2,items,,,,Jewish AutoMiner: Gold Mining Lv. 2,Еврейский: добыча золота ур. 2
+zzJM_Prod_Gold_T3,items,,,,Jewish AutoMiner: Gold Mining Lv. 3,Еврейский: добыча золота ур. 3
+zzJM_Prod_Gold_T4,items,,,,Jewish AutoMiner: Gold Mining Lv. 4,Еврейский: добыча золота ур. 4
+zzJM_Prod_Gold_T5,items,,,,Jewish AutoMiner: Gold Mining Lv. 5,Еврейский: добыча золота ур. 5
+zzJM_Stor_Gold_T1,items,,,,Jewish AutoMiner: Gold Storage Lv. 1,Еврейский: склад золота ур. 1
+zzJM_Stor_Gold_T2,items,,,,Jewish AutoMiner: Gold Storage Lv. 2,Еврейский: склад золота ур. 2
+zzJM_Stor_Gold_T3,items,,,,Jewish AutoMiner: Gold Storage Lv. 3,Еврейский: склад золота ур. 3
+zzJM_Stor_Gold_T4,items,,,,Jewish AutoMiner: Gold Storage Lv. 4,Еврейский: склад золота ур. 4
+zzJM_Stor_Gold_T5,items,,,,Jewish AutoMiner: Gold Storage Lv. 5,Еврейский: склад золота ур. 5
+zzJM_Mult_Gold_T1,items,,,,Jewish AutoMiner: Gold Multiplier x2,Еврейский: множитель золота x2
+zzJM_Mult_Gold_T2,items,,,,Jewish AutoMiner: Gold Multiplier x3,Еврейский: множитель золота x3
+zzJM_Mult_Gold_T3,items,,,,Jewish AutoMiner: Gold Multiplier x4,Еврейский: множитель золота x4
+zzJM_Mult_Gold_T4,items,,,,Jewish AutoMiner: Gold Multiplier x5,Еврейский: множитель золота x5
+zzJM_Mult_Gold_T5,items,,,,Jewish AutoMiner: Gold Multiplier x6,Еврейский: множитель золота x6
+zzJM_Prod_Silver_T1,items,,,,Jewish AutoMiner: Silver Mining Lv. 1,Еврейский: добыча серебра ур. 1
+zzJM_Prod_Silver_T2,items,,,,Jewish AutoMiner: Silver Mining Lv. 2,Еврейский: добыча серебра ур. 2
+zzJM_Prod_Silver_T3,items,,,,Jewish AutoMiner: Silver Mining Lv. 3,Еврейский: добыча серебра ур. 3
+zzJM_Prod_Silver_T4,items,,,,Jewish AutoMiner: Silver Mining Lv. 4,Еврейский: добыча серебра ур. 4
+zzJM_Prod_Silver_T5,items,,,,Jewish AutoMiner: Silver Mining Lv. 5,Еврейский: добыча серебра ур. 5
+zzJM_Stor_Silver_T1,items,,,,Jewish AutoMiner: Silver Storage Lv. 1,Еврейский: склад серебра ур. 1
+zzJM_Stor_Silver_T2,items,,,,Jewish AutoMiner: Silver Storage Lv. 2,Еврейский: склад серебра ур. 2
+zzJM_Stor_Silver_T3,items,,,,Jewish AutoMiner: Silver Storage Lv. 3,Еврейский: склад серебра ур. 3
+zzJM_Stor_Silver_T4,items,,,,Jewish AutoMiner: Silver Storage Lv. 4,Еврейский: склад серебра ур. 4
+zzJM_Stor_Silver_T5,items,,,,Jewish AutoMiner: Silver Storage Lv. 5,Еврейский: склад серебра ур. 5
+zzJM_Mult_Silver_T1,items,,,,Jewish AutoMiner: Silver Multiplier x2,Еврейский: множитель серебра x2
+zzJM_Mult_Silver_T2,items,,,,Jewish AutoMiner: Silver Multiplier x3,Еврейский: множитель серебра x3
+zzJM_Mult_Silver_T3,items,,,,Jewish AutoMiner: Silver Multiplier x4,Еврейский: множитель серебра x4
+zzJM_Mult_Silver_T4,items,,,,Jewish AutoMiner: Silver Multiplier x5,Еврейский: множитель серебра x5
+zzJM_Mult_Silver_T5,items,,,,Jewish AutoMiner: Silver Multiplier x6,Еврейский: множитель серебра x6
+zzJM_FuelStor_T1,items,,,,Jewish AutoMiner: Fuel Tank Lv. 1,Еврейский автомайнер: бак топлива ур. 1
+zzJM_FuelStor_T2,items,,,,Jewish AutoMiner: Fuel Tank Lv. 2,Еврейский автомайнер: бак топлива ур. 2
+zzJM_FuelStor_T3,items,,,,Jewish AutoMiner: Fuel Tank Lv. 3,Еврейский автомайнер: бак топлива ур. 3
+zzJM_FuelStor_T4,items,,,,Jewish AutoMiner: Fuel Tank Lv. 4,Еврейский автомайнер: бак топлива ур. 4
+zzJM_FuelStor_T5,items,,,,Jewish AutoMiner: Fuel Tank Lv. 5,Еврейский автомайнер: бак топлива ур. 5
+zzJM_FuelEff_T1,items,,,,Jewish AutoMiner: Fuel Economy Lv. 1,Еврейский автомайнер: экономия топлива ур. 1
+zzJM_FuelEff_T2,items,,,,Jewish AutoMiner: Fuel Economy Lv. 2,Еврейский автомайнер: экономия топлива ур. 2
+zzJM_FuelEff_T3,items,,,,Jewish AutoMiner: Fuel Economy Lv. 3,Еврейский автомайнер: экономия топлива ур. 3
+zzJM_FuelEff_T4,items,,,,Jewish AutoMiner: Fuel Economy Lv. 4,Еврейский автомайнер: экономия топлива ур. 4
+zzJM_FuelEff_T5,items,,,,Jewish AutoMiner: Fuel Economy Lv. 5,Еврейский автомайнер: экономия топлива ур. 5
+zzJM_Prod_Diamond_Desc,items,,,,[FF3030]Jewish AutoMiner: Diamond Mining[-]\nAdds +0.6/+1.2/+1.8/+2.4/+3.0 Diamond per minute for T1-T5. Limits: 100/90/80/70/60 modules.,[FF3030]Еврейский автомайнер: добыча алмазов[-]\nДобавляет +0.6/+1.2/+1.8/+2.4/+3.0 алмазов в минуту для T1-T5. Лимиты: 100/90/80/70/60 модулей.
+zzJM_Stor_Diamond_Desc,items,,,,[FF3030]Jewish AutoMiner: Diamond Storage[-]\nAdds +250/+500/+1K/+2K/+3.5K storage for T1-T5. Full set: 500K storage per resource.,[FF3030]Еврейский автомайнер: склад алмазов[-]\nДобавляет +250/+500/+1K/+2K/+3.5K склада для T1-T5. Полный набор: 500K склада на ресурс.
+zzJM_Mult_Diamond_Desc,items,,,,[FF3030]Jewish AutoMiner: Diamond Multiplier[-]\nSets production multiplier from x2 to x6. Stronger multiplier replaces weaker one.,[FF3030]Еврейский автомайнер: множитель алмазов[-]\nУстанавливает множитель добычи от x2 до x6. Более сильный множитель заменяет слабый.
+zzJM_Prod_Gold_Desc,items,,,,[FF3030]Jewish AutoMiner: Gold Mining[-]\nAdds +0.6/+1.2/+1.8/+2.4/+3.0 Gold per minute for T1-T5. Limits: 100/90/80/70/60 modules.,[FF3030]Еврейский автомайнер: добыча золота[-]\nДобавляет +0.6/+1.2/+1.8/+2.4/+3.0 золота в минуту для T1-T5. Лимиты: 100/90/80/70/60 модулей.
+zzJM_Stor_Gold_Desc,items,,,,[FF3030]Jewish AutoMiner: Gold Storage[-]\nAdds +250/+500/+1K/+2K/+3.5K storage for T1-T5. Full set: 500K storage per resource.,[FF3030]Еврейский автомайнер: склад золота[-]\nДобавляет +250/+500/+1K/+2K/+3.5K склада для T1-T5. Полный набор: 500K склада на ресурс.
+zzJM_Mult_Gold_Desc,items,,,,[FF3030]Jewish AutoMiner: Gold Multiplier[-]\nSets production multiplier from x2 to x6. Stronger multiplier replaces weaker one.,[FF3030]Еврейский автомайнер: множитель золота[-]\nУстанавливает множитель добычи от x2 до x6. Более сильный множитель заменяет слабый.
+zzJM_Prod_Silver_Desc,items,,,,[FF3030]Jewish AutoMiner: Silver Mining[-]\nAdds +0.6/+1.2/+1.8/+2.4/+3.0 Silver per minute for T1-T5. Limits: 100/90/80/70/60 modules.,[FF3030]Еврейский автомайнер: добыча серебра[-]\nДобавляет +0.6/+1.2/+1.8/+2.4/+3.0 серебра в минуту для T1-T5. Лимиты: 100/90/80/70/60 модулей.
+zzJM_Stor_Silver_Desc,items,,,,[FF3030]Jewish AutoMiner: Silver Storage[-]\nAdds +250/+500/+1K/+2K/+3.5K storage for T1-T5. Full set: 500K storage per resource.,[FF3030]Еврейский автомайнер: склад серебра[-]\nДобавляет +250/+500/+1K/+2K/+3.5K склада для T1-T5. Полный набор: 500K склада на ресурс.
+zzJM_Mult_Silver_Desc,items,,,,[FF3030]Jewish AutoMiner: Silver Multiplier[-]\nSets production multiplier from x2 to x6. Stronger multiplier replaces weaker one.,[FF3030]Еврейский автомайнер: множитель серебра[-]\nУстанавливает множитель добычи от x2 до x6. Более сильный множитель заменяет слабый.
+zzJM_FuelStor_Desc,items,,,,[FF8800]Jewish AutoMiner: Fuel Tank[-]\nAdds +2.5K/+5K/+10K/+20K/+35K fuel capacity for T1-T5. Full set: 5M fuel capacity.,[FF8800]Еврейский автомайнер: бак топлива[-]\nДобавляет +2.5K/+5K/+10K/+20K/+35K вместимости топлива для T1-T5. Полный набор: 5M топлива.
+zzJM_FuelEff_Desc,items,,,,[44FF44]Jewish AutoMiner: Fuel Economy[-]\nReduces fuel use by 1/2/3/4/5% per module for T1-T5. Bonuses stack. Effective cap: 90%.,[44FF44]Еврейский автомайнер: экономия топлива[-]\nСнижает расход топлива на 1/2/3/4/5% за модуль T1-T5. Бонусы складываются. Рабочий лимит: 90%.
 zzGoldenSap,items,,,,Golden Sap,Золотая Смола
 zzMoneyTreeWateringCan,items,,,,Golden Watering Can,Золотая Лейка
 zzGoldenSapDesc,items,,,,[FFD700]✦ Golden Sap ✦[-]\n\n[AAAAAA]Concentrated currency for upgrading the Money Tree.[-]\n[888888]Craft: 130 000 Old Banknotes + 500 of each of the 13 crops + 1 Honey[-],[FFD700]✦ Золотая Смола ✦[-]\n\n[AAAAAA]Концентрированная валюта для улучшения Денежного Дерева.[-]\n[888888]Крафт: 130 000 Старых Купюр + 500 каждой из 13 культур + 1 Мёд[-]
 zzMoneyTreeWateringCanDesc,items,,,,[FFD700]✦ Golden Watering Can ✦[-]\n\n[AAAAAA]Tool for upgrading the Money Tree.[-]\n[00FF88]RMB on a grown tree to upgrade.[-]\n[888888]Requires 1 Golden Sap per level.[-],[FFD700]✦ Золотая Лейка ✦[-]\n\n[AAAAAA]Инструмент для улучшения Денежного Дерева.[-]\n[00FF88]ПКМ на выросшее дерево для улучшения.[-]\n[888888]Требуется 1 Золотая Смола на 1 уровень.[-]
-zzMT_Prod_T1,items,,,,Money Module: Production Lv.1,Денежный Модуль: Добыча Ур.1
-zzMT_Prod_T1Desc,items,,,,[00FF88]Production Module Lv.1[-]\n+5 Dukes/min per module\nMax: 100 modules,[00FF88]Модуль Добычи Ур.1[-]\n+5 дюков/мин за модуль\nМакс: 100 модулей
-zzMT_Prod_T2,items,,,,Money Module: Production Lv.2,Денежный Модуль: Добыча Ур.2
-zzMT_Prod_T2Desc,items,,,,[00FF88]Production Module Lv.2[-]\n+8 Dukes/min per module\nMax: 90 modules,[00FF88]Модуль Добычи Ур.2[-]\n+8 дюков/мин за модуль\nМакс: 90 модулей
-zzMT_Prod_T3,items,,,,Money Module: Production Lv.3,Денежный Модуль: Добыча Ур.3
-zzMT_Prod_T3Desc,items,,,,[00FF88]Production Module Lv.3[-]\n+12 Dukes/min per module\nMax: 80 modules,[00FF88]Модуль Добычи Ур.3[-]\n+12 дюков/мин за модуль\nМакс: 80 модулей
-zzMT_Prod_T4,items,,,,Money Module: Production Lv.4,Денежный Модуль: Добыча Ур.4
-zzMT_Prod_T4Desc,items,,,,[00FF88]Production Module Lv.4[-]\n+18 Dukes/min per module\nMax: 70 modules,[00FF88]Модуль Добычи Ур.4[-]\n+18 дюков/мин за модуль\nМакс: 70 модулей
-zzMT_Prod_T5,items,,,,Money Module: Production Lv.5,Денежный Модуль: Добыча Ур.5
-zzMT_Prod_T5Desc,items,,,,[00FF88]Production Module Lv.5[-]\n+26 Dukes/min per module\nMax: 60 modules,[00FF88]Модуль Добычи Ур.5[-]\n+26 дюков/мин за модуль\nМакс: 60 модулей
-zzMT_Stor_T1,items,,,,Money Module: Storage Lv.1,Денежный Модуль: Склад Ур.1
-zzMT_Stor_T1Desc,items,,,,[00AAFF]Storage Module Lv.1[-]\n+2500 max storage per module\nMax: 100 modules,[00AAFF]Модуль Склада Ур.1[-]\n+2500 к складу за модуль\nМакс: 100 модулей
-zzMT_Stor_T2,items,,,,Money Module: Storage Lv.2,Денежный Модуль: Склад Ур.2
-zzMT_Stor_T2Desc,items,,,,[00AAFF]Storage Module Lv.2[-]\n+5000 max storage per module\nMax: 90 modules,[00AAFF]Модуль Склада Ур.2[-]\n+5000 к складу за модуль\nМакс: 90 модулей
-zzMT_Stor_T3,items,,,,Money Module: Storage Lv.3,Денежный Модуль: Склад Ур.3
-zzMT_Stor_T3Desc,items,,,,[00AAFF]Storage Module Lv.3[-]\n+10000 max storage per module\nMax: 80 modules,[00AAFF]Модуль Склада Ур.3[-]\n+10000 к складу за модуль\nМакс: 80 модулей
-zzMT_Stor_T4,items,,,,Money Module: Storage Lv.4,Денежный Модуль: Склад Ур.4
-zzMT_Stor_T4Desc,items,,,,[00AAFF]Storage Module Lv.4[-]\n+20000 max storage per module\nMax: 70 modules,[00AAFF]Модуль Склада Ур.4[-]\n+20000 к складу за модуль\nМакс: 70 модулей
-zzMT_Stor_T5,items,,,,Money Module: Storage Lv.5,Денежный Модуль: Склад Ур.5
-zzMT_Stor_T5Desc,items,,,,[00AAFF]Storage Module Lv.5[-]\n+35000 max storage per module\nMax: 60 modules,[00AAFF]Модуль Склада Ур.5[-]\n+35000 к складу за модуль\nМакс: 60 модулей
-zzMT_Mult_T1,items,,,,Money Module: Multiplier x2,Денежный Модуль: Коэффициент x2
-zzMT_Mult_T1Desc,items,,,,[FF8800]Multiplier Module x2[-]\nDoubles all production,[FF8800]Модуль Коэффициента x2[-]\nУдваивает всю добычу
-zzMT_Mult_T2,items,,,,Money Module: Multiplier x3,Денежный Модуль: Коэффициент x3
-zzMT_Mult_T2Desc,items,,,,[CC6600]Multiplier Module x3[-]\nTriples all production,[CC6600]Модуль Коэффициента x3[-]\nУтраивает всю добычу
-zzMT_Mult_T3,items,,,,Money Module: Multiplier x4,Денежный Модуль: Коэффициент x4
-zzMT_Mult_T3Desc,items,,,,[AA4400]Multiplier Module x4[-]\nQuadruples all production,[AA4400]Модуль Коэффициента x4[-]\nУчетверяет всю добычу
-zzMT_Mult_T4,items,,,,Money Module: Multiplier x5,Денежный Модуль: Коэффициент x5
-zzMT_Mult_T4Desc,items,,,,[882200]Multiplier Module x5[-]\nx5 all production,[882200]Модуль Коэффициента x5[-]\nx5 всю добычу
-zzMT_Mult_T5,items,,,,Money Module: Multiplier x6,Денежный Модуль: Коэффициент x6
-zzMT_Mult_T5Desc,items,,,,[660000]Multiplier Module x6[-]\nx6 all production,[660000]Модуль Коэффициента x6[-]\nx6 всю добычу
+zzMT_Prod_T1,items,,,,Money Tree: Production Lv. 1,Денежное дерево: Добыча ур. 1
+zzMT_Prod_T1Desc,items,,,,[00FF88]Money Tree: Production Lv. 1[-]\nAdds +5 Dukes/min per module. Limit: 100 modules.,[00FF88]Денежное дерево: Добыча ур. 1[-]\nДобавляет +5 дюков/мин за модуль. Лимит: 100 модулей.
+zzMT_Prod_T2,items,,,,Money Tree: Production Lv. 2,Денежное дерево: Добыча ур. 2
+zzMT_Prod_T2Desc,items,,,,[00FF88]Money Tree: Production Lv. 2[-]\nAdds +8 Dukes/min per module. Limit: 90 modules.,[00FF88]Денежное дерево: Добыча ур. 2[-]\nДобавляет +8 дюков/мин за модуль. Лимит: 90 модулей.
+zzMT_Prod_T3,items,,,,Money Tree: Production Lv. 3,Денежное дерево: Добыча ур. 3
+zzMT_Prod_T3Desc,items,,,,[00FF88]Money Tree: Production Lv. 3[-]\nAdds +12 Dukes/min per module. Limit: 80 modules.,[00FF88]Денежное дерево: Добыча ур. 3[-]\nДобавляет +12 дюков/мин за модуль. Лимит: 80 модулей.
+zzMT_Prod_T4,items,,,,Money Tree: Production Lv. 4,Денежное дерево: Добыча ур. 4
+zzMT_Prod_T4Desc,items,,,,[00FF88]Money Tree: Production Lv. 4[-]\nAdds +18 Dukes/min per module. Limit: 70 modules.,[00FF88]Денежное дерево: Добыча ур. 4[-]\nДобавляет +18 дюков/мин за модуль. Лимит: 70 модулей.
+zzMT_Prod_T5,items,,,,Money Tree: Production Lv. 5,Денежное дерево: Добыча ур. 5
+zzMT_Prod_T5Desc,items,,,,[00FF88]Money Tree: Production Lv. 5[-]\nAdds +26 Dukes/min per module. Limit: 60 modules.,[00FF88]Денежное дерево: Добыча ур. 5[-]\nДобавляет +26 дюков/мин за модуль. Лимит: 60 модулей.
+zzMT_Stor_T1,items,,,,Money Tree: Storage Lv. 1,Денежное дерево: Склад ур. 1
+zzMT_Stor_T1Desc,items,,,,[00AAFF]Money Tree: Storage Lv. 1[-]\nAdds +2.5K Duke storage per module. Limit: 100 modules.,[00AAFF]Денежное дерево: Склад ур. 1[-]\nДобавляет +2.5K склада дюков за модуль. Лимит: 100 модулей.
+zzMT_Stor_T2,items,,,,Money Tree: Storage Lv. 2,Денежное дерево: Склад ур. 2
+zzMT_Stor_T2Desc,items,,,,[00AAFF]Money Tree: Storage Lv. 2[-]\nAdds +5K Duke storage per module. Limit: 90 modules.,[00AAFF]Денежное дерево: Склад ур. 2[-]\nДобавляет +5K склада дюков за модуль. Лимит: 90 модулей.
+zzMT_Stor_T3,items,,,,Money Tree: Storage Lv. 3,Денежное дерево: Склад ур. 3
+zzMT_Stor_T3Desc,items,,,,[00AAFF]Money Tree: Storage Lv. 3[-]\nAdds +10K Duke storage per module. Limit: 80 modules.,[00AAFF]Денежное дерево: Склад ур. 3[-]\nДобавляет +10K склада дюков за модуль. Лимит: 80 модулей.
+zzMT_Stor_T4,items,,,,Money Tree: Storage Lv. 4,Денежное дерево: Склад ур. 4
+zzMT_Stor_T4Desc,items,,,,[00AAFF]Money Tree: Storage Lv. 4[-]\nAdds +20K Duke storage per module. Limit: 70 modules.,[00AAFF]Денежное дерево: Склад ур. 4[-]\nДобавляет +20K склада дюков за модуль. Лимит: 70 модулей.
+zzMT_Stor_T5,items,,,,Money Tree: Storage Lv. 5,Денежное дерево: Склад ур. 5
+zzMT_Stor_T5Desc,items,,,,[00AAFF]Money Tree: Storage Lv. 5[-]\nAdds +35K Duke storage per module. Limit: 60 modules.,[00AAFF]Денежное дерево: Склад ур. 5[-]\nДобавляет +35K склада дюков за модуль. Лимит: 60 модулей.
+zzMT_Mult_T1,items,,,,Money Tree: Multiplier x2,Денежное дерево: Множитель x2
+zzMT_Mult_T1Desc,items,,,,[FF8800]Money Tree: Multiplier x2[-]\nSets all Duke production to x2. Stronger multiplier replaces weaker one.,[FF8800]Денежное дерево: Множитель x2[-]\nУстанавливает всю добычу дюков на x2. Более сильный множитель заменяет слабый.
+zzMT_Mult_T2,items,,,,Money Tree: Multiplier x3,Денежное дерево: Множитель x3
+zzMT_Mult_T2Desc,items,,,,[FF8800]Money Tree: Multiplier x3[-]\nSets all Duke production to x3. Stronger multiplier replaces weaker one.,[FF8800]Денежное дерево: Множитель x3[-]\nУстанавливает всю добычу дюков на x3. Более сильный множитель заменяет слабый.
+zzMT_Mult_T3,items,,,,Money Tree: Multiplier x4,Денежное дерево: Множитель x4
+zzMT_Mult_T3Desc,items,,,,[FF8800]Money Tree: Multiplier x4[-]\nSets all Duke production to x4. Stronger multiplier replaces weaker one.,[FF8800]Денежное дерево: Множитель x4[-]\nУстанавливает всю добычу дюков на x4. Более сильный множитель заменяет слабый.
+zzMT_Mult_T4,items,,,,Money Tree: Multiplier x5,Денежное дерево: Множитель x5
+zzMT_Mult_T4Desc,items,,,,[FF8800]Money Tree: Multiplier x5[-]\nSets all Duke production to x5. Stronger multiplier replaces weaker one.,[FF8800]Денежное дерево: Множитель x5[-]\nУстанавливает всю добычу дюков на x5. Более сильный множитель заменяет слабый.
+zzMT_Mult_T5,items,,,,Money Tree: Multiplier x6,Денежное дерево: Множитель x6
+zzMT_Mult_T5Desc,items,,,,[FF8800]Money Tree: Multiplier x6[-]\nSets all Duke production to x6. Stronger multiplier replaces weaker one.,[FF8800]Денежное дерево: Множитель x6[-]\nУстанавливает всю добычу дюков на x6. Более сильный множитель заменяет слабый.
 zzDollarBill,items,,,,Dollar Bill,Долларовая купюра
 zzDollarBillDesc,items,,,,[33AA55]Dollar Bill[-]\nFuel for Money Tree. 1 bill produces 10 Dukes before fuel efficiency.[-],[33AA55]Долларовая Купюра[-]\nТопливо для Денежного Дерева. 1 купюра производит 10 дюков до учёта экономии.[-]
-zzMT_FuelStor_T1,items,,,,Dollar Tank Lv.1,Бак Купюр ур.1
-zzMT_FuelStor_T1Desc,items,,,,[33AA55]Dollar Tank Lv.1[-]\n+2500 fuel capacity per module,[33AA55]Бак Купюр ур.1[-]\n+2500 к ёмкости бака за модуль
-zzMT_FuelStor_T2,items,,,,Dollar Tank Lv.2,Бак Купюр ур.2
-zzMT_FuelStor_T2Desc,items,,,,[33AA55]Dollar Tank Lv.2[-]\n+5000 fuel capacity per module,[33AA55]Бак Купюр ур.2[-]\n+5000 к ёмкости бака за модуль
-zzMT_FuelStor_T3,items,,,,Dollar Tank Lv.3,Бак Купюр ур.3
-zzMT_FuelStor_T3Desc,items,,,,[33AA55]Dollar Tank Lv.3[-]\n+10000 fuel capacity per module,[33AA55]Бак Купюр ур.3[-]\n+10000 к ёмкости бака за модуль
-zzMT_FuelStor_T4,items,,,,Dollar Tank Lv.4,Бак Купюр ур.4
-zzMT_FuelStor_T4Desc,items,,,,[33AA55]Dollar Tank Lv.4[-]\n+20000 fuel capacity per module,[33AA55]Бак Купюр ур.4[-]\n+20000 к ёмкости бака за модуль
-zzMT_FuelStor_T5,items,,,,Dollar Tank Lv.5,Бак Купюр ур.5
-zzMT_FuelStor_T5Desc,items,,,,[33AA55]Dollar Tank Lv.5[-]\n+35000 fuel capacity per module,[33AA55]Бак Купюр ур.5[-]\n+35000 к ёмкости бака за модуль
-zzMT_FuelEff_T1,items,,,,Dollar Economy Lv.1,Экономия Купюр ур.1
-zzMT_FuelEff_T1Desc,items,,,,[33AA55]Dollar Economy Lv.1[-]\n-1% fuel consumption per module,[33AA55]Экономия Купюр ур.1[-]\n-1% расход купюр за модуль
-zzMT_FuelEff_T2,items,,,,Dollar Economy Lv.2,Экономия Купюр ур.2
-zzMT_FuelEff_T2Desc,items,,,,[33AA55]Dollar Economy Lv.2[-]\n-2% fuel consumption per module,[33AA55]Экономия Купюр ур.2[-]\n-2% расход купюр за модуль
-zzMT_FuelEff_T3,items,,,,Dollar Economy Lv.3,Экономия Купюр ур.3
-zzMT_FuelEff_T3Desc,items,,,,[33AA55]Dollar Economy Lv.3[-]\n-3% fuel consumption per module,[33AA55]Экономия Купюр ур.3[-]\n-3% расход купюр за модуль
-zzMT_FuelEff_T4,items,,,,Dollar Economy Lv.4,Экономия Купюр ур.4
-zzMT_FuelEff_T4Desc,items,,,,[33AA55]Dollar Economy Lv.4[-]\n-4% fuel consumption per module,[33AA55]Экономия Купюр ур.4[-]\n-4% расход купюр за модуль
-zzMT_FuelEff_T5,items,,,,Dollar Economy Lv.5,Экономия Купюр ур.5
-zzMT_FuelEff_T5Desc,items,,,,[33AA55]Dollar Economy Lv.5[-]\n-5% fuel consumption per module,[33AA55]Экономия Купюр ур.5[-]\n-5% расход купюр за модуль
+zzMT_FuelStor_T1,items,,,,Money Tree: Bill Tank Lv. 1,Денежное дерево: Бак купюр ур. 1
+zzMT_FuelStor_T1Desc,items,,,,[33AA55]Money Tree: Bill Tank Lv. 1[-]\nAdds +2.5K bill fuel capacity per module. Limit: 100 modules.,[33AA55]Денежное дерево: Бак купюр ур. 1[-]\nДобавляет +2.5K вместимости купюр за модуль. Лимит: 100 модулей.
+zzMT_FuelStor_T2,items,,,,Money Tree: Bill Tank Lv. 2,Денежное дерево: Бак купюр ур. 2
+zzMT_FuelStor_T2Desc,items,,,,[33AA55]Money Tree: Bill Tank Lv. 2[-]\nAdds +5K bill fuel capacity per module. Limit: 90 modules.,[33AA55]Денежное дерево: Бак купюр ур. 2[-]\nДобавляет +5K вместимости купюр за модуль. Лимит: 90 модулей.
+zzMT_FuelStor_T3,items,,,,Money Tree: Bill Tank Lv. 3,Денежное дерево: Бак купюр ур. 3
+zzMT_FuelStor_T3Desc,items,,,,[33AA55]Money Tree: Bill Tank Lv. 3[-]\nAdds +10K bill fuel capacity per module. Limit: 80 modules.,[33AA55]Денежное дерево: Бак купюр ур. 3[-]\nДобавляет +10K вместимости купюр за модуль. Лимит: 80 модулей.
+zzMT_FuelStor_T4,items,,,,Money Tree: Bill Tank Lv. 4,Денежное дерево: Бак купюр ур. 4
+zzMT_FuelStor_T4Desc,items,,,,[33AA55]Money Tree: Bill Tank Lv. 4[-]\nAdds +20K bill fuel capacity per module. Limit: 70 modules.,[33AA55]Денежное дерево: Бак купюр ур. 4[-]\nДобавляет +20K вместимости купюр за модуль. Лимит: 70 модулей.
+zzMT_FuelStor_T5,items,,,,Money Tree: Bill Tank Lv. 5,Денежное дерево: Бак купюр ур. 5
+zzMT_FuelStor_T5Desc,items,,,,[33AA55]Money Tree: Bill Tank Lv. 5[-]\nAdds +35K bill fuel capacity per module. Limit: 60 modules.,[33AA55]Денежное дерево: Бак купюр ур. 5[-]\nДобавляет +35K вместимости купюр за модуль. Лимит: 60 модулей.
+zzMT_FuelEff_T1,items,,,,Money Tree: Bill Economy Lv. 1,Денежное дерево: Экономия купюр ур. 1
+zzMT_FuelEff_T1Desc,items,,,,[33AA55]Money Tree: Bill Economy Lv. 1[-]\nReduces bill consumption by 1% per module. Limit: 100 modules. Effective cap: 90%.,[33AA55]Денежное дерево: Экономия купюр ур. 1[-]\nСнижает расход купюр на 1% за модуль. Лимит: 100 модулей. Рабочий лимит: 90%.
+zzMT_FuelEff_T2,items,,,,Money Tree: Bill Economy Lv. 2,Денежное дерево: Экономия купюр ур. 2
+zzMT_FuelEff_T2Desc,items,,,,[33AA55]Money Tree: Bill Economy Lv. 2[-]\nReduces bill consumption by 2% per module. Limit: 90 modules. Effective cap: 90%.,[33AA55]Денежное дерево: Экономия купюр ур. 2[-]\nСнижает расход купюр на 2% за модуль. Лимит: 90 модулей. Рабочий лимит: 90%.
+zzMT_FuelEff_T3,items,,,,Money Tree: Bill Economy Lv. 3,Денежное дерево: Экономия купюр ур. 3
+zzMT_FuelEff_T3Desc,items,,,,[33AA55]Money Tree: Bill Economy Lv. 3[-]\nReduces bill consumption by 3% per module. Limit: 80 modules. Effective cap: 90%.,[33AA55]Денежное дерево: Экономия купюр ур. 3[-]\nСнижает расход купюр на 3% за модуль. Лимит: 80 модулей. Рабочий лимит: 90%.
+zzMT_FuelEff_T4,items,,,,Money Tree: Bill Economy Lv. 4,Денежное дерево: Экономия купюр ур. 4
+zzMT_FuelEff_T4Desc,items,,,,[33AA55]Money Tree: Bill Economy Lv. 4[-]\nReduces bill consumption by 4% per module. Limit: 70 modules. Effective cap: 90%.,[33AA55]Денежное дерево: Экономия купюр ур. 4[-]\nСнижает расход купюр на 4% за модуль. Лимит: 70 модулей. Рабочий лимит: 90%.
+zzMT_FuelEff_T5,items,,,,Money Tree: Bill Economy Lv. 5,Денежное дерево: Экономия купюр ур. 5
+zzMT_FuelEff_T5Desc,items,,,,[33AA55]Money Tree: Bill Economy Lv. 5[-]\nReduces bill consumption by 5% per module. Limit: 60 modules. Effective cap: 90%.,[33AA55]Денежное дерево: Экономия купюр ур. 5[-]\nСнижает расход купюр на 5% за модуль. Лимит: 60 модулей. Рабочий лимит: 90%.
 TMO_CarWheelMaster,blocks,,,,Wheel (Car recovering),Колесо (Автомобиль восстанавливается)
 TMO_CarWheel_Sedan01,blocks,,,,Wheel — Sedan (recovery ~7 days),Колесо — Седан (восстановление ~7 дней)
 TMO_CarWheel_OldSedan,blocks,,,,Wheel — Old Sedan (recovery ~7 days),Колесо — Старый Седан (восстановление ~7 дней)
