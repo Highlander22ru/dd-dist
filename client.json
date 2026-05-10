@@ -1,32 +1,32 @@
 {
-    "version":  "7.15.29",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.29-ffca3df13b25ab0852648a6cf0c12445794caf2c90b05b5b840cb8c6a8362d9b",
-    "sha256":  "ffca3df13b25ab0852648a6cf0c12445794caf2c90b05b5b840cb8c6a8362d9b",
+    "version":  "7.15.30",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/=7.15.30-8a53800f35100239f611bc9b64081299a7b13bdd0cf1463d483801c53c1d6c1a",
+    "sha256":  "8a53800f35100239f611bc9b64081299a7b13bdd0cf1463d483801c53c1d6c1a",
     "size":  322560,
-    "notes":  "v7.15.29: промышленный автомайнер теперь показывает базовый расход, набранную и действующую экономию; лимит экономии топлива поднят до -99%; возврат Doomsday-блоков при запрете установки вне/чужого клайма выполняется отложенно и не теряется после rollback.",
-    "released":  "2026-05-10T13:27:17.0217408Z",
+    "notes":  "v7.15.30: снижена фоновая нагрузка sync во всех GUI Doomsday-блоков, добавлена защита от закрытия окна тем же E, которым оно открылось, исправлены подписи 7DaysБанка и BattlePass, обновлена ясность экономии топлива промышленного автомайнера, промышленная кузница получила более стабильный огонь/звук.",
+    "released":  "2026-05-10T13:58:37.2047662Z",
     "files":  [
                   {
-                      "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.29-ffca3df13b25ab0852648a6cf0c12445794caf2c90b05b5b840cb8c6a8362d9b",
-                      "sha256":  "ffca3df13b25ab0852648a6cf0c12445794caf2c90b05b5b840cb8c6a8362d9b",
+                      "path":  "DoomsdayClient.dll",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/=7.15.30-8a53800f35100239f611bc9b64081299a7b13bdd0cf1463d483801c53c1d6c1a",
+                      "sha256":  "8a53800f35100239f611bc9b64081299a7b13bdd0cf1463d483801c53c1d6c1a",
                       "size":  322560
                   },
                   {
-                      "path":  "DoomsdayClient/ModInfo.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.29-ded116d53b1e932342d5ce21a98a4ff89cb8be47662d2874bf88e7508900344d",
-                      "sha256":  "ded116d53b1e932342d5ce21a98a4ff89cb8be47662d2874bf88e7508900344d",
+                      "path":  "ModInfo.xml",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/=7.15.30-9aea40ad0d1253f6613ea028feaf724411dccb21d497c50304c6e1a82f508741",
+                      "sha256":  "9aea40ad0d1253f6613ea028feaf724411dccb21d497c50304c6e1a82f508741",
                       "size":  246
                   },
                   {
                       "path":  "Doomsday/Config/Localization.txt",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.29-4ac91ae609b2562d22da1a040e0c54b33cbc27ba91c1869eeccee836d484f4cb",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/=7.15.30-4ac91ae609b2562d22da1a040e0c54b33cbc27ba91c1869eeccee836d484f4cb",
                       "sha256":  "4ac91ae609b2562d22da1a040e0c54b33cbc27ba91c1869eeccee836d484f4cb",
                       "size":  2737738
                   },
                   {
                       "path":  "Doomsday/Config/progression.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/progression.xml?v=7.15.29-f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/=7.15.30-f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
                       "sha256":  "f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
                       "size":  642356
                   }
