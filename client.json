@@ -1,32 +1,32 @@
 {
-    "version":  "7.15.28",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.28-2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
-    "sha256":  "2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
-    "size":  321536,
-    "notes":  "v7.15.28: дополнительная вычитка русской локализации навыков, кодексов, книг, баффов и строк добычи. Исправлены XP/лут/стейдж лута/Кодекс Знаний/описания босс-классов без изменения логики DLL.",
-    "released":  "2026-05-08T23:47:22.9865232Z",
+    "version":  "7.15.29",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.29-ffca3df13b25ab0852648a6cf0c12445794caf2c90b05b5b840cb8c6a8362d9b",
+    "sha256":  "ffca3df13b25ab0852648a6cf0c12445794caf2c90b05b5b840cb8c6a8362d9b",
+    "size":  322560,
+    "notes":  "v7.15.29: промышленный автомайнер теперь показывает базовый расход, набранную и действующую экономию; лимит экономии топлива поднят до -99%; возврат Doomsday-блоков при запрете установки вне/чужого клайма выполняется отложенно и не теряется после rollback.",
+    "released":  "2026-05-10T13:27:17.0217408Z",
     "files":  [
                   {
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.28-2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
-                      "sha256":  "2b206c09e69f3bf57bbaae83a3cb8800662c46ba3b4f727862ca2b1eef4bae44",
-                      "size":  321536
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.29-ffca3df13b25ab0852648a6cf0c12445794caf2c90b05b5b840cb8c6a8362d9b",
+                      "sha256":  "ffca3df13b25ab0852648a6cf0c12445794caf2c90b05b5b840cb8c6a8362d9b",
+                      "size":  322560
                   },
                   {
                       "path":  "DoomsdayClient/ModInfo.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.28-b257d657192a08b2e9919eb7ff96025dd33a2edcfe8aad7062ee13be7d36626e",
-                      "sha256":  "b257d657192a08b2e9919eb7ff96025dd33a2edcfe8aad7062ee13be7d36626e",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.29-ded116d53b1e932342d5ce21a98a4ff89cb8be47662d2874bf88e7508900344d",
+                      "sha256":  "ded116d53b1e932342d5ce21a98a4ff89cb8be47662d2874bf88e7508900344d",
                       "size":  246
                   },
                   {
                       "path":  "Doomsday/Config/Localization.txt",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.28-d9bd7a4e074149182b73f4dedc99ab551ff9f0c26a65dd0bc50b5ba335bedec0",
-                      "sha256":  "d9bd7a4e074149182b73f4dedc99ab551ff9f0c26a65dd0bc50b5ba335bedec0",
-                      "size":  2737378
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/Localization.txt?v=7.15.29-4ac91ae609b2562d22da1a040e0c54b33cbc27ba91c1869eeccee836d484f4cb",
+                      "sha256":  "4ac91ae609b2562d22da1a040e0c54b33cbc27ba91c1869eeccee836d484f4cb",
+                      "size":  2737738
                   },
                   {
                       "path":  "Doomsday/Config/progression.xml",
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/progression.xml?v=7.15.28-f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/progression.xml?v=7.15.29-f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
                       "sha256":  "f9134216dc082a18ead5495b9cc5c55626772a6a83522fcce3b01ddc26e68982",
                       "size":  642356
                   }
