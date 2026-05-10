@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "5.7.20",
-    "url":  "https://raw.githubusercontent.com/Highlander22ru/dd-dist/raw-v5.7/DoomsdayLauncher-v5.7.20.exe?v=5.7.20-2e9725cc306f45f17f20b3e84bbd3844ab89e39a66b09d9bf82261fba70c0b26",
-    "sha256":  "2e9725cc306f45f17f20b3e84bbd3844ab89e39a66b09d9bf82261fba70c0b26",
-    "size":  74349421,
-    "changelog":  "v5.7.20 raw.githubusercontent.com-first rescue build for local zapret filters that break doomsday7dtd.online and GitHub release asset redirects; includes detailed failed file diagnostics.",
-    "released":  "2026-05-10T16:09:28.479Z"
+    "version":  "5.7.22",
+    "url":  "https://cdn.jsdelivr.net/gh/Highlander22ru/dd-dist@raw-v5.7/DoomsdayLauncher-v5.7.22.exe?v=5.7.22-9046a16a597d21b28ef1bcebb665e6141b5a8825fd0b74997e17cc2819ea59d8",
+    "sha256":  "9046a16a597d21b28ef1bcebb665e6141b5a8825fd0b74997e17cc2819ea59d8",
+    "size":  74350004,
+    "changelog":  "v5.7.22 CDN rescue build: uses jsDelivr and Statically mirrors before raw.githubusercontent.com for mod files, and reports the host that returned a bad size.",
+    "released":  "2026-05-10T17:11:46.094Z"
 }
