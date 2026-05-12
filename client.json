@@ -1,18 +1,18 @@
 {
-    "version":  "7.15.71",
-    "notes":  "v7.15.71: client GUI allocation optimization pass. Block snapshot caches now use struct keys instead of concatenated string keys, reducing temporary allocations during IMGUI CVar reads. Gameplay XML configs and server DLL are still not shipped.",
+    "version":  "7.15.72",
+    "notes":  "v7.15.72: MultiVlastForge fire-state parity pass. MultiVlast forge fire now keeps the same stale-snapshot fallback as IndustrialForge/TestIndustrialForge and receives server reset signals on destroy. Gameplay XML configs and server DLL are still not shipped.",
     "files":  [
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll",
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "sha256":  "6C1834F7544D3DB31D532537016D875356FFA2F16E49E43C93C6E6C369CB1577",
+                      "sha256":  "DDA10000F290A0FB4117F32B22C378E60237D9B9E21C1CFA094423B25493A657",
                       "asset":  "DoomsdayClient.dll",
-                      "size":  368640
+                      "size":  369152
                   },
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml",
                       "path":  "DoomsdayClient/ModInfo.xml",
-                      "sha256":  "83D5F7BFC21CCD6AEC97C393A5CFDC21D8E9B874709FFF373975162494FA7856",
+                      "sha256":  "29A09185668D66471E576264B7E9F1EA0F23700389823DB1FEC4E55ED4C2F03E",
                       "asset":  "ModInfo.xml",
                       "size":  246
                   },
