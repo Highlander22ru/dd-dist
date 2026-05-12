@@ -1,8 +1,8 @@
 {
-    "version":  "5.7.26",
-    "url":  "https://doomsday7dtd.online/dl/DoomsdayLauncher-v5.7.26.exe",
-    "sha256":  "a5ec2375b8756ec4a556aebfb2d3f5390eff232e7eea31f697bff1a5d9980db0",
-    "size":  74352976,
-    "changelog":  "v5.7.26: adds .ru fallback for launcher server-status API and switches raw/jsDelivr rescue mirrors to raw-v5.7; keeps mod manifest and Harmony files unchanged.",
-    "released":  "2026-05-12T15:14:09Z"
+    "version":  "5.7.27",
+    "url":  "https://doomsday7dtd.online/dl/DoomsdayLauncher-v5.7.27.exe",
+    "sha256":  "82c936237a8afc2d8af77a95314711cc65c88fe5b961ce37f07d0f9748831cd5",
+    "size":  74352968,
+    "changelog":  "v5.7.27: moves jsDelivr ahead of raw.githubusercontent fallback so stale GitHub raw branch cache cannot return an old client manifest before a fresh CDN mirror.",
+    "released":  "2026-05-12T22:01:39Z"
 }
