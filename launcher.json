@@ -1,8 +1,8 @@
 {
-    "version":  "5.7.25",
-    "url":  "https://doomsday7dtd.online/dl/DoomsdayLauncher-v5.7.25.exe",
-    "sha256":  "688d8df9154a9feed8171a25ed5b30de186ee1a8d1d14a6f16765fe39d79fa9b",
-    "size":  74352427,
-    "changelog":  "v5.7.25: restores required 0_TFP_Harmony dependency installation without shipping gameplay XML; writes Harmony ModInfo locally and keeps old Mods/Doomsday XML cleanup.",
-    "released":  "2026-05-11T09:56:00Z"
+    "version":  "5.7.26",
+    "url":  "https://doomsday7dtd.online/dl/DoomsdayLauncher-v5.7.26.exe",
+    "sha256":  "a5ec2375b8756ec4a556aebfb2d3f5390eff232e7eea31f697bff1a5d9980db0",
+    "size":  74352976,
+    "changelog":  "v5.7.26: adds .ru fallback for launcher server-status API and switches raw/jsDelivr rescue mirrors to raw-v5.7; keeps mod manifest and Harmony files unchanged.",
+    "released":  "2026-05-12T15:14:09Z"
 }
