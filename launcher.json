@@ -1,0 +1,8 @@
+{
+    "version":  "5.7.29",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayLauncher-v5.7.29.exe",
+    "sha256":  "002421237209707e4b4049be29c5d6160688d7bdf07b3850f0913035b39ecb88",
+    "size":  74353351,
+    "changelog":  "v5.7.29: fixes self-update loop by deriving the current launcher version from the assembly, keeps 10-second mirror fallback for headers and stalled downloads.",
+    "released":  "2026-05-15T00:13:45Z"
+}

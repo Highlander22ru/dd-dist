@@ -1,0 +1,118 @@
+{
+    "version":  "7.15.124",
+    "notes":  "v7.15.124: исправлены D4 quest tier VI-X у торговцев: tier VII=300, VIII=600, IX=900, X=1200; клиентский журнал показывает новые пороги.",
+    "files":  [
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll",
+                      "path":  "DoomsdayClient/DoomsdayClient.dll",
+                      "sha256":  "F77BD5224C4ABD8CF7A9FBBD7566F1D2663E6626AED733494F2C1ECE1AD53A00",
+                      "asset":  "DoomsdayClient.dll",
+                      "size":  488960
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml",
+                      "path":  "DoomsdayClient/ModInfo.xml",
+                      "sha256":  "44B0C27FE4E73C6D5D97A859A190A329EC3AD12A219CAF8CE4E98D4CA9957C0C",
+                      "asset":  "ModInfo.xml",
+                      "size":  255
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_0Harmony.dll",
+                      "path":  "0_TFP_Harmony/0Harmony.dll",
+                      "sha256":  "C349E1A3FD13FA5A9FACC9805A5E160161B14489F46F6BDD38202B8E124F78DF",
+                      "asset":  "0_TFP_Harmony_0Harmony.dll",
+                      "size":  290304
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_Mono.Cecil.dll",
+                      "path":  "0_TFP_Harmony/Mono.Cecil.dll",
+                      "sha256":  "71C8B01208AB37A5164F5BACD69054899DB9FC00F2DA87DBD07DC1EE40FC06A8",
+                      "asset":  "0_TFP_Harmony_Mono.Cecil.dll",
+                      "size":  360448
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_Mono.Cecil.Mdb.dll",
+                      "path":  "0_TFP_Harmony/Mono.Cecil.Mdb.dll",
+                      "sha256":  "D65E445A02DC2D2A189D19745F14368C6A24D05914E36BBC7ED9732962998EA5",
+                      "asset":  "0_TFP_Harmony_Mono.Cecil.Mdb.dll",
+                      "size":  43008
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_Mono.Cecil.Pdb.dll",
+                      "path":  "0_TFP_Harmony/Mono.Cecil.Pdb.dll",
+                      "sha256":  "8E221211DF8A917D69145239B71B71C87E61761FB0C96D5E997964C172DDA4C0",
+                      "asset":  "0_TFP_Harmony_Mono.Cecil.Pdb.dll",
+                      "size":  89600
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_Mono.Cecil.Rocks.dll",
+                      "path":  "0_TFP_Harmony/Mono.Cecil.Rocks.dll",
+                      "sha256":  "9DB3EDAA8BC6CCD7AC6E2517C743591658BD6BDD436A146E0EDA101D30A1332E",
+                      "asset":  "0_TFP_Harmony_Mono.Cecil.Rocks.dll",
+                      "size":  29696
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_MonoMod.Backports.dll",
+                      "path":  "0_TFP_Harmony/MonoMod.Backports.dll",
+                      "sha256":  "6DB3486EB3BFC458C770D61A1391569000CD871DCC7160FB3DA2CBFE8D98601A",
+                      "asset":  "0_TFP_Harmony_MonoMod.Backports.dll",
+                      "size":  117760
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_MonoMod.Core.dll",
+                      "path":  "0_TFP_Harmony/MonoMod.Core.dll",
+                      "sha256":  "76E100A660669362710AD611752D0B7BE4D57F502D547D07D8BB7C2CD30EF79D",
+                      "asset":  "0_TFP_Harmony_MonoMod.Core.dll",
+                      "size":  228352
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_MonoMod.Iced.dll",
+                      "path":  "0_TFP_Harmony/MonoMod.Iced.dll",
+                      "sha256":  "1821372DBF5BA5CC6FD7BF8416846C02CBA97AE26D7B130CE921E2BC8EF9156B",
+                      "asset":  "0_TFP_Harmony_MonoMod.Iced.dll",
+                      "size":  638976
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_MonoMod.ILHelpers.dll",
+                      "path":  "0_TFP_Harmony/MonoMod.ILHelpers.dll",
+                      "sha256":  "20DF341949B81662E09787E42B66AC3FEA601D4CF4B717294F2D72A80860E4EC",
+                      "asset":  "0_TFP_Harmony_MonoMod.ILHelpers.dll",
+                      "size":  6656
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_MonoMod.RuntimeDetour.dll",
+                      "path":  "0_TFP_Harmony/MonoMod.RuntimeDetour.dll",
+                      "sha256":  "98A99A3CC37E90FDDCACDD88BA64C39CB0EB84119CCF820F4C4F29E9660F276A",
+                      "asset":  "0_TFP_Harmony_MonoMod.RuntimeDetour.dll",
+                      "size":  73216
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_MonoMod.Utils.dll",
+                      "path":  "0_TFP_Harmony/MonoMod.Utils.dll",
+                      "sha256":  "CCCAE0C3033F34205DF9466725DF7522422F797A60C996B2A5811885FDBB2CF6",
+                      "asset":  "0_TFP_Harmony_MonoMod.Utils.dll",
+                      "size":  339456
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_System.ValueTuple.dll",
+                      "path":  "0_TFP_Harmony/System.ValueTuple.dll",
+                      "sha256":  "F341FDCD30BFE1615B8CDCB0DA0FB8C60DFAE0B7AAF9238FE1CD5B721DF16EB1",
+                      "asset":  "0_TFP_Harmony_System.ValueTuple.dll",
+                      "size":  4608
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_TfpHarmony.dll",
+                      "path":  "0_TFP_Harmony/TfpHarmony.dll",
+                      "sha256":  "71D78B990A29ECC0E0C575227E7933E2BFEDCA802108D8A30E8D9EB91CEC1AC8",
+                      "asset":  "0_TFP_Harmony_TfpHarmony.dll",
+                      "size":  7168
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_TfpHarmony.pdb",
+                      "path":  "0_TFP_Harmony/TfpHarmony.pdb",
+                      "sha256":  "D7698702930E9187ABBD1FBE79673B80679BBC71E75CAE61A1092E0C58492842",
+                      "asset":  "0_TFP_Harmony_TfpHarmony.pdb",
+                      "size":  1740
+                  }
+              ]
+}
