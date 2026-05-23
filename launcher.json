@@ -1,8 +1,8 @@
-{
-    "version":  "5.7.27",
-    "url":  "https://doomsday7dtd.online/dl/DoomsdayLauncher-v5.7.27.exe",
-    "sha256":  "82c936237a8afc2d8af77a95314711cc65c88fe5b961ce37f07d0f9748831cd5",
-    "size":  74352968,
-    "changelog":  "v5.7.27: moves jsDelivr ahead of raw.githubusercontent fallback so stale GitHub raw branch cache cannot return an old client manifest before a fresh CDN mirror.",
-    "released":  "2026-05-12T22:01:39Z"
+﻿{
+    "version":  "5.7.33",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayLauncher-v5.7.33.exe",
+    "sha256":  "f2dd46a5ecbb61e3c686adaed61d3048bee890e2356fc09d07fb11966dfd7ca1",
+    "size":  74353361,
+    "changelog":  "v5.7.33: EAC status appears immediately after a valid saved game folder is found; Mods cleanup protects dev-marker folders; DoomsdayClient ModInfo is generated locally so public dist no longer needs XML.",
+    "released":  "2026-05-23T04:47:07Z"
 }

@@ -1,20 +1,13 @@
-{
-    "version":  "7.15.72",
-    "notes":  "v7.15.72: MultiVlastForge fire-state parity pass. MultiVlast forge fire now keeps the same stale-snapshot fallback as IndustrialForge/TestIndustrialForge and receives server reset signals on destroy. Gameplay XML configs and server DLL are still not shipped.",
+﻿{
+    "version":  "7.15.145",
+    "notes":  "v7.15.145: Gypsy AutoMiner Divine Metals GUI layout is tightened, 13K divine iron/clay packs load into smelting, and Divine Smelting upgrades use valid tinted icons/text.",
     "files":  [
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll",
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "sha256":  "DDA10000F290A0FB4117F32B22C378E60237D9B9E21C1CFA094423B25493A657",
+                      "sha256":  "B2CE0AF01921640CBE224E23519F059439B9747A3742ED58B8A9123B52FCF6B3",
                       "asset":  "DoomsdayClient.dll",
-                      "size":  369152
-                  },
-                  {
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml",
-                      "path":  "DoomsdayClient/ModInfo.xml",
-                      "sha256":  "29A09185668D66471E576264B7E9F1EA0F23700389823DB1FEC4E55ED4C2F03E",
-                      "asset":  "ModInfo.xml",
-                      "size":  246
+                      "size":  513536
                   },
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_0Harmony.dll",
