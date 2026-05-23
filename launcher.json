@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "5.7.33",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayLauncher-v5.7.33.exe",
-    "sha256":  "f2dd46a5ecbb61e3c686adaed61d3048bee890e2356fc09d07fb11966dfd7ca1",
-    "size":  74353361,
-    "changelog":  "v5.7.33: EAC status appears immediately after a valid saved game folder is found; Mods cleanup protects dev-marker folders; DoomsdayClient ModInfo is generated locally so public dist no longer needs XML.",
-    "released":  "2026-05-23T04:47:07Z"
+    "version":  "5.7.34",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayLauncher-v5.7.34.exe",
+    "sha256":  "0db818ad26069621fff3e78c0b1660aec02547714bd4540aee3744de7a3f2cbe",
+    "size":  74353367,
+    "changelog":  "v5.7.34: EAC status is local and immediate after a valid game folder is found; Mods cleanup protects dev-marker folders; DoomsdayClient and MenuMusicReplacer ModInfo files are generated locally so public mirrors need no XML.",
+    "released":  "2026-05-23T08:01:33Z"
 }
