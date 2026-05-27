@@ -1,0 +1,101 @@
+name: Deploy /dl to VPS
+
+on:
+  workflow_dispatch:
+    inputs:
+      dist_ref:
+        description: "dd-dist ref to deploy"
+        required: true
+        default: "raw-v5.7"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout dist ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.dist_ref }}
+
+      - name: Verify local artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f client.json
+          test -f client.json.sha256
+          test -f DoomsdayClient.dll
+          test -f DoomsdayClient.dll.sha256
+          test -f ModInfo.xml
+          test -f ModInfo.xml.sha256
+          grep -q '"version":  "7.15.166"' client.json
+          grep -q 'B9E36643AAC02FEDCE7F1EC3B2DA32DEA3BDEE325E892169AF9D558119DF7DDB' client.json
+          sha256sum -c DoomsdayClient.dll.sha256
+          sha256sum -c client.json.sha256
+          sha256sum -c ModInfo.xml.sha256
+
+      - name: Deploy files to VPS
+        shell: bash
+        env:
+          VPS_HOST: 193.233.91.196
+          VPS_USER: root
+          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_SSH_PASSWORD: ${{ secrets.VPS_SSH_PASSWORD }}
+        run: |
+          set -euo pipefail
+          files=(DoomsdayClient.dll DoomsdayClient.dll.sha256 client.json client.json.sha256 ModInfo.xml ModInfo.xml.sha256)
+          common=(-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20)
+          mkdir -p ~/.ssh
+          remote_tmp="/tmp/dd-dist-v5.7-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+
+          use_password=0
+          if [ -n "${VPS_SSH_KEY:-}" ]; then
+            printf '%s\n' "$VPS_SSH_KEY" > ~/.ssh/doomsday_vps_key
+            chmod 600 ~/.ssh/doomsday_vps_key
+            if ssh "${common[@]}" -i ~/.ssh/doomsday_vps_key "$VPS_USER@$VPS_HOST" 'echo key-ok' >/dev/null 2>&1; then
+              ssh_cmd=(ssh "${common[@]}" -i ~/.ssh/doomsday_vps_key "$VPS_USER@$VPS_HOST")
+              scp_cmd=(scp "${common[@]}" -i ~/.ssh/doomsday_vps_key)
+            else
+              use_password=1
+            fi
+          else
+            use_password=1
+          fi
+
+          if [ "$use_password" -eq 1 ]; then
+            if [ -z "${VPS_SSH_PASSWORD:-}" ]; then
+              echo "No usable SSH key and no password secret"
+              exit 1
+            fi
+            sudo apt-get update -y >/dev/null
+            sudo apt-get install -y sshpass >/dev/null
+            ssh_cmd=(sshpass -p "$VPS_SSH_PASSWORD" ssh "${common[@]}" "$VPS_USER@$VPS_HOST")
+            scp_cmd=(sshpass -p "$VPS_SSH_PASSWORD" scp "${common[@]}")
+          fi
+
+          "${ssh_cmd[@]}" "mkdir -p '$remote_tmp' /var/www/doomsday/dl"
+          "${scp_cmd[@]}" "${files[@]}" "$VPS_USER@$VPS_HOST:$remote_tmp/"
+          "${ssh_cmd[@]}" "set -euo pipefail
+            backup=/var/www/doomsday/dl/.backup-$(date +%Y%m%d-%H%M%S)
+            mkdir -p \"\$backup\"
+            for f in ${files[*]}; do
+              [ -f /var/www/doomsday/dl/\"\$f\" ] && cp -a /var/www/doomsday/dl/\"\$f\" \"\$backup/\" || true
+              install -m 0644 '$remote_tmp'/\"\$f\" /var/www/doomsday/dl/\"\$f\"
+            done
+            cd /var/www/doomsday/dl
+            sha256sum -c DoomsdayClient.dll.sha256
+            sha256sum -c client.json.sha256
+            sha256sum -c ModInfo.xml.sha256
+            rm -rf '$remote_tmp'"
+
+      - name: Verify public mirrors
+        shell: bash
+        run: |
+          set -euo pipefail
+          for base in https://doomsday7dtd.online/dl https://doomsday7dtd.ru/dl; do
+            body="$(curl -fsSL "$base/client.json?bust=$(date +%s)-$RANDOM")"
+            echo "$body" | grep -q '"version":  "7.15.166"'
+            echo "$body" | grep -q 'B9E36643AAC02FEDCE7F1EC3B2DA32DEA3BDEE325E892169AF9D558119DF7DDB'
+            curl -fsSL "$base/ModInfo.xml?bust=$(date +%s)-$RANDOM" | grep -q 'Version value="7.15.166"'
+          done
