@@ -1,13 +1,13 @@
-﻿{
-    "version":  "7.15.145",
-    "notes":  "v7.15.145: Gypsy AutoMiner Divine Metals GUI layout is tightened, 13K divine iron/clay packs load into smelting, and Divine Smelting upgrades use valid tinted icons/text.",
+{
+    "version":  "7.15.166",
+    "notes":  "v7.15.166: disables duplicate XML selfAOE enemy-around scan; ClientRadar now preserves enemy count/status buffs from one cached scan.",
     "files":  [
                   {
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.166-B9E36643AAC02FEDCE7F1EC3B2DA32DEA3BDEE325E892169AF9D558119DF7DDB",
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "sha256":  "B2CE0AF01921640CBE224E23519F059439B9747A3742ED58B8A9123B52FCF6B3",
+                      "sha256":  "B9E36643AAC02FEDCE7F1EC3B2DA32DEA3BDEE325E892169AF9D558119DF7DDB",
                       "asset":  "DoomsdayClient.dll",
-                      "size":  513536
+                      "size":  536576
                   },
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_0Harmony.dll",
