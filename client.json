@@ -1,13 +1,13 @@
-{
-    "version":  "7.15.223",
-    "notes":  "v7.15.223: enforces FPS-safe Dynamic Mesh client prefs, reduces client GUI sync churn, and keeps DLL/MenuMusic SHA handshake active.",
+﻿{
+    "version":  "7.15.224",
+    "notes":  "v7.15.224: fixes trader quest-reset spam, logs client FPS telemetry to the server, reduces GUI/look/radar and extended-damage network churn, and keeps the launcher link current.",
     "files":  [
                   {
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.223-D4A114E57CF69036DA0876CCBE6395DABC2786BB46F5D0BCD859E46F64444B6E",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.224-4B3A0B551DC29914F07DD508A16EF6C603A6F69CF6897BD9F2E4547A0AAED89E",
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "sha256":  "D4A114E57CF69036DA0876CCBE6395DABC2786BB46F5D0BCD859E46F64444B6E",
+                      "sha256":  "4B3A0B551DC29914F07DD508A16EF6C603A6F69CF6897BD9F2E4547A0AAED89E",
                       "asset":  "DoomsdayClient.dll",
-                      "size":  543744
+                      "size":  544768
                   },
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_0Harmony.dll",
