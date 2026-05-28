@@ -46,7 +46,7 @@ jobs:
             local file="$1"
             local sha_file="$2"
             local expected actual
-            expected="$(awk '{print toupper($1)}' "$sha_file")"
+            expected="$(tr -cd 'A-Fa-f0-9' < "$sha_file" | head -c 64 | tr '[:lower:]' '[:upper:]')"
             actual="$(sha256sum "$file" | awk '{print toupper($1)}')"
             if [ "$actual" != "$expected" ]; then
               echo "SHA mismatch for $file"
@@ -116,7 +116,7 @@ jobs:
               local file=\"\$1\"
               local sha_file=\"\$2\"
               local expected actual
-              expected=\$(awk '{print toupper(\$1)}' \"\$sha_file\")
+              expected=\$(tr -cd 'A-Fa-f0-9' < \"\$sha_file\" | head -c 64 | tr '[:lower:]' '[:upper:]')
               actual=\$(sha256sum \"\$file\" | awk '{print toupper(\$1)}')
               if [ \"\$actual\" != \"\$expected\" ]; then
                 echo \"SHA mismatch for \$file\"
