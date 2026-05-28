@@ -1,13 +1,13 @@
 {
-    "version":  "7.15.168",
-    "notes":  "v7.15.168: keeps radar split/budget fix and packages the nearby-player aura hotfix for Rescuer/Predator/Maus churn.",
+    "version":  "7.15.169",
+    "notes":  "v7.15.169: adds client DLL/MenuMusic SHA handshake, keeps radar FPS fix, and moves Rescuer party aura off per-frame XML spam.",
     "files":  [
                   {
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.168-72E38403FB835113AA9D37267F88442C8FE12A6F43554CD84662C4DD611FB3EB",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.169-8BEAAB01FC8256A2E888F272DD5E0B90DE8FC5252213B7C9CC89C017FFC7D663",
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "sha256":  "72E38403FB835113AA9D37267F88442C8FE12A6F43554CD84662C4DD611FB3EB",
+                      "sha256":  "8BEAAB01FC8256A2E888F272DD5E0B90DE8FC5252213B7C9CC89C017FFC7D663",
                       "asset":  "DoomsdayClient.dll",
-                      "size":  496128
+                      "size":  542208
                   },
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_0Harmony.dll",
