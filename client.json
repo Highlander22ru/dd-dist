@@ -1,6 +1,6 @@
 ﻿{
     "version":  "7.15.228",
-    "notes":  "v7.15.228: clamps client MaxQueuedMeshLayers to 32 and sends FPS telemetry every 2s to reduce high-online frame-time stalls while keeping DynamicMesh disabled.",
+    "notes":  "v7.15.228: requires DoomsdayClient/ModInfo.xml in the launcher manifest so the client DLL always loads; keeps MaxQueuedMeshLayers at 32 and FPS telemetry at 2s.",
     "files":  [
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.228-D206DEE45F7B21D92B64BA6B0EC659D6DC13E2FA209FDCFD61D17AB3A7FBE4EE",
@@ -8,6 +8,13 @@
                       "sha256":  "D206DEE45F7B21D92B64BA6B0EC659D6DC13E2FA209FDCFD61D17AB3A7FBE4EE",
                       "asset":  "DoomsdayClient.dll",
                       "size":  545280
+                  },
+                  {
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml?v=7.15.228-F871AFD92C71353547FF06564C35E2D112164007F72FA4DD210208B436EBCC72",
+                      "path":  "DoomsdayClient/ModInfo.xml",
+                      "sha256":  "F871AFD92C71353547FF06564C35E2D112164007F72FA4DD210208B436EBCC72",
+                      "asset":  "ModInfo.xml",
+                      "size":  255
                   },
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_0Harmony.dll",
