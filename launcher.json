@@ -1,8 +1,8 @@
-﻿{
-    "version":  "5.7.35",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayLauncher-v5.7.35.exe",
-    "sha256":  "e3c18bf2e9fba487009f5bf344f8654ec1fc382432d181211b03902a86ee8204",
-    "size":  74355225,
-    "changelog":  "v5.7.35: fixes game autodetect hang; standard Steam installs in Program Files are accepted; autodetect falls back to manual folder selection after 8 seconds.",
+{
+    "version":  "5.7.36",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayLauncher-v5.7.36.exe",
+    "sha256":  "6575b0744dbc0b23441a3fc067c487332d3527757f9d1f1c7fbb96ca6a962f05",
+    "size":  74350149,
+    "changelog":  "v5.7.36: temporarily disables MenuMusicReplacer for FPS diagnostics; removes Mods/MenuMusicReplacer from client installs and no longer downloads menu music assets.",
     "released":  "2026-05-28T00:00:00Z"
 }
