@@ -1,8 +1,8 @@
 {
-    "version":  "5.7.36",
-    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayLauncher-v5.7.36.exe",
-    "sha256":  "6575b0744dbc0b23441a3fc067c487332d3527757f9d1f1c7fbb96ca6a962f05",
-    "size":  74350149,
-    "changelog":  "v5.7.36: temporarily disables MenuMusicReplacer for FPS diagnostics; removes Mods/MenuMusicReplacer from client installs and no longer downloads menu music assets.",
+    "version":  "5.7.37",
+    "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayLauncher-v5.7.37.exe",
+    "sha256":  "2cebfdfe8269afb93ae498d1050c7197741a612f7c3c4c1ec8b421e5558c1208",
+    "size":  74350144,
+    "changelog":  "v5.7.37: GitHub is the primary source for launcher/client manifests and client file URLs; .online/.ru are fallback only.",
     "released":  "2026-05-28T00:00:00Z"
 }
