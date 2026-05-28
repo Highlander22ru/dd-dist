@@ -1,13 +1,13 @@
 {
-    "version":  "7.15.169",
-    "notes":  "v7.15.169: adds client DLL/MenuMusic SHA handshake, keeps radar FPS fix, and moves Rescuer party aura off per-frame XML spam.",
+    "version":  "7.15.223",
+    "notes":  "v7.15.223: enforces FPS-safe Dynamic Mesh client prefs, reduces client GUI sync churn, and keeps DLL/MenuMusic SHA handshake active.",
     "files":  [
                   {
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.169-238624A083F9449F3529D1A3820FC44E4CF6B3738802A68788E8C0A5B0400092",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.223-D4A114E57CF69036DA0876CCBE6395DABC2786BB46F5D0BCD859E46F64444B6E",
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "sha256":  "238624A083F9449F3529D1A3820FC44E4CF6B3738802A68788E8C0A5B0400092",
+                      "sha256":  "D4A114E57CF69036DA0876CCBE6395DABC2786BB46F5D0BCD859E46F64444B6E",
                       "asset":  "DoomsdayClient.dll",
-                      "size":  542208
+                      "size":  543744
                   },
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_0Harmony.dll",
