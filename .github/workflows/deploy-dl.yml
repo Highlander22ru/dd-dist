@@ -37,8 +37,8 @@ jobs:
           test -f DoomsdayLauncher-v5.7.35.exe.sha256
           test -f DoomsdayLauncher_source_v5.7.35.game-search-fix_2026-05-28.zip
           test -f DoomsdayLauncher_source_v5.7.35.game-search-fix_2026-05-28.zip.sha256
-          grep -q '"version":  "7.15.166"' client.json
-          grep -q 'B9E36643AAC02FEDCE7F1EC3B2DA32DEA3BDEE325E892169AF9D558119DF7DDB' client.json
+          grep -q '"version":  "7.15.167"' client.json
+          grep -q '968EEC9760164ED74D2CDA21ED7C5CDCECB1DB58900D1EEF6EE3177AD598BB66' client.json
           grep -q '"version":  "5.7.35"' launcher.json
           grep -q 'e3c18bf2e9fba487009f5bf344f8654ec1fc382432d181211b03902a86ee8204' launcher.json
           sha256sum -c DoomsdayClient.dll.sha256
@@ -113,9 +113,9 @@ jobs:
           set -euo pipefail
           for base in https://doomsday7dtd.online/dl https://doomsday7dtd.ru/dl; do
             body="$(curl -fsSL "$base/client.json?bust=$(date +%s)-$RANDOM")"
-            echo "$body" | grep -q '"version":  "7.15.166"'
-            echo "$body" | grep -q 'B9E36643AAC02FEDCE7F1EC3B2DA32DEA3BDEE325E892169AF9D558119DF7DDB'
-            curl -fsSL "$base/ModInfo.xml?bust=$(date +%s)-$RANDOM" | grep -q 'Version value="7.15.166"'
+            echo "$body" | grep -q '"version":  "7.15.167"'
+            echo "$body" | grep -q '968EEC9760164ED74D2CDA21ED7C5CDCECB1DB58900D1EEF6EE3177AD598BB66'
+            curl -fsSL "$base/ModInfo.xml?bust=$(date +%s)-$RANDOM" | grep -q 'Version value="7.15.167"'
             launcher="$(curl -fsSL "$base/launcher.json?bust=$(date +%s)-$RANDOM")"
             echo "$launcher" | grep -q '"version":  "5.7.35"'
             echo "$launcher" | grep -q 'e3c18bf2e9fba487009f5bf344f8654ec1fc382432d181211b03902a86ee8204'
