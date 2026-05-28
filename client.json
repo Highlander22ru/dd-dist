@@ -1,20 +1,13 @@
 {
-    "version":  "7.15.124",
-    "notes":  "v7.15.124: исправлены D4 quest tier VI-X у торговцев: tier VII=300, VIII=600, IX=900, X=1200; клиентский журнал показывает новые пороги.",
+    "version":  "7.15.169",
+    "notes":  "v7.15.169: adds client DLL/MenuMusic SHA handshake, keeps radar FPS fix, and moves Rescuer party aura off per-frame XML spam.",
     "files":  [
                   {
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.169-8BEAAB01FC8256A2E888F272DD5E0B90DE8FC5252213B7C9CC89C017FFC7D663",
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "sha256":  "F77BD5224C4ABD8CF7A9FBBD7566F1D2663E6626AED733494F2C1ECE1AD53A00",
+                      "sha256":  "8BEAAB01FC8256A2E888F272DD5E0B90DE8FC5252213B7C9CC89C017FFC7D663",
                       "asset":  "DoomsdayClient.dll",
-                      "size":  488960
-                  },
-                  {
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/ModInfo.xml",
-                      "path":  "DoomsdayClient/ModInfo.xml",
-                      "sha256":  "44B0C27FE4E73C6D5D97A859A190A329EC3AD12A219CAF8CE4E98D4CA9957C0C",
-                      "asset":  "ModInfo.xml",
-                      "size":  255
+                      "size":  542208
                   },
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_0Harmony.dll",
