@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://doomsday7dtd.online/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/servers.html</loc><priority>0.9</priority><changefreq>daily</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/launcher.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/features.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/shop.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/cases.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/farm.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/guide.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/leaderboard.html</loc><priority>0.7</priority><changefreq>daily</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/profile.html</loc><priority>0.5</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/legal.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/offer.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/privacy.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/payment-refund.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://doomsday7dtd.online/delivery.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url>
+    <loc>https://doomsday7dtd.online/rules.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://doomsday7dtd.online/wipe.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://doomsday7dtd.online/map.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>

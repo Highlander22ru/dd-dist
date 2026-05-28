@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейсы — DOOMSDAY 7 Days to Die</title>
+  <meta name="description" content="Кейсы Doomsday: содержимое, шансы выпадения, качество предметов. 5 типов кейсов от Обычного до Божественного.">
+  <link rel="canonical" href="https://doomsday7dtd.online/cases.html">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="alternate icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Кейсы — DOOMSDAY">
+  <meta property="og:description" content="5 типов кейсов с шансами выпадения и качеством предметов.">
+  <meta property="og:url" content="https://doomsday7dtd.online/cases.html">
+  <meta name="theme-color" content="#c41e1e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Russo+One&family=Share+Tech+Mono&display=swap&subset=cyrillic,cyrillic-ext">
+
+  <link rel="stylesheet" href="css/variables.css?v=20260418ax">
+  <link rel="stylesheet" href="css/layout.css?v=20260418ax">
+  <link rel="stylesheet" href="css/components.css?v=20260513m">
+  <link rel="stylesheet" href="css/animations.css?v=20260418ax">
+  <link rel="stylesheet" href="css/pages/cases.css?v=20260511a">
+  <meta property="og:image" content="https://doomsday7dtd.online/img/og-cover.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DOOMSDAY — 7 Days to Die">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://doomsday7dtd.online/img/og-cover.svg">
+
+</head>
+<body class="noise-overlay scanlines">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DOOMSDAY</a>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="servers.html">Серверы</a>
+        <a href="features.html">Системы</a>
+        <a href="shop.html">Магазин</a>
+        <a href="cases.html" class="active">Кейсы</a>
+        <a href="guide.html">Начать играть</a>
+        <a href="leaderboard.html">Лидерборд</a>
+        <a href="profile.html">Кабинет</a>
+      </div>
+      <button class="nav-burger" type="button" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <a href="index.html">Главная</a>
+    <a href="servers.html">Серверы</a>
+    <a href="features.html">Системы</a>
+    <a href="shop.html">Магазин</a>
+    <a href="cases.html" style="color:#c41e1e">Кейсы</a>
+    <a href="farm.html">Ферма DC</a>
+    <a href="launcher.html">Лаунчер</a>
+    <a href="guide.html">Начать играть</a>
+    <a href="leaderboard.html">Лидерборд</a>
+    <a href="profile.html">Кабинет</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="cases-hero">
+    <div class="container">
+      <h1 class="cases-hero-title">КЕЙСЫ DOOMSDAY</h1>
+      <p class="cases-hero-sub">5 типов кейсов с прозрачными шансами выпадения. Открывай в игре командой <code>/case</code> или покупай за <span class="dc-pill">DoomCoins</span>.</p>
+      <div class="cases-hero-info">
+        <div class="info-pill"><span class="info-pill-icon">🪙</span><span>DoomCoins зарабатываются за убийство зомби (1 DC) и ежедневный бонус (+50 DC)</span></div>
+        <div class="info-pill"><span class="info-pill-icon">🎲</span><span>Все шансы открыты — никаких скрытых вероятностей</span></div>
+        <div class="info-pill"><span class="info-pill-icon">⭐</span><span>Оружие выпадает с указанным качеством (1—6)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="merchant-legal-strip" style="max-width:1200px;margin:14px auto 0;padding:12px 16px;border:1px solid rgba(255,215,0,.3);background:rgba(255,215,0,.06);border-radius:6px;color:#e6d9a8;font-size:.84rem;line-height:1.55">
+    <strong style="color:#ffd700">Продавец:</strong> ИП Бетеньков Антон Вячеславович · ИНН 222412608054 · ОГРНИП 326220200063519.
+    <a href="legal.html" style="color:#ffd700;font-weight:700;margin-left:8px">Реквизиты и документы</a>
+    <a href="payment-refund.html" style="color:#ffd700;font-weight:700;margin-left:8px">Оплата и возврат</a>
+    <a href="delivery.html" style="color:#ffd700;font-weight:700;margin-left:8px">Доставка</a>
+  </div>
+
+  <!-- CASES GRID -->
+  <section>
+    <div class="container">
+      <div id="cases-grid" class="cases-grid"></div>
+      <div id="cases-error" class="cases-error" style="display:none">Не удалось загрузить кейсы. Попробуй обновить страницу.</div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="case-modal" class="case-modal" aria-hidden="true">
+    <div class="case-modal-backdrop" data-close="1"></div>
+    <div class="case-modal-card" role="dialog" aria-modal="true">
+      <button class="case-modal-close" data-close="1" aria-label="Закрыть">&times;</button>
+      <div class="case-modal-header">
+        <h2 id="modal-case-name" class="modal-case-name"></h2>
+        <div id="modal-case-desc" class="modal-case-desc"></div>
+        <div id="modal-case-stats" class="modal-case-stats"></div>
+      </div>
+      <div class="case-modal-body">
+        <div class="modal-list-head">
+          <span>Предмет</span>
+          <span>Качество</span>
+          <span>Бонус DC</span>
+          <span>Шанс</span>
+        </div>
+        <div id="modal-items" class="modal-items"></div>
+      </div>
+      <div class="case-buy-bar" id="case-buy-bar">
+        <div class="case-buy-left">
+          <div class="case-buy-price">
+            <span class="case-buy-pricelabel">Цена</span>
+            <span class="case-buy-priceval" id="case-buy-price">—</span>
+          </div>
+          <label class="case-buy-server">
+            Сервер:
+            <select id="case-buy-server">
+              <option value="1">#1 Hard</option>
+              <option value="2">#2 Normal</option>
+              <option value="3">#3 Lite</option>
+            </select>
+          </label>
+        </div>
+        <div class="case-buy-right">
+          <button type="button" class="btn btn-primary" id="case-buy-btn-dc">🪙 Купить за кредиты</button>
+          <button type="button" class="btn btn-outline" id="case-buy-btn-bonus">🎁 За бонусы</button>
+        </div>
+        <div class="case-buy-msg" id="case-buy-msg" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Навигация</h3>
+          <a href="index.html">Главная</a>
+          <a href="servers.html">Серверы</a>
+          <a href="features.html">Системы</a>
+          <a href="shop.html">Магазин</a>
+          <a href="cases.html">Кейсы</a>
+          <a href="farm.html">Ферма DC</a>
+          <a href="launcher.html">Лаунчер</a>
+          <a href="guide.html">Как начать играть</a>
+          <a href="rules.html">Правила</a>
+          <a href="wipe.html">Вайп-расписание</a>
+          <a href="map.html">Онлайн-карты</a>
+          <a href="leaderboard.html">Лидерборд</a>
+          <a href="profile.html">Кабинет</a>
+        </div>
+        <div class="footer-col">
+          <h3>Серверы</h3>
+          <p>IP: 109.195.37.13</p>
+          <p>Doomsday №1 — :26900</p>
+          <p>Doomsday №2 — :26905</p>
+          <p>Doomsday №3 — :26910</p>        </div>
+        <div class="footer-col">
+          <h3>Проект</h3>
+          <p>7 Days to Die Mod</p>
+          <p>Версия: v4.7</p>
+          <p>3 PVE-сервера 24/7</p>
+          <a href="legal.html">Реквизиты и документы</a>
+          <a href="offer.html">Оферта</a>
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="payment-refund.html">Оплата и возврат</a>
+          <a href="delivery.html">Доставка</a>
+        </div>
+        <div class="footer-col footer-col-community">
+          <h3>Сообщество</h3>
+          <a href="https://discord.gg/3u3GwShEhR" target="_blank" rel="noopener noreferrer" class="social-link social-discord">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.211.375-.445.865-.608 1.249-1.845-.276-3.68-.276-5.487 0-.164-.39-.406-.874-.617-1.249a.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.056 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.009c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            Discord
+          </a>
+          <a href="https://t.me/doomsday7dtd" target="_blank" rel="noopener noreferrer" class="social-link social-telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>DOOMSDAY</span> &mdash; 7 Days to Die &copy; 2024&ndash;2026
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js?v=20260513m3"></script>
+  <script src="js/cases.js?v=20260521cases"></script>
+</body>
+</html>

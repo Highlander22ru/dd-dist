@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин — DOOMSDAY 7 Days to Die</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Russo+One&family=Share+Tech+Mono&display=swap&subset=cyrillic,cyrillic-ext">
+
+  <link rel="stylesheet" href="css/variables.css?v=20260418ax">
+  <link rel="stylesheet" href="css/layout.css?v=20260418ax">
+  <link rel="stylesheet" href="css/components.css?v=20260513m">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="alternate icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/animations.css?v=20260418ax">
+  <style>
+    *{box-sizing:border-box}
+    .shop-hero{text-align:center;padding:32px 20px 16px;background:linear-gradient(180deg,rgba(196,30,30,0.06) 0%,transparent 100%)}
+    .shop-hero h1{font-family:'Black Ops One',cursive;font-size:2.2rem;color:#c41e1e;margin:0 0 6px;text-shadow:0 0 20px rgba(196,30,30,0.3)}
+    .shop-hero p{color:#888;margin:0;font-size:0.9rem}
+
+    /* Balance bar */
+    .balance-bar{background:#0d1117;border-bottom:1px solid #1e2a1e;padding:10px 20px;position:sticky;top:0;z-index:100}
+    .balance-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .balance-left{display:flex;align-items:center;gap:16px}
+    .balance-item{display:flex;align-items:center;gap:6px;font-size:0.9rem}
+    .balance-item .bal-icon{font-size:1.1rem}
+    .balance-item .bal-val{font-weight:700;font-size:1.1rem}
+    .bal-credits .bal-val{color:#ffd700}
+    .bal-bonuses .bal-val{color:#ff6b35}
+    .balance-right{display:flex;align-items:center;gap:8px}
+    .btn-login{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:#171a21;border:1px solid #c41e1e;border-radius:6px;color:#c41e1e;font-weight:700;font-size:0.85rem;cursor:pointer;text-decoration:none;transition:all .2s}
+    .btn-login:hover{background:#c41e1e;color:#000}
+    .btn-login img{width:20px;height:20px}
+    .user-info{display:flex;align-items:center;gap:8px}
+    .user-info img{width:28px;height:28px;border-radius:50%}
+    .user-info span{color:#ccc;font-size:0.85rem}
+
+    /* Server select */
+    .server-select{display:flex;align-items:center;gap:6px}
+    .server-select label{color:#888;font-size:0.8rem}
+    .server-select select{background:#111;color:#c41e1e;border:1px solid #333;border-radius:4px;padding:4px 8px;font-size:0.8rem;cursor:pointer}
+
+    /* Filters */
+    .shop-filters{max-width:1200px;margin:16px auto;padding:0 20px}
+    .filter-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .filter-pills{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+    .filter-pill{padding:6px 12px;border:1px solid #222;border-radius:20px;background:#0d1117;color:#777;cursor:pointer;font-size:0.75rem;transition:all .2s;white-space:nowrap}
+    .filter-pill:hover{border-color:#c41e1e;color:#ccc}
+    .filter-pill.active{background:#c41e1e;color:#fff;border-color:#c41e1e;font-weight:700}
+    .shop-search{background:#111;border:1px solid #333;border-radius:6px;padding:6px 12px;color:#fff;font-size:0.85rem;width:200px}
+    .shop-search:focus{border-color:#c41e1e;outline:none}
+    .shop-count{color:#555;font-size:0.75rem;white-space:nowrap}
+    .shop-count span{color:#c41e1e;font-weight:700}
+
+    /* Grid */
+    .shop-grid{max-width:1200px;margin:0 auto;padding:0 20px 40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+
+    /* Product card */
+    .product-card{background:#111;border:1px solid #1a1a1a;border-radius:10px;overflow:hidden;transition:all .3s;position:relative;display:flex;flex-direction:column}
+    .product-card:hover{border-color:#c41e1e;transform:translateY(-2px);box-shadow:0 4px 20px rgba(196,30,30,0.1)}
+    .product-card.rarity-legendary{border-color:#ff4444;box-shadow:0 0 15px rgba(255,68,68,0.15)}
+    .product-card.rarity-legendary:hover{box-shadow:0 4px 25px rgba(255,68,68,0.25)}
+    .product-card.rarity-epic{border-color:#ff8c00;box-shadow:0 0 15px rgba(255,140,0,0.1)}
+    .product-card.rarity-epic:hover{box-shadow:0 4px 25px rgba(255,140,0,0.2)}
+    .product-card.rarity-rare{border-color:#ffd700;box-shadow:0 0 10px rgba(255,215,0,0.08)}
+
+    .product-badge{position:absolute;top:8px;left:8px;padding:3px 8px;background:rgba(0,0,0,0.7);border-radius:4px;font-size:0.65rem;color:#888;text-transform:uppercase;letter-spacing:.5px;z-index:2}
+    .product-discount{position:absolute;top:8px;right:8px;padding:3px 8px;background:#ff4444;border-radius:4px;font-size:0.75rem;color:#fff;font-weight:700;z-index:2}
+
+    .product-icon{height:156px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0a0f0a,#111);font-size:2.5rem;position:relative}
+    .product-icon::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#c41e1e40,transparent)}
+
+    .product-body{padding:12px;flex:1;display:flex;flex-direction:column}
+    .product-name{font-weight:700;color:#e0e0e0;font-size:0.9rem;margin-bottom:4px;line-height:1.3}
+    .product-desc{color:#555;font-size:0.7rem;margin-bottom:8px;line-height:1.3;flex:1}
+    .rarity-tag{display:inline-block;padding:2px 6px;border-radius:3px;font-size:0.6rem;font-weight:700;margin-bottom:6px}
+    .rarity-tag.legendary{background:rgba(255,68,68,0.15);color:#ff4444}
+    .rarity-tag.epic{background:rgba(255,140,0,0.15);color:#ff8c00}
+    .rarity-tag.rare{background:rgba(255,215,0,0.15);color:#ffd700}
+
+    .product-prices{display:flex;gap:12px;margin-bottom:10px}
+    .price-col{display:flex;flex-direction:column}
+    .price-label{font-size:0.6rem;color:#555;text-transform:uppercase;letter-spacing:.5px}
+    .price-old{font-size:0.7rem;color:#555;text-decoration:line-through}
+    .price-new{font-weight:700;font-size:1rem}
+    .price-new.cr{color:#ffd700}
+    .price-new.bn{color:#ff6b35}
+
+    .product-actions{display:flex;gap:6px}
+    .btn-buy{flex:1;padding:8px;border:none;border-radius:6px;font-weight:700;font-size:0.75rem;cursor:pointer;transition:all .2s;text-transform:uppercase}
+    .btn-buy-credits{background:linear-gradient(135deg,#ffd700,#ffaa00);color:#000}
+    .btn-buy-credits:hover{box-shadow:0 0 15px rgba(255,215,0,0.4);transform:scale(1.02)}
+    .btn-buy-bonuses{background:linear-gradient(135deg,#c41e1e,#22cc00);color:#000}
+    .btn-buy-bonuses:hover{box-shadow:0 0 15px rgba(196,30,30,0.4);transform:scale(1.02)}
+    .btn-buy:disabled{opacity:0.3;cursor:not-allowed;transform:none!important;box-shadow:none!important}
+    .btn-topup{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:linear-gradient(135deg,#c41e1e,#8b0000);color:#000;border:none;border-radius:6px;font-weight:700;font-size:0.8rem;cursor:pointer;transition:all .2s;text-decoration:none;margin-left:10px}
+    .btn-topup:hover{box-shadow:0 0 15px rgba(196,30,30,0.5);transform:scale(1.05)}
+    .topup-methods{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+    .topup-method{padding:16px;background:#1a1a1a;border:1px solid #333;border-radius:8px;cursor:pointer;transition:all .2s;text-align:center;text-decoration:none}
+    .topup-method:hover{border-color:#c41e1e;background:#1e2a1e}
+    .topup-method .tm-icon{font-size:1.5rem;margin-bottom:6px}
+    .topup-method .tm-name{font-weight:700;color:#e0e0e0;font-size:0.85rem}
+    .topup-method .tm-desc{color:#666;font-size:0.7rem;margin-top:4px}
+
+    /* Modal */
+    .modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);z-index:1000;align-items:center;justify-content:center}
+    .modal-overlay.open{display:flex}
+    .modal{background:#111;border:1px solid #c41e1e;border-radius:12px;padding:24px;max-width:420px;width:90%;text-align:center;animation:modalIn .2s}
+    @keyframes modalIn{from{transform:scale(0.95);opacity:0}to{transform:scale(1);opacity:1}}
+    .modal h3{color:#c41e1e;margin:0 0 12px;font-size:1.1rem}
+    .modal p{color:#ccc;margin:0 0 8px;font-size:0.85rem}
+    .modal .modal-item{font-weight:700;color:#fff;font-size:1rem;margin:8px 0}
+    .modal .modal-price{font-size:1.2rem;font-weight:700;margin:8px 0}
+    .modal .modal-price.cr{color:#ffd700}
+    .modal .modal-price.bn{color:#c41e1e}
+    .modal-btns{display:flex;gap:8px;margin-top:16px;justify-content:center}
+    .modal-btn{padding:10px 24px;border:none;border-radius:6px;font-weight:700;cursor:pointer;font-size:0.85rem;transition:all .2s}
+    .modal-btn-confirm{background:#c41e1e;color:#000}
+    .modal-btn-confirm:hover{box-shadow:0 0 15px rgba(196,30,30,0.4)}
+    .modal-btn-cancel{background:#333;color:#fff}
+    .modal-btn-cancel:hover{background:#444}
+    .modal-btn:disabled{opacity:0.5;cursor:wait}
+
+    /* Toast */
+    .toast{position:fixed;top:80px;right:20px;padding:12px 20px;border-radius:8px;color:#fff;font-size:0.85rem;font-weight:600;z-index:2000;animation:toastIn .3s;max-width:360px}
+    .toast.success{background:#1a4d1a;border:1px solid #c41e1e}
+    .toast.error{background:#4d1a1a;border:1px solid #ff4444}
+    @keyframes toastIn{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+
+    /* History */
+    .history-section{max-width:1200px;margin:0 auto 40px;padding:0 20px}
+    .history-title{font-size:1rem;color:#c41e1e;margin-bottom:12px;font-weight:700}
+    .history-table{width:100%;border-collapse:collapse}
+    .history-table th{background:#0d1117;padding:8px;text-align:left;font-size:0.7rem;color:#c41e1e;text-transform:uppercase;border-bottom:2px solid #222}
+    .history-table td{padding:6px 8px;border-bottom:1px solid #1a1a1a;font-size:0.8rem;color:#ccc}
+    .history-table tr:hover td{background:rgba(196,30,30,0.03)}
+
+    .shop-empty{text-align:center;padding:60px 20px;color:#555;font-size:1rem}
+    .legend{max-width:1200px;margin:20px auto;padding:0 20px}
+    .legend-grid{display:flex;gap:16px;flex-wrap:wrap}
+    .legend-item{display:flex;align-items:center;gap:6px;font-size:0.75rem;color:#666}
+    .legend-dot{width:10px;height:10px;border-radius:50%}
+
+    @media(max-width:600px){
+      .shop-grid{grid-template-columns:1fr}
+      .filter-pills{order:2}
+      .shop-search{width:100%;order:1}
+      .balance-inner{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+  <meta name="description" content="Магазин серверов Doomsday. Покупайте оружие, броню, кодексы, наборы за кредиты или бонусы.">
+  <link rel="canonical" href="https://doomsday7dtd.online/shop.html">
+  <meta name="keywords" content="doomsday магазин, 7dtd донат, купить предметы 7 days to die">
+  <meta property="og:title" content="Магазин — DOOMSDAY 7 Days to Die">
+  <meta property="og:description" content="Магазин серверов Doomsday. Покупайте оружие, броню, кодексы, наборы за кредиты или бонусы.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://doomsday7dtd.online/shop.html">
+  <meta property="og:site_name" content="DOOMSDAY">
+  <meta name="theme-color" content="#c41e1e">
+  <meta property="og:image" content="https://doomsday7dtd.online/img/og-cover.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DOOMSDAY — 7 Days to Die">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://doomsday7dtd.online/img/og-cover.svg">
+
+  </head>
+<body class="noise-overlay scanlines" style="background:#0a0a0a;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DOOMSDAY</a>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="servers.html">Серверы</a>
+        <a href="features.html">Системы</a>
+        <a href="shop.html" style="color:#c41e1e">Магазин</a>
+        <a href="cases.html">Кейсы</a>
+        <a href="farm.html">Ферма DC</a>
+        <a href="launcher.html">Лаунчер</a>
+        <a href="guide.html">Начать играть</a>
+        <a href="leaderboard.html">Лидерборд</a>
+        <a href="profile.html">Кабинет</a>
+      </div>
+      <button class="nav-burger" type="button" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <a href="index.html">Главная</a>
+    <a href="servers.html">Серверы</a>
+    <a href="features.html">Системы</a>
+    <a href="shop.html" style="color:#c41e1e">Магазин</a>
+    <a href="cases.html">Кейсы</a>
+    <a href="farm.html">Ферма DC</a>
+    <a href="launcher.html">Лаунчер</a>
+    <a href="guide.html">Начать играть</a>
+    <a href="leaderboard.html">Лидерборд</a>
+    <a href="profile.html">Кабинет</a>
+  </div>
+
+  <div class="shop-hero">
+    <h1>МАГАЗИН DOOMSDAY</h1>
+    <p>Приобретайте предметы за кредиты или бонусы — доставка прямо на сервер</p>
+  </div>
+
+  <div class="merchant-legal-strip" style="max-width:1200px;margin:14px auto 0;padding:12px 16px;border:1px solid rgba(255,215,0,.3);background:rgba(255,215,0,.06);border-radius:6px;color:#e6d9a8;font-size:.84rem;line-height:1.55">
+    <strong style="color:#ffd700">Продавец:</strong> ИП Бетеньков Антон Вячеславович · ИНН 222412608054 · ОГРНИП 326220200063519.
+    <a href="legal.html" style="color:#ffd700;font-weight:700;margin-left:8px">Реквизиты и документы</a>
+    <a href="payment-refund.html" style="color:#ffd700;font-weight:700;margin-left:8px">Оплата и возврат</a>
+    <a href="delivery.html" style="color:#ffd700;font-weight:700;margin-left:8px">Доставка</a>
+  </div>
+
+  <!-- Balance Bar -->
+  <div class="balance-bar">
+    <div class="balance-inner">
+      <div class="balance-left">
+        <div id="auth-area"></div>
+        <div id="balance-display" style="display:none">
+          <div class="balance-item bal-credits">
+            <span class="bal-icon">💰</span>
+            <span>Кредиты:</span>
+            <span class="bal-val" id="bal-credits">0</span>
+          </div>
+          <div class="balance-item bal-bonuses">
+            <span class="bal-icon">⭐</span>
+            <span>Бонусы:</span>
+            <span class="bal-val" id="bal-bonuses">0</span>
+          </div>
+          <button class="btn-topup" id="btn-topup" style="display:none" onclick="window._openTopup()">+</button>
+        </div>
+      </div>
+      <div class="balance-right">
+        <div class="server-select">
+          <label>Сервер доставки:</label>
+          <select id="delivery-server">
+            <option value="1">#1 Hard</option>
+            <option value="2">#2 Normal</option>
+            <option value="3">#3 Lite</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="shop-filters">
+    <div class="filter-row">
+      <div class="filter-pills" id="filter-pills"></div>
+      <input type="text" id="shop-search" class="shop-search" placeholder="Поиск товара...">
+      <div class="shop-count" id="shop-count"></div>
+    </div>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="shop-grid" id="shop-grid"></div>
+
+  <!-- Purchase History -->
+  <div class="history-section" id="history-section" style="display:none">
+    <div class="history-title">📜 История покупок</div>
+    <table class="history-table">
+      <thead>
+        <tr><th>Дата</th><th>Товар</th><th>Цена</th><th>Сервер</th><th>Статус</th></tr>
+      </thead>
+      <tbody id="history-body"></tbody>
+    </table>
+  </div>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-grid">
+      <div class="legend-item"><div class="legend-dot" style="background:#ffd700"></div>Кредиты — пополняются донатом</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#c41e1e"></div>Бонусы — за голосование на wargm.ru</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff4444"></div><span style="color:#ff4444">Легендарный</span> — от 5000₽</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff8c00"></div><span style="color:#ff8c00">Эпический</span> — от 2000₽</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ffd700"></div><span style="color:#ffd700">Редкий</span> — от 1000₽</div>
+    </div>
+  </div>
+
+  
+  <!-- Top-up Modal -->
+  <div class="modal-overlay" id="topup-modal">
+    <div class="modal" style="max-width:480px">
+      <h3>Пополнить баланс</h3>
+      <p>Выберите способ пополнения</p>
+      <div class="topup-methods" id="topup-methods">
+        <a onclick="window._showPayment()" class="topup-method">
+          <div class="tm-icon">🎮</div>
+          <div class="tm-name">Ручное пополнение</div>
+          <div class="tm-desc">Выберите сумму и свяжитесь с администратором; автоматический платёж пока отключён</div>
+        </a>
+        <div class="topup-method" onclick="window._showTransfer()">
+          <div class="tm-icon">💰</div>
+          <div class="tm-name">Перевод</div>
+          <div class="tm-desc">Реквизиты и контакты администратора</div>
+        </div>
+        <a href="https://wargm.ru/server/70717" target="_blank" rel="noopener noreferrer" style="text-decoration:none" class="topup-method">
+          <div class="tm-icon">⭐</div>
+          <div class="tm-name">Бонусы</div>
+          <div class="tm-desc">Голосуйте за сервер и получайте бонусы</div>
+        </a>
+        <div class="topup-method" onclick="window._showPromo()">
+          <div class="tm-icon">🎁</div>
+          <div class="tm-name">Промокод</div>
+          <div class="tm-desc">Введите промокод</div>
+        </div>
+      </div>
+      <div id="topup-extra" style="display:none;margin-top:12px"></div>
+      <button class="modal-btn modal-btn-cancel" onclick="closeTopup()" style="margin-top:12px">Закрыть</button>
+    </div>
+  </div>
+
+  <!-- Purchase Confirm Modal -->
+  <div class="modal-overlay" id="purchase-modal">
+    <div class="modal">
+      <h3>Подтверждение покупки</h3>
+      <div class="modal-item" id="modal-item-name"></div>
+      <p id="modal-server-info"></p>
+      <div class="modal-price" id="modal-price"></div>
+      <p style="font-size:0.75rem;color:#888" id="modal-balance-after"></p>
+      <div class="modal-btns">
+        <button class="modal-btn modal-btn-confirm" id="modal-confirm" onclick="confirmPurchase()">Купить</button>
+        <button class="modal-btn modal-btn-cancel" onclick="closeModal()">Отмена</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var user = null;
+    var shopItems = [];
+    var activeCategory = 'Все';
+    var searchTerm = '';
+    var searchTimer = null;
+    var pendingPurchase = null;
+
+    var CATEGORY_ORDER = [
+      'Все','Наборы','Блоки','Модули','Оружие','Броня',
+      'Баффы','Навыки','Кодексы','Кейсы','Инструменты',
+      'Боеприпасы','Ресурсы','Другое'
+    ];
+    var CATEGORIES = CATEGORY_ORDER.slice();
+
+    var CAT_ICONS = {
+      'Все':'🌐','Наборы':'🎁','Блоки':'🏭','Модули':'⚙️','Оружие':'🔫',
+      'Броня':'🛡️','Баффы':'✨','Навыки':'⚡','Кодексы':'📖','Кейсы':'📦',
+      'Инструменты':'⛏️','Боеприпасы':'💥','Ресурсы':'💎','Другое':'🧩'
+    };
+
+    function esc(s){if(!s)return'';var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+    function fmt(n){
+      var num=Number(n||0);
+      if(!isFinite(num))return String(n||0);
+      var fixed=Math.round(num*100)%100===0?num.toFixed(0):num.toFixed(2).replace(/0$/,'').replace(/\.$/,'');
+      return fixed.replace(/\B(?=(\d{3})+(?!\d))/g,' ');
+    }
+
+    function getRarity(credits){
+      if(credits>=5000)return'rarity-legendary';
+      if(credits>=2000)return'rarity-epic';
+      if(credits>=1000)return'rarity-rare';
+      return'';
+    }
+    function getRarityLabel(credits){
+      if(credits>=5000)return'<span class="rarity-tag legendary">Легендарный</span>';
+      if(credits>=2000)return'<span class="rarity-tag epic">Эпический</span>';
+      if(credits>=1000)return'<span class="rarity-tag rare">Редкий</span>';
+      return'';
+    }
+
+    function calcPrice(base,discount){return Math.round(Number(base||0)*(100-(discount||0)))/100}
+
+    function buildCategories(){
+      var present={};
+      shopItems.forEach(function(item){if(item.cat)present[item.cat]=true});
+      CATEGORIES=CATEGORY_ORDER.filter(function(cat){return cat==='Все'||present[cat]});
+      Object.keys(present).sort(function(a,b){return a.localeCompare(b,'ru')}).forEach(function(cat){
+        if(CATEGORIES.indexOf(cat)===-1)CATEGORIES.push(cat);
+      });
+      if(CATEGORIES.indexOf(activeCategory)===-1)activeCategory='Все';
+    }
+
+    // Auth check
+    function checkAuth(){
+      return fetch('/api/auth/user',{credentials:'include'}).then(function(r){return r.json()}).then(function(data){
+        if(data&&data.steamId){
+          user=data;
+          renderAuth();
+          loadHistory();
+        } else {
+          renderAuth();
+        }
+      }).catch(function(){renderAuth()});
+    }
+
+    function renderAuth(){
+      var area=document.getElementById('auth-area');
+      var balDisplay=document.getElementById('balance-display');
+      if(user){
+        area.innerHTML='<div class="user-info">'+
+          (user.avatar?'<img src="'+esc(user.avatar)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':'')+
+          '<span>'+esc(user.displayName)+'</span></div>';
+        balDisplay.style.display='flex';document.getElementById('btn-topup').style.display='';
+        document.getElementById('bal-credits').textContent=fmt(user.credits||0);
+        document.getElementById('bal-bonuses').textContent=fmt(user.bonuses||0);
+      } else {
+        area.innerHTML='<a href="/api/auth/steam" class="btn-login">'+
+          '<img src="https://community.akamai.steamstatic.com/public/images/signinthroughsteam/sits_01.png" alt="Steam">'+
+          'Войти через Steam</a>';
+        balDisplay.style.display='none';
+      }
+    }
+
+    function updateBalance(cr,bn){
+      if(user){user.credits=cr;user.bonuses=bn}
+      document.getElementById('bal-credits').textContent=fmt(cr||0);
+      document.getElementById('bal-bonuses').textContent=fmt(bn||0);
+    }
+
+    // Load shop items
+    function loadShop(){
+      fetch('/api/shop/items').then(function(r){return r.json()}).then(function(items){
+        shopItems=items;
+        buildCategories();
+        renderPills();
+        renderItems();
+      }).catch(function(){
+        document.getElementById('shop-grid').innerHTML='<div class="shop-empty">Ошибка загрузки магазина</div>';
+      });
+    }
+
+    function renderPills(){
+      var html='';
+      CATEGORIES.forEach(function(cat){
+        var cls=cat===activeCategory?'filter-pill active':'filter-pill';
+        var icon=CAT_ICONS[cat]||'';
+        html+='<button class="'+cls+'" data-cat="'+esc(cat)+'">'+icon+' '+esc(cat)+'</button>';
+      });
+      document.getElementById('filter-pills').innerHTML=html;
+    }
+
+    function renderItems(){
+      var filtered=shopItems.filter(function(item){
+        var catMatch=activeCategory==='Все'||item.cat===activeCategory;
+        var searchMatch=!searchTerm||item.name.toLowerCase().indexOf(searchTerm.toLowerCase())!==-1;
+        return catMatch&&searchMatch;
+      });
+      filtered.sort(function(a,b){return b.credits-a.credits});
+
+      var html='';
+      filtered.forEach(function(item){
+        var rarity=getRarity(item.credits);
+        var rarityLabel=getRarityLabel(item.credits);
+        var icon=CAT_ICONS[item.cat]||'⚡';
+        var discount=item.discount||0;
+        var priceCredits=calcPrice(item.credits,discount);
+        var priceBonuses=calcPrice(item.bonuses,discount);
+        var canBuyCredits=user&&(user.credits||0)>=priceCredits;
+        var canBuyBonuses=user&&(user.bonuses||0)>=priceBonuses;
+
+        html+='<div class="product-card '+rarity+'">'+
+          '<span class="product-badge">'+esc(item.cat)+'</span>'+
+          (discount>0?'<span class="product-discount">-'+discount+'%</span>':'')+
+          (item.img?'<div class="product-icon" style="padding:10px"><img src="'+esc(item.img)+'" alt="'+esc(item.name)+'" loading="lazy" decoding="async" style="max-width:100%;max-height:136px;object-fit:contain;border-radius:4px"></div>':'<div class="product-icon" aria-hidden="true">'+icon+'</div>')+
+          '<div class="product-body">'+
+            '<div class="product-name">'+esc(item.name)+'</div>'+
+            rarityLabel+
+            (item.desc?'<div class="product-desc">'+esc(item.desc)+'</div>':'')+
+            '<div class="product-prices">'+
+              '<div class="price-col">'+
+                '<span class="price-label">Кредиты</span>'+
+                (discount>0?'<span class="price-old">'+fmt(item.credits)+' ₽</span>':'')+
+                '<span class="price-new cr">'+fmt(priceCredits)+' ₽</span>'+
+              '</div>'+
+              '<div class="price-col">'+
+                '<span class="price-label">Бонусы</span>'+
+                (discount>0?'<span class="price-old">'+fmt(item.bonuses)+'</span>':'')+
+                '<span class="price-new bn">'+fmt(priceBonuses)+'</span>'+
+              '</div>'+
+            '</div>'+
+            '<div class="product-actions">'+
+              '<button class="btn-buy btn-buy-credits" onclick="window._buyItem('+item.id+',\'credits\')"'+(canBuyCredits?'':' disabled')+'>💰 Кредиты</button>'+
+              '<button class="btn-buy btn-buy-bonuses" onclick="window._buyItem('+item.id+',\'bonuses\')"'+(canBuyBonuses?'':' disabled')+'>⭐ Бонусы</button>'+
+            '</div>'+
+          '</div>'+
+        '</div>';
+      });
+
+      if(!filtered.length) html='<div class="shop-empty">Товары не найдены</div>';
+
+      document.getElementById('shop-grid').innerHTML=html;
+      document.getElementById('shop-count').innerHTML='Показано: <span>'+filtered.length+'</span> из <span>'+shopItems.length+'</span>';
+    }
+
+    // Buy item
+    window._buyItem=function(itemId,currency){
+      if(!user){
+        showToast('Войдите через Steam для покупки','error');
+        return;
+      }
+      var item=shopItems.find(function(i){return i.id===itemId});
+      if(!item)return;
+
+      var discount=item.discount||0;
+      var price=calcPrice(currency==='credits'?item.credits:item.bonuses,discount);
+      var balance=currency==='credits'?(user.credits||0):(user.bonuses||0);
+
+      if(balance<price){
+        showToast('Недостаточно '+(currency==='credits'?'кредитов':'бонусов'),'error');
+        return;
+      }
+
+      var serverSel=document.getElementById('delivery-server');
+      var serverName=serverSel.options[serverSel.selectedIndex].text;
+
+      pendingPurchase={itemId:itemId,currency:currency,price:price,item:item};
+
+      document.getElementById('modal-item-name').textContent=item.name;
+      document.getElementById('modal-server-info').textContent='Доставка на сервер: '+serverName;
+      document.getElementById('modal-price').textContent=fmt(price)+(currency==='credits'?' ₽ (кредиты)':' бонусов');
+      document.getElementById('modal-price').className='modal-price '+(currency==='credits'?'cr':'bn');
+      document.getElementById('modal-balance-after').textContent='Остаток после покупки: '+fmt(balance-price)+(currency==='credits'?' ₽':' бонусов');
+      document.getElementById('modal-confirm').disabled=false;
+      document.getElementById('purchase-modal').classList.add('open');
+    };
+
+    window.confirmPurchase=function(){
+      if(!pendingPurchase)return;
+      var btn=document.getElementById('modal-confirm');
+      btn.disabled=true;
+      btn.textContent='Покупка...';
+
+      var serverId=document.getElementById('delivery-server').value;
+
+      fetch('/api/shop/buy',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        credentials:'include',
+        body:JSON.stringify({
+          itemId:pendingPurchase.itemId,
+          currency:pendingPurchase.currency,
+          server:parseInt(serverId)
+        })
+      }).then(function(r){return r.json().then(function(d){return{ok:r.ok,data:d}})})
+      .then(function(res){
+        closeModal();
+        if(res.ok&&res.data.success){
+          showToast(res.data.message,'success');
+          updateBalance(res.data.newBalance.credits,res.data.newBalance.bonuses);
+          renderItems();
+          loadHistory();
+        } else {
+          showToast(res.data.error||'Ошибка покупки','error');
+        }
+      }).catch(function(e){
+        closeModal();
+        showToast('Ошибка: '+e.message,'error');
+      });
+    };
+
+    window.closeModal=function(){
+      document.getElementById('purchase-modal').classList.remove('open');
+      var btn=document.getElementById('modal-confirm');
+      btn.disabled=false;
+      btn.textContent='Купить';
+      pendingPurchase=null;
+    };
+
+    // Toast
+    function showToast(msg,type){
+      var el=document.createElement('div');
+      el.className='toast '+(type||'success');
+      el.textContent=msg;
+      document.body.appendChild(el);
+      setTimeout(function(){el.style.transition='opacity .3s';el.style.opacity='0';setTimeout(function(){el.remove()},300)},3500);
+    }
+
+    // History
+    function loadHistory(){
+      if(!user)return;
+      fetch('/api/shop/history',{credentials:'include'}).then(function(r){return r.json()}).then(function(history){
+        if(!history.length){document.getElementById('history-section').style.display='none';return}
+        document.getElementById('history-section').style.display='';
+        var html='';
+        history.forEach(function(p){
+          var date=new Date(p.timestamp);
+          var dateStr=date.toLocaleDateString('ru-RU')+' '+date.toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'});
+          var statusClass=p.status==='success'?'color:#c41e1e':'color:#ffd700';
+          var statusText=p.status==='success'?'Доставлено':'Частично';
+          html+='<tr>'+
+            '<td>'+dateStr+'</td>'+
+            '<td>'+esc(p.itemName)+'</td>'+
+            '<td style="'+(p.currency==='credits'?'color:#ffd700':'color:#c41e1e')+'">'+fmt(p.price)+(p.currency==='credits'?' ₽':' бон.')+'</td>'+
+            '<td style="font-size:0.75rem">'+esc(p.server)+'</td>'+
+            '<td style="'+statusClass+'">'+statusText+'</td>'+
+          '</tr>';
+        });
+        document.getElementById('history-body').innerHTML=html;
+      }).catch(function(){});
+    }
+
+    // Events
+    document.getElementById('filter-pills').addEventListener('click',function(e){
+      var pill=e.target.closest('.filter-pill');
+      if(!pill)return;
+      activeCategory=pill.getAttribute('data-cat');
+      renderPills();
+      renderItems();
+    });
+
+    document.getElementById('shop-search').addEventListener('input',function(){
+      var el=this;
+      clearTimeout(searchTimer);
+      searchTimer=setTimeout(function(){
+        searchTerm=el.value.trim();
+        renderItems();
+      },200);
+    });
+
+    document.getElementById('topup-modal').addEventListener('click',function(e){if(e.target===this)closeTopup()});
+    document.getElementById('purchase-modal').addEventListener('click',function(e){
+      if(e.target===this)closeModal();
+    });
+
+
+    window._openTopup=function(){
+      var extra=document.getElementById('topup-extra');
+      var methods=document.getElementById('topup-methods');
+      extra.style.display='none';
+      extra.innerHTML='';
+      if(methods)methods.style.display='';
+      if(!user){
+        if(methods)methods.style.display='none';
+        extra.style.display='block';
+        extra.innerHTML='<div style="background:#1a1a1a;padding:14px;border-radius:8px;text-align:left"><p style="color:#ffd700;font-weight:700;margin:0 0 8px">Нужен вход через Steam</p><p style="color:#ccc;margin:0 0 12px;font-size:0.85rem">Пополнение привязывается к вашему Steam ID, поэтому сначала авторизуйтесь.</p><a href="/api/auth/steam" class="modal-btn modal-btn-confirm" style="display:inline-block;text-decoration:none">Войти через Steam</a></div>';
+      }
+      document.getElementById('topup-modal').classList.add('open');
+    };
+    window.closeTopup=function(){document.getElementById('topup-modal').classList.remove('open')};
+    window._showTransfer=function(){
+      var ex=document.getElementById('topup-extra');
+      ex.style.display='block';
+      ex.innerHTML='<div style="background:#1a1a1a;padding:12px;border-radius:8px;text-align:left"><p style="color:#ffd700;font-weight:700;margin:0 0 8px">Реквизиты:</p><p style="color:#c41e1e;margin:0;font-size:0.9rem;font-weight:600">Discord: highlander22ru</p><p style="color:#c41e1e;margin:4px 0 0;font-size:0.9rem;font-weight:600">Telegram: @Highlander22ru</p><p style="color:#888;margin:8px 0 0;font-size:0.75rem">Ваш Steam ID: '+(user?esc(user.steamId):'')+'</p></div>';
+    };
+    window._showPromo=function(){
+      var ex=document.getElementById('topup-extra');
+      ex.style.display='block';
+      ex.innerHTML='<div style="display:flex;gap:8px;margin-top:8px"><input id="promo-input" type="text" placeholder="Промокод" maxlength="40" autocomplete="off" autocapitalize="characters" style="flex:1;padding:10px;background:#1a1a1a;border:1px solid #333;border-radius:6px;color:#fff;font-size:0.9rem"><button onclick="window._applyPromo()" style="padding:10px 20px;background:#c41e1e;color:#000;border:none;border-radius:6px;font-weight:700;cursor:pointer">OK</button></div>';
+      var pi=document.getElementById('promo-input');
+      if(pi){pi.focus();pi.onkeydown=function(e){if(e.key==='Enter')window._applyPromo()};}
+    };
+    window._applyPromo=function(){
+      var code=document.getElementById('promo-input').value.trim();
+      if(!code){showToast('Введите промокод','error');return}
+      fetch('/api/shop/promo',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'include',body:JSON.stringify({code:code})}).then(function(r){return r.json()}).then(function(d){if(d.success){showToast(d.message,'success');updateBalance(d.newBalance.credits,d.newBalance.bonuses);closeTopup()}else{showToast(d.error||'Неверный промокод','error')}}).catch(function(){showToast('Ошибка','error')});
+    };
+
+
+    window._showPayment=function(){
+      var ex=document.getElementById('topup-extra');
+      ex.style.display='block';
+      ex.innerHTML='<div style="background:#1a1a1a;padding:16px;border-radius:8px">'+
+        '<p style="color:#ffd700;font-weight:700;margin:0 0 12px;text-align:center">Выберите сумму</p>'+
+        '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px">'+
+        '<button class="topup-amt" onclick="window._setAmt(100,event)" style="padding:10px;background:#222;border:1px solid #333;border-radius:6px;color:#ffd700;font-weight:700;cursor:pointer;font-size:0.9rem">100 ₽</button>'+
+        '<button class="topup-amt" onclick="window._setAmt(250,event)" style="padding:10px;background:#222;border:1px solid #333;border-radius:6px;color:#ffd700;font-weight:700;cursor:pointer;font-size:0.9rem">250 ₽</button>'+
+        '<button class="topup-amt" onclick="window._setAmt(500,event)" style="padding:10px;background:#222;border:1px solid #333;border-radius:6px;color:#ffd700;font-weight:700;cursor:pointer;font-size:0.9rem">500 ₽</button>'+
+        '<button class="topup-amt" onclick="window._setAmt(1000,event)" style="padding:10px;background:#222;border:1px solid #333;border-radius:6px;color:#ffd700;font-weight:700;cursor:pointer;font-size:0.9rem">1 000 ₽</button>'+
+        '<button class="topup-amt" onclick="window._setAmt(2500,event)" style="padding:10px;background:#222;border:1px solid #333;border-radius:6px;color:#ffd700;font-weight:700;cursor:pointer;font-size:0.9rem">2 500 ₽</button>'+
+        '<button class="topup-amt" onclick="window._setAmt(5000,event)" style="padding:10px;background:#222;border:1px solid #333;border-radius:6px;color:#ffd700;font-weight:700;cursor:pointer;font-size:0.9rem">5 000 ₽</button>'+
+        '</div>'+
+        '<div style="display:flex;gap:8px;align-items:center">'+
+        '<input id="topup-amount" type="number" placeholder="Или своя сумма" min="10" style="flex:1;padding:10px;background:#111;border:1px solid #333;border-radius:6px;color:#ffd700;font-size:1rem;font-weight:700">'+
+        '<span style="color:#ffd700;font-size:1.2rem">₽</span>'+
+        '</div>'+
+        '<p style="color:#555;font-size:0.7rem;margin:8px 0 0;text-align:center">1 ₽ = 1 кредит. Минимум 10 ₽</p>'+
+        '<button onclick="window._processPayment()" style="width:100%;margin-top:12px;padding:12px;background:linear-gradient(135deg,#ffd700,#ff8c00);color:#000;border:none;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer">Написать админу</button>'+
+        '<p style="color:#444;font-size:0.65rem;margin:8px 0 0;text-align:center">Автоматический платёж пока отключён. Пополнение выполняется вручную через администратора.</p>'+
+        '</div>';
+    };
+    window._setAmt=function(v,e){document.getElementById('topup-amount').value=v;document.querySelectorAll('.topup-amt').forEach(function(b){b.style.borderColor='#333'});if(e&&e.target)e.target.style.borderColor='#ffd700'};
+    window._processPayment=function(){
+      var amt=parseInt(document.getElementById('topup-amount').value, 10);
+      if(!amt||amt<10){showToast('Минимум 10 ₽','error');return}
+      showToast('Автоматическое пополнение пока отключено. Напишите админу сумму '+amt+' ₽: Discord highlander22ru или Telegram @Highlander22ru','error');
+      window._showTransfer();
+    };
+
+    // Init
+    checkAuth().then(function(){
+      if(location.hash === '#topup') setTimeout(function(){ window._openTopup(); }, 0);
+    });
+    loadShop();
+  })();
+  </script>
+  <script src="js/main.js?v=20260513m3"></script>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Навигация</h3>
+          <a href="index.html">Главная</a>
+          <a href="servers.html">Серверы</a>
+          <a href="features.html">Системы</a>
+          <a href="shop.html">Магазин</a>
+          <a href="cases.html">Кейсы</a>
+          <a href="farm.html">Ферма DC</a>
+          <a href="launcher.html">Лаунчер</a>
+          <a href="guide.html">Как начать играть</a>
+          <a href="rules.html">Правила</a>
+          <a href="wipe.html">Вайп-расписание</a>
+          <a href="map.html">Онлайн-карты</a>
+          <a href="leaderboard.html">Лидерборд</a>
+          <a href="profile.html">Кабинет</a>
+        </div>
+        <div class="footer-col">
+          <h3>Серверы</h3>
+          <p>IP: 109.195.37.13</p>
+          <p>Doomsday №1 — :26900</p>
+          <p>Doomsday №2 — :26905</p>
+          <p>Doomsday №3 — :26910</p>        </div>
+        <div class="footer-col">
+          <h3>Проект</h3>
+          <p>7 Days to Die Mod</p>
+          <p>Версия: v4.7</p>
+          <p>3 PVE-сервера 24/7</p>
+          <a href="legal.html">Реквизиты и документы</a>
+          <a href="offer.html">Оферта</a>
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="payment-refund.html">Оплата и возврат</a>
+          <a href="delivery.html">Доставка</a>
+        </div>
+        <div class="footer-col footer-col-community">
+          <h3>Сообщество</h3>
+          <a href="https://discord.gg/3u3GwShEhR" target="_blank" rel="noopener noreferrer" class="social-link social-discord">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.211.375-.445.865-.608 1.249-1.845-.276-3.68-.276-5.487 0-.164-.39-.406-.874-.617-1.249a.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.056 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.009c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            Discord
+          </a>
+          <a href="https://t.me/doomsday7dtd" target="_blank" rel="noopener noreferrer" class="social-link social-telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>DOOMSDAY</span> &mdash; 7 Days to Die &copy; 2024&ndash;2026
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

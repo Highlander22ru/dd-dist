@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лидерборд — DOOMSDAY 7 Days to Die</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Russo+One&family=Share+Tech+Mono&display=swap&subset=cyrillic,cyrillic-ext">
+
+  <link rel="stylesheet" href="css/variables.css?v=20260418ax">
+  <link rel="stylesheet" href="css/layout.css?v=20260418ax">
+  <link rel="stylesheet" href="css/components.css?v=20260513m">
+  <link rel="stylesheet" href="css/animations.css?v=20260418ax">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="alternate icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <style>
+    .lb-wrap{max-width:960px;margin:40px auto;padding:0 20px;padding-top:80px}
+    .lb-title{font-family:'Black Ops One',cursive;font-size:2rem;color:#c41e1e;text-align:center;margin-bottom:8px}
+    .lb-sub{text-align:center;color:#888;margin-bottom:20px;font-size:0.9rem}
+    .lb-tabs{display:flex;justify-content:center;gap:6px;margin-bottom:20px;flex-wrap:wrap}
+    .lb-tab{padding:8px 16px;border:1px solid #333;border-radius:6px;background:#111;color:#888;cursor:pointer;font-size:0.85rem;font-family:inherit;transition:all .2s}
+    .lb-tab:hover{border-color:#c41e1e;color:#fff}
+    .lb-tab:focus-visible{outline:2px solid #ff4444;outline-offset:2px}
+    .lb-tab.active{background:#c41e1e;color:#000;border-color:#c41e1e;font-weight:700}
+    .lb-table{width:100%;border-collapse:collapse;table-layout:fixed}
+    .lb-table th{background:#111;padding:10px 8px;text-align:left;font-size:0.7rem;color:#c41e1e;text-transform:uppercase;letter-spacing:.5px;border-bottom:2px solid #222;white-space:nowrap;cursor:pointer;user-select:none}
+    .lb-table th:hover{color:#fff}
+    .lb-table th .arrow{font-size:0.6rem;margin-left:2px}
+    .lb-table td{padding:7px 8px;border-bottom:1px solid #1a1a1a;font-size:0.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .lb-table tr:hover td{background:rgba(196,30,30,0.05)}
+    .lb-table col.c-rank{width:40px}
+    .lb-table col.c-name{width:22%}
+    .lb-table col.c-num{width:10%}
+    .lb-table col.c-time{width:10%}
+    .lb-table col.c-date{width:18%}
+    .r1{color:#ffd700;font-weight:900;text-shadow:0 0 8px rgba(255,215,0,0.4)}
+    .r2{color:#c0c0c0;font-weight:900}
+    .r3{color:#cd7f32;font-weight:900}
+    .lb-name{font-weight:600;color:#e0e0e0}
+    .lb-val{color:#c41e1e;font-weight:700}
+    .lb-loading{text-align:center;padding:40px;color:#555}
+    .online-dot{color:#c41e1e;font-size:0.7rem;margin-left:4px}
+  </style>
+  <meta name="description" content="Топ игроков серверов Doomsday. Рейтинг по уровню, убийствам, времени игры.">
+  <link rel="canonical" href="https://doomsday7dtd.online/leaderboard.html">
+  <meta name="keywords" content="doomsday лидерборд, топ игроков 7dtd, рейтинг 7 days to die">
+  <meta property="og:title" content="Лидерборд — DOOMSDAY 7 Days to Die">
+  <meta property="og:description" content="Топ игроков серверов Doomsday. Рейтинг по уровню, убийствам, времени игры.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://doomsday7dtd.online/leaderboard.html">
+  <meta property="og:site_name" content="DOOMSDAY">
+  <meta name="theme-color" content="#c41e1e">
+  <meta property="og:image" content="https://doomsday7dtd.online/img/og-cover.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DOOMSDAY — 7 Days to Die">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://doomsday7dtd.online/img/og-cover.svg">
+
+  </head>
+<body class="noise-overlay scanlines">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">DOOMSDAY</a>
+      <div class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="servers.html">Серверы</a>
+        <a href="features.html">Системы</a>
+        <a href="shop.html">Магазин</a>
+        <a href="cases.html">Кейсы</a>
+        <a href="farm.html">Ферма DC</a>
+        <a href="launcher.html">Лаунчер</a>
+        <a href="guide.html">Начать играть</a>
+        <a href="leaderboard.html" style="color:#c41e1e">Лидерборд</a>
+        <a href="profile.html">Кабинет</a>
+      </div>
+      <button class="nav-burger" type="button" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <a href="index.html">Главная</a>
+    <a href="servers.html">Серверы</a>
+    <a href="features.html">Системы</a>
+    <a href="shop.html">Магазин</a>
+    <a href="cases.html">Кейсы</a>
+    <a href="farm.html">Ферма DC</a>
+    <a href="launcher.html">Лаунчер</a>
+    <a href="guide.html">Начать играть</a>
+    <a href="leaderboard.html" style="color:#c41e1e">Лидерборд</a>
+    <a href="profile.html">Кабинет</a>
+  </div>
+
+  <div class="lb-wrap">
+    <div class="lb-title">ЛИДЕРБОРД</div>
+    <div class="lb-sub">Топ игроков серверов Doomsday</div>
+
+    <div class="lb-tabs" role="tablist">
+      <button type="button" class="lb-tab active" role="tab" aria-selected="true"  data-srv="1" onclick="loadLB(1)">Сервер #1 Hard</button>
+      <button type="button" class="lb-tab"        role="tab" aria-selected="false" data-srv="2" onclick="loadLB(2)">Сервер #2 Normal</button>
+      <button type="button" class="lb-tab"        role="tab" aria-selected="false" data-srv="3" onclick="loadLB(3)">Сервер #3 Lite</button>
+      <button type="button" class="lb-tab"        role="tab" aria-selected="false" data-srv="4" disabled title="Сервер #4 временно отключён">Сервер #4 TEST</button>
+    </div>
+
+    <table class="lb-table">
+      <colgroup>
+        <col class="c-rank"><col class="c-name"><col class="c-num"><col class="c-num"><col class="c-num"><col class="c-time"><col class="c-date">
+      </colgroup>
+      <thead id="lb-head"></thead>
+      <tbody id="lb-body">
+        <tr><td colspan="7" class="lb-loading">Загрузка...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Навигация</h3>
+          <a href="index.html">Главная</a>
+          <a href="servers.html">Серверы</a>
+          <a href="features.html">Системы</a>
+          <a href="shop.html">Магазин</a>
+          <a href="cases.html">Кейсы</a>
+          <a href="farm.html">Ферма DC</a>
+          <a href="launcher.html">Лаунчер</a>
+          <a href="guide.html">Как начать играть</a>
+          <a href="rules.html">Правила</a>
+          <a href="wipe.html">Вайп-расписание</a>
+          <a href="map.html">Онлайн-карты</a>
+          <a href="leaderboard.html">Лидерборд</a>
+          <a href="profile.html">Кабинет</a>
+        </div>
+        <div class="footer-col">
+          <h3>Серверы</h3>
+          <p>IP: 109.195.37.13</p>
+          <p>Doomsday №1 — :26900</p>
+          <p>Doomsday №2 — :26905</p>
+          <p>Doomsday №3 — :26910</p>        </div>
+        <div class="footer-col">
+          <h3>Проект</h3>
+          <p>7 Days to Die Mod</p>
+          <p>Версия: v4.7</p>
+          <p>3 PVE-сервера 24/7</p>
+          <a href="legal.html">Реквизиты и документы</a>
+          <a href="offer.html">Оферта</a>
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="payment-refund.html">Оплата и возврат</a>
+          <a href="delivery.html">Доставка</a>
+        </div>
+        <div class="footer-col footer-col-community">
+          <h3>Сообщество</h3>
+          <a href="https://discord.gg/3u3GwShEhR" target="_blank" rel="noopener noreferrer" class="social-link social-discord">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.211.375-.445.865-.608 1.249-1.845-.276-3.68-.276-5.487 0-.164-.39-.406-.874-.617-1.249a.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.056 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.009c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+            Discord
+          </a>
+          <a href="https://t.me/doomsday7dtd" target="_blank" rel="noopener noreferrer" class="social-link social-telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>DOOMSDAY</span> &mdash; 7 Days to Die &copy; 2024&ndash;2026
+      </div>
+    </div>
+  </footer>
+  <script>
+    var lbData=[],lbSortKey='level',lbSortAsc=false;
+    var cols=[
+      {key:'rank',label:'#',sortable:false},
+      {key:'name',label:'Игрок',sortable:false},
+      {key:'level',label:'Уровень',sortable:true},
+      {key:'zombieKills',label:'Убийства',sortable:true},
+      {key:'deaths',label:'Смерти',sortable:true},
+      {key:'totalTimePlayed',label:'Время',sortable:true},
+      {key:'lastLogin',label:'Посл. вход',sortable:false}
+    ];
+
+    function renderHead(){
+      var html='<tr>';
+      cols.forEach(function(c){
+        var arrow='';
+        if(c.sortable){
+          if(c.key===lbSortKey) arrow=' <span class="arrow">'+(lbSortAsc?'&#9650;':'&#9660;')+'</span>';
+          html+='<th onclick="sortLB(\''+c.key+'\')">'+c.label+arrow+'</th>';
+        } else {
+          html+='<th>'+c.label+'</th>';
+        }
+      });
+      document.getElementById('lb-head').innerHTML=html+'</tr>';
+    }
+
+    function loadLB(srv){
+      document.querySelectorAll('.lb-tab').forEach(function(t){
+        var active = parseInt(t.getAttribute('data-srv'),10) === srv;
+        t.classList.toggle('active', active);
+        t.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      document.getElementById('lb-body').innerHTML='<tr><td colspan="7" class="lb-loading">Загрузка...</td></tr>';
+      fetch('/api/leaderboard?server='+srv).then(function(r){
+        if(!r.ok) throw new Error('http');
+        return r.json();
+      }).then(function(data){
+        lbData=Array.isArray(data)?data:[];sortLB(lbSortKey,false);
+      }).catch(function(){
+        document.getElementById('lb-body').innerHTML='<tr><td colspan="7" class="lb-loading" style="color:#aa6">Сервер временно недоступен. <a href="javascript:loadLB('+srv+')" style="color:#c41e1e">Обновить</a></td></tr>';
+      });
+    }
+
+    function sortLB(key,toggle){
+      if(toggle!==false){
+        if(key===lbSortKey)lbSortAsc=!lbSortAsc;else{lbSortKey=key;lbSortAsc=false}
+      } else if(key!==lbSortKey){
+        lbSortKey=key;lbSortAsc=false;
+      }
+      lbData.sort(function(a,b){var va=sortVal(a,key),vb=sortVal(b,key);return lbSortAsc?va-vb:vb-va});
+      renderHead();renderLB();
+    }
+
+    function sortVal(row,key){var n=Number(row&&row[key]);return isFinite(n)?n:0}
+
+    function formatPlaytime(minutes){
+      var total=Number(minutes);
+      if(!isFinite(total)||total<=0)return'0м';
+      total=Math.round(total);
+      var h=Math.floor(total/60),m=total%60;
+      if(h<=0)return m+'м';
+      return m?h+'ч '+m+'м':h+'ч';
+    }
+
+    function renderLB(){
+      var html='';
+      lbData.forEach(function(p,i){
+        var rank=i+1;
+        var rc=rank===1?' r1':rank===2?' r2':rank===3?' r3':'';
+        var timeH=formatPlaytime(p.totalTimePlayed);
+        var online=!p.isOffline?'<span class="online-dot">&#9679;</span>':'';
+        html+='<tr>'+
+          '<td class="'+rc+'" style="font-weight:700">'+rank+'</td>'+
+          '<td class="lb-name">'+esc(p.name)+online+'</td>'+
+          '<td class="lb-val">'+p.level+'</td>'+
+          '<td>'+(p.zombieKills||0)+'</td>'+
+          '<td>'+(p.deaths||0)+'</td>'+
+          '<td>'+timeH+'</td>'+
+          '<td style="font-size:0.75rem;color:#555">'+esc(p.lastLogin||'-')+'</td>'+
+        '</tr>';
+      });
+      document.getElementById('lb-body').innerHTML=html||'<tr><td colspan="7" class="lb-loading">Здесь ещё никто не играл. Стань первым: IP <b style="color:#c41e1e">109.195.37.13</b></td></tr>';
+    }
+
+    function esc(s){if(!s)return'';var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+
+    renderHead();loadLB(1);
+  </script>
+  <script src="js/main.js?v=20260513m3"></script>
+</body>
+</html>
