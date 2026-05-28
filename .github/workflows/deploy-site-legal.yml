@@ -159,11 +159,18 @@ jobs:
           set -euo pipefail
           base="https://doomsday7dtd.online"
           bust="$(date +%s)-$RANDOM"
-          curl -fsSL "$base/legal.html?bust=$bust" | grep -Fq "222412608054"
-          curl -fsSL "$base/offer.html?bust=$bust" | grep -Fq "326220200063519"
-          curl -fsSL "$base/privacy.html?bust=$bust" | grep -Fq "support@doomsday7dtd.online"
-          curl -fsSL "$base/payment-refund.html?bust=$bust" | grep -Fq "payment-logo mir"
-          curl -fsSL "$base/delivery.html?bust=$bust" | grep -Fq "326220200063519"
-          curl -fsSL "$base/shop.html?bust=$bust" | grep -Fq "222412608054"
-          curl -fsSL "$base/cases.html?bust=$bust" | grep -Fq "222412608054"
-          curl -fsSL "$base/farm.html?bust=$bust" | grep -Fq "222412608054"
+          check_contains() {
+            local url="$1"
+            local marker="$2"
+            local body
+            body="$(curl -fsSL "$url")"
+            grep -Fq "$marker" <<<"$body"
+          }
+          check_contains "$base/legal.html?bust=$bust" "222412608054"
+          check_contains "$base/offer.html?bust=$bust" "326220200063519"
+          check_contains "$base/privacy.html?bust=$bust" "support@doomsday7dtd.online"
+          check_contains "$base/payment-refund.html?bust=$bust" "payment-logo mir"
+          check_contains "$base/delivery.html?bust=$bust" "326220200063519"
+          check_contains "$base/shop.html?bust=$bust" "222412608054"
+          check_contains "$base/cases.html?bust=$bust" "222412608054"
+          check_contains "$base/farm.html?bust=$bust" "222412608054"
