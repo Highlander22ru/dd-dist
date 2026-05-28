@@ -33,21 +33,34 @@ jobs:
           test -f launcher.json.sha256
           test -f DoomsdayLauncher.exe
           test -f DoomsdayLauncher.exe.sha256
-          test -f DoomsdayLauncher-v5.7.35.exe
-          test -f DoomsdayLauncher-v5.7.35.exe.sha256
-          test -f DoomsdayLauncher_source_v5.7.35.game-search-fix_2026-05-28.zip
-          test -f DoomsdayLauncher_source_v5.7.35.game-search-fix_2026-05-28.zip.sha256
-          grep -q '"version":  "7.15.168"' client.json
-          grep -q '72E38403FB835113AA9D37267F88442C8FE12A6F43554CD84662C4DD611FB3EB' client.json
-          grep -q '"version":  "5.7.35"' launcher.json
-          grep -q 'e3c18bf2e9fba487009f5bf344f8654ec1fc382432d181211b03902a86ee8204' launcher.json
-          sha256sum -c DoomsdayClient.dll.sha256
-          sha256sum -c client.json.sha256
-          sha256sum -c ModInfo.xml.sha256
-          sha256sum -c DoomsdayLauncher.exe.sha256
-          sha256sum -c DoomsdayLauncher-v5.7.35.exe.sha256
-          sha256sum -c DoomsdayLauncher_source_v5.7.35.game-search-fix_2026-05-28.zip.sha256
-          sha256sum -c launcher.json.sha256
+          test -f DoomsdayLauncher-v5.7.37.exe
+          test -f DoomsdayLauncher-v5.7.37.exe.sha256
+          test -f DoomsdayLauncher_source_v5.7.37.github-primary_2026-05-28.zip
+          test -f DoomsdayLauncher_source_v5.7.37.github-primary_2026-05-28.zip.sha256
+          grep -q '"version":  "7.15.169"' client.json
+          grep -q '238624A083F9449F3529D1A3820FC44E4CF6B3738802A68788E8C0A5B0400092' client.json
+          grep -q '"version":  "5.7.37"' launcher.json
+          grep -q '2cebfdfe8269afb93ae498d1050c7197741a612f7c3c4c1ec8b421e5558c1208' launcher.json
+          verify_sha() {
+            local file="$1"
+            local sha_file="$2"
+            local expected actual
+            expected="$(awk '{print toupper($1)}' "$sha_file")"
+            actual="$(sha256sum "$file" | awk '{print toupper($1)}')"
+            if [ "$actual" != "$expected" ]; then
+              echo "SHA mismatch for $file"
+              echo "expected: $expected"
+              echo "actual:   $actual"
+              exit 1
+            fi
+          }
+          verify_sha DoomsdayClient.dll DoomsdayClient.dll.sha256
+          verify_sha client.json client.json.sha256
+          verify_sha ModInfo.xml ModInfo.xml.sha256
+          verify_sha DoomsdayLauncher.exe DoomsdayLauncher.exe.sha256
+          verify_sha DoomsdayLauncher-v5.7.37.exe DoomsdayLauncher-v5.7.37.exe.sha256
+          verify_sha DoomsdayLauncher_source_v5.7.37.github-primary_2026-05-28.zip DoomsdayLauncher_source_v5.7.37.github-primary_2026-05-28.zip.sha256
+          verify_sha launcher.json launcher.json.sha256
 
       - name: Deploy files to VPS
         shell: bash
@@ -58,7 +71,7 @@ jobs:
           VPS_SSH_PASSWORD: ${{ secrets.VPS_SSH_PASSWORD }}
         run: |
           set -euo pipefail
-          files=(DoomsdayClient.dll DoomsdayClient.dll.sha256 client.json client.json.sha256 ModInfo.xml ModInfo.xml.sha256 launcher.json launcher.json.sha256 DoomsdayLauncher.exe DoomsdayLauncher.exe.sha256 DoomsdayLauncher-v5.7.35.exe DoomsdayLauncher-v5.7.35.exe.sha256 DoomsdayLauncher_source_v5.7.35.game-search-fix_2026-05-28.zip DoomsdayLauncher_source_v5.7.35.game-search-fix_2026-05-28.zip.sha256)
+          files=(DoomsdayClient.dll DoomsdayClient.dll.sha256 client.json client.json.sha256 ModInfo.xml ModInfo.xml.sha256 launcher.json launcher.json.sha256 DoomsdayLauncher.exe DoomsdayLauncher.exe.sha256 DoomsdayLauncher-v5.7.37.exe DoomsdayLauncher-v5.7.37.exe.sha256 DoomsdayLauncher_source_v5.7.37.github-primary_2026-05-28.zip DoomsdayLauncher_source_v5.7.37.github-primary_2026-05-28.zip.sha256)
           common=(-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=20)
           mkdir -p ~/.ssh
           remote_tmp="/tmp/dd-dist-v5.7-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
@@ -98,13 +111,26 @@ jobs:
               install -m 0644 '$remote_tmp'/\"\$f\" /var/www/doomsday/dl/\"\$f\"
             done
             cd /var/www/doomsday/dl
-            sha256sum -c DoomsdayClient.dll.sha256
-            sha256sum -c client.json.sha256
-            sha256sum -c ModInfo.xml.sha256
-            sha256sum -c DoomsdayLauncher.exe.sha256
-            sha256sum -c DoomsdayLauncher-v5.7.35.exe.sha256
-            sha256sum -c DoomsdayLauncher_source_v5.7.35.game-search-fix_2026-05-28.zip.sha256
-            sha256sum -c launcher.json.sha256
+            verify_sha() {
+              local file=\"\$1\"
+              local sha_file=\"\$2\"
+              local expected actual
+              expected=\$(awk '{print toupper(\$1)}' \"\$sha_file\")
+              actual=\$(sha256sum \"\$file\" | awk '{print toupper(\$1)}')
+              if [ \"\$actual\" != \"\$expected\" ]; then
+                echo \"SHA mismatch for \$file\"
+                echo \"expected: \$expected\"
+                echo \"actual:   \$actual\"
+                exit 1
+              fi
+            }
+            verify_sha DoomsdayClient.dll DoomsdayClient.dll.sha256
+            verify_sha client.json client.json.sha256
+            verify_sha ModInfo.xml ModInfo.xml.sha256
+            verify_sha DoomsdayLauncher.exe DoomsdayLauncher.exe.sha256
+            verify_sha DoomsdayLauncher-v5.7.37.exe DoomsdayLauncher-v5.7.37.exe.sha256
+            verify_sha DoomsdayLauncher_source_v5.7.37.github-primary_2026-05-28.zip DoomsdayLauncher_source_v5.7.37.github-primary_2026-05-28.zip.sha256
+            verify_sha launcher.json launcher.json.sha256
             rm -rf '$remote_tmp'"
 
       - name: Verify public mirrors
@@ -113,10 +139,10 @@ jobs:
           set -euo pipefail
           for base in https://doomsday7dtd.online/dl https://doomsday7dtd.ru/dl; do
             body="$(curl -fsSL "$base/client.json?bust=$(date +%s)-$RANDOM")"
-            echo "$body" | grep -q '"version":  "7.15.168"'
-            echo "$body" | grep -q '72E38403FB835113AA9D37267F88442C8FE12A6F43554CD84662C4DD611FB3EB'
-            curl -fsSL "$base/ModInfo.xml?bust=$(date +%s)-$RANDOM" | grep -q 'Version value="7.15.168"'
+            echo "$body" | grep -q '"version":  "7.15.169"'
+            echo "$body" | grep -q '238624A083F9449F3529D1A3820FC44E4CF6B3738802A68788E8C0A5B0400092'
+            curl -fsSL "$base/ModInfo.xml?bust=$(date +%s)-$RANDOM" | grep -q 'Version value="7.15.169"'
             launcher="$(curl -fsSL "$base/launcher.json?bust=$(date +%s)-$RANDOM")"
-            echo "$launcher" | grep -q '"version":  "5.7.35"'
-            echo "$launcher" | grep -q 'e3c18bf2e9fba487009f5bf344f8654ec1fc382432d181211b03902a86ee8204'
+            echo "$launcher" | grep -q '"version":  "5.7.37"'
+            echo "$launcher" | grep -q '2cebfdfe8269afb93ae498d1050c7197741a612f7c3c4c1ec8b421e5558c1208'
           done
