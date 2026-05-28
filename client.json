@@ -1,13 +1,13 @@
 {
-    "version":  "7.15.166",
-    "notes":  "v7.15.166: disables duplicate XML selfAOE enemy-around scan; ClientRadar now preserves enemy count/status buffs from one cached scan.",
+    "version":  "7.15.167",
+    "notes":  "v7.15.167: splits client radar scans, removes 50m scan for players without radar, budgets marker buff churn, and disables duplicate Doomsday XML radar selfAOE.",
     "files":  [
                   {
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.166-B9E36643AAC02FEDCE7F1EC3B2DA32DEA3BDEE325E892169AF9D558119DF7DDB",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.167-968EEC9760164ED74D2CDA21ED7C5CDCECB1DB58900D1EEF6EE3177AD598BB66",
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "sha256":  "B9E36643AAC02FEDCE7F1EC3B2DA32DEA3BDEE325E892169AF9D558119DF7DDB",
+                      "sha256":  "968EEC9760164ED74D2CDA21ED7C5CDCECB1DB58900D1EEF6EE3177AD598BB66",
                       "asset":  "DoomsdayClient.dll",
-                      "size":  536576
+                      "size":  496128
                   },
                   {
                       "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/0_TFP_Harmony_0Harmony.dll",
