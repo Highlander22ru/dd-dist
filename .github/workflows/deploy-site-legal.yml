@@ -168,7 +168,7 @@ jobs:
           }
           check_contains "$base/legal.html?bust=$bust" "222412608054"
           check_contains "$base/offer.html?bust=$bust" "326220200063519"
-          check_contains "$base/privacy.html?bust=$bust" "support@doomsday7dtd.online"
+          check_contains "$base/privacy.html?bust=$bust" "222412608054"
           check_contains "$base/payment-refund.html?bust=$bust" "payment-logo mir"
           check_contains "$base/delivery.html?bust=$bust" "326220200063519"
           check_contains "$base/shop.html?bust=$bust" "222412608054"
