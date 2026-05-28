@@ -1,11 +1,11 @@
 {
-    "version":  "7.15.167",
-    "notes":  "v7.15.167: splits client radar scans, removes 50m scan for players without radar, budgets marker buff churn, and disables duplicate Doomsday XML radar selfAOE.",
+    "version":  "7.15.168",
+    "notes":  "v7.15.168: keeps radar split/budget fix and packages the nearby-player aura hotfix for Rescuer/Predator/Maus churn.",
     "files":  [
                   {
-                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.167-968EEC9760164ED74D2CDA21ED7C5CDCECB1DB58900D1EEF6EE3177AD598BB66",
+                      "url":  "https://github.com/Highlander22ru/dd-dist/releases/download/v5.7/DoomsdayClient.dll?v=7.15.168-72E38403FB835113AA9D37267F88442C8FE12A6F43554CD84662C4DD611FB3EB",
                       "path":  "DoomsdayClient/DoomsdayClient.dll",
-                      "sha256":  "968EEC9760164ED74D2CDA21ED7C5CDCECB1DB58900D1EEF6EE3177AD598BB66",
+                      "sha256":  "72E38403FB835113AA9D37267F88442C8FE12A6F43554CD84662C4DD611FB3EB",
                       "asset":  "DoomsdayClient.dll",
                       "size":  496128
                   },
